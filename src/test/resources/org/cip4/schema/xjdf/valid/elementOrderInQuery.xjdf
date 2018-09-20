@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:Header Time="2017-05-11T17:35:16" DeviceID="foo"/>
+    <xjdf:QueryKnownDevices>
+        <xjdf:Header Time="2017-05-11T17:35:16" DeviceID="bar"/>
+        <xjdf:Subscription URL="https://some-site.com/xjmf"/>
+        <xjdf:DeviceFilter/>
+    </xjdf:QueryKnownDevices>
+</xjdf:XJMF>
