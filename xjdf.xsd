@@ -1507,11 +1507,11 @@
     <xs:element name="AuditPool">
         <xs:complexType>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element ref="AuditCreated" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="AuditNotification" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="AuditProcessRun" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="AuditResource" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="AuditStatus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="AuditCreated"/>
+                <xs:element ref="AuditNotification"/>
+                <xs:element ref="AuditProcessRun"/>
+                <xs:element ref="AuditResource"/>
+                <xs:element ref="AuditStatus"/>
             </xs:choice>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
