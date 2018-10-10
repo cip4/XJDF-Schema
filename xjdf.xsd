@@ -1129,7 +1129,7 @@
     </xs:element>
 
     <xs:element abstract="true" name="Message" type="Message"/>
-    <xs:complexType name="Message">
+    <xs:complexType abstract="true" name="Message">
         <xs:sequence>
             <xs:element maxOccurs="1" minOccurs="1" ref="Header"/>
         </xs:sequence>
@@ -1152,7 +1152,7 @@
     </xs:element>
 
     <xs:element abstract="true" name="Command" substitutionGroup="Message" type="Command"/>
-    <xs:complexType name="Command">
+    <xs:complexType abstract="true" name="Command">
         <xs:complexContent>
             <xs:extension base="Message">
             </xs:extension>
@@ -1160,7 +1160,7 @@
     </xs:complexType>
 
     <xs:element abstract="true" name="Query" substitutionGroup="Message" type="Query"/>
-    <xs:complexType name="Query">
+    <xs:complexType abstract="true" name="Query">
         <xs:complexContent>
             <xs:extension base="Message">
                 <xs:sequence>
@@ -1171,7 +1171,7 @@
     </xs:complexType>
 
     <xs:element abstract="true" name="Response" substitutionGroup="Message" type="Response"/>
-    <xs:complexType name="Response">
+    <xs:complexType abstract="true" name="Response">
         <xs:complexContent>
             <xs:extension base="Message">
                 <xs:sequence>
