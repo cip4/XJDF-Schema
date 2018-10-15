@@ -684,7 +684,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="SourceObjects">
+    <xs:simpleType name="SourceObject">
         <xs:restriction base="xs:string">
             <xs:enumeration value="ImagePhotographic"/>
             <xs:enumeration value="ImageScreenShot"/>
@@ -692,6 +692,10 @@
             <xs:enumeration value="SmoothShades"/>
             <xs:enumeration value="Text"/>
         </xs:restriction>
+    </xs:simpleType>
+
+	<xs:simpleType name="SourceObjects">
+        <xs:list itemType="SourceObject"/>
     </xs:simpleType>
 
     <xs:simpleType name="textElement">
