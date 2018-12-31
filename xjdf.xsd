@@ -748,6 +748,14 @@
             <xs:enumeration value="Overlap"/>
         </xs:restriction>
     </xs:simpleType>
+	
+	<xs:simpleType name="SpreadType">
+        <xs:restriction base="NMTOKEN">
+           <xs:enumeration value="SinglePage"/>
+           <xs:enumeration value="Spread"/>
+        </xs:restriction>
+    </xs:simpleType>
+
 
     <xs:element name="Resource">
         <xs:complexType>
@@ -856,6 +864,7 @@
             <xs:attribute name="IsRoot" type="boolean" use="optional"/>
             <xs:attribute name="MaxAmount" type="integer" use="optional"/>
             <xs:attribute name="MinAmount" type="integer" use="optional"/>
+            <xs:attribute name="PartVersion" type="NMTOKEN" use="optional"/>
             <xs:attribute name="ProductType" type="NMTOKEN" use="optional"/>
             <xs:attribute name="ProductTypeDetails" type="string" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -3071,15 +3080,8 @@
                 <xs:attribute name="Orientation" type="Orientation" use="optional"/>
                 <xs:attribute name="Pages" type="integer" use="optional"/>
                 <xs:attribute name="Sides" type="Sides" use="optional"/>
-                <xs:attribute name="SpreadType" use="optional">
-                    <xs:simpleType>
-                        <xs:restriction base="NMTOKEN">
-                            <xs:enumeration value="SinglePage"/>
-                            <xs:enumeration value="Spread"/>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
-            </xs:extension>
+                <xs:attribute name="SpreadType" type="SpreadType" use="optional"/>
+             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
 
@@ -3367,6 +3369,7 @@
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="AssemblySection"/>
                 </xs:sequence>
                 <xs:attribute name="BinderySignatureIDs" type="NMTOKENS" use="optional"/>
+                <xs:attribute name="CommonFolds" type="integer" use="optional"/>
                 <xs:attribute name="Order" use="required">
                     <xs:simpleType>
                         <xs:restriction base="NMTOKEN">
@@ -3526,6 +3529,7 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
+                <xs:attribute name="SpreadType" type="SpreadType" use="optional"/>
                 <xs:attribute name="StaggerColumns" type="FloatList" use="optional"/>
                 <xs:attribute name="StaggerContinuous" type="boolean" use="optional"/>
                 <xs:attribute name="StaggerRows" type="FloatList" use="optional"/>
@@ -3704,6 +3708,7 @@
                 <xs:attribute name="PrintingTechnology" type="NMTOKEN" use="optional"/>
                 <xs:attribute name="PrintStandard" type="string" use="optional"/>
                 <xs:attribute name="RawName" type="hexBinary" use="optional"/>
+                <xs:attribute name="Spectrum" type="TransferFunction" use="optional"/>
                 <xs:attribute name="sRGB" type="sRGBColor" use="optional"/>
             </xs:extension>
         </xs:complexContent>
