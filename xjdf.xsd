@@ -117,8 +117,10 @@
     </xs:simpleType>
 
     <xs:simpleType name="rectangle">
-        <xs:list itemType="float"/>
-    </xs:simpleType>
+       <xs:restriction base="FloatList">
+           <xs:length value="4"/>
+        </xs:restriction>
+   </xs:simpleType>
 
     <xs:simpleType name="integer">
         <xs:restriction base="xs:int"/>
@@ -126,8 +128,7 @@
 
     <xs:simpleType name="IntegerRange">
         <xs:restriction base="IntegerList">
-            <xs:minLength value="2"/>
-            <xs:maxLength value="2"/>
+            <xs:length value="2"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -144,7 +145,9 @@
     </xs:simpleType>
 
     <xs:simpleType name="shape">
-        <xs:restriction base="FloatList"/>
+        <xs:restriction base="FloatList">
+           <xs:length value="3"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="URL">
@@ -160,19 +163,27 @@
     </xs:simpleType>
 
     <xs:simpleType name="XYPair">
-        <xs:restriction base="FloatList"/>
+        <xs:restriction base="FloatList">
+           <xs:length value="2"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="matrix">
-        <xs:restriction base="FloatList"/>
+       <xs:restriction base="FloatList">
+           <xs:length value="6"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="LabColor">
-        <xs:restriction base="FloatList"/>
+      <xs:restriction base="FloatList">
+           <xs:length value="3"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="CMYKColor">
-        <xs:restriction base="FloatList"/>
+       <xs:restriction base="FloatList">
+           <xs:length value="4"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="TransferFunction">
@@ -181,9 +192,8 @@
 
     <xs:simpleType name="sRGBColor">
         <xs:restriction base="FloatList">
-            <xs:minLength value="3"/>
-            <xs:maxLength value="3"/>
-        </xs:restriction>
+            <xs:length value="3"/>
+         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="FoldCatalog">
@@ -4399,12 +4409,8 @@
         <xs:complexType>
             <xs:attribute name="Operation" type="NMTOKEN" use="required"/>
             <xs:attribute name="OperationDetails" type="string" use="optional"/>
-            <xs:attribute name="SourceObjects" use="optional">
-                <xs:simpleType>
-                    <xs:list itemType="SourceObjects"/>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:anyAttribute namespace="##other" processContents="lax"/>
+            <xs:attribute name="SourceObjects" use="optional" type="SourceObjects"/>
+             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
 
@@ -4789,11 +4795,7 @@
         <xs:complexType>
             <xs:attribute name="AntiAliasing" type="NMTOKEN" use="optional"/>
             <xs:attribute name="Resolution" type="XYPair" use="required"/>
-            <xs:attribute name="SourceObjects" use="optional">
-                <xs:simpleType>
-                    <xs:list itemType="SourceObjects"/>
-                </xs:simpleType>
-            </xs:attribute>
+            <xs:attribute name="SourceObjects" use="optional" type="SourceObjects"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
@@ -5186,11 +5188,7 @@
             <xs:attribute name="Separation" type="NMTOKEN" use="optional"/>
             <xs:attribute name="SourceFrequencyMax" type="float" use="optional"/>
             <xs:attribute name="SourceFrequencyMin" type="float" use="optional"/>
-            <xs:attribute name="SourceObjects" use="optional">
-                <xs:simpleType>
-                    <xs:list itemType="SourceObjects"/>
-                </xs:simpleType>
-            </xs:attribute>
+            <xs:attribute name="SourceObjects" use="optional" type="SourceObjects"/>
             <xs:attribute name="SpotFunction" type="NMTOKEN" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
@@ -5908,11 +5906,7 @@
             <xs:attribute name="AdjustHue" type="float" use="optional"/>
             <xs:attribute name="AdjustLightness" type="float" use="optional"/>
             <xs:attribute name="AdjustSaturation" type="float" use="optional"/>
-            <xs:attribute name="SourceObjects" use="optional">
-                <xs:simpleType>
-                    <xs:list itemType="SourceObjects"/>
-                </xs:simpleType>
-            </xs:attribute>
+            <xs:attribute name="SourceObjects" use="optional" type="SourceObjects"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
@@ -5975,11 +5969,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="SourceObjects" use="optional">
-                <xs:simpleType>
-                    <xs:list itemType="SourceObjects"/>
-                </xs:simpleType>
-            </xs:attribute>
+            <xs:attribute name="SourceObjects" use="optional" type="SourceObjects"/>
             <xs:attribute name="SourceRenderingIntent" type="RenderingIntent" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
