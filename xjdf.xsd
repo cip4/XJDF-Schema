@@ -3472,7 +3472,6 @@
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="AssemblySection"/>
                 </xs:sequence>
                 <xs:attribute name="BinderySignatureIDs" type="NMTOKENS" use="optional"/>
-                <xs:attribute name="CommonFolds" type="integer" use="optional"/>
                 <xs:attribute name="Order" use="required">
                     <xs:simpleType>
                         <xs:restriction base="NMTOKEN">
