@@ -1242,7 +1242,10 @@
 
     <xs:element name="Activity">
         <xs:complexType>
-            <xs:attribute name="ActivityID" type="NMTOKEN" use="optional"/>
+            <xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="0" ref="Comment"/>
+            </xs:sequence>
+			<xs:attribute name="ActivityID" type="NMTOKEN" use="optional"/>
             <xs:attribute name="ActivityName" type="string" use="optional"/>
             <xs:attribute name="PersonalID" type="NMTOKEN" use="optional"/>
             <xs:attribute name="StartTime" type="dateTime" use="optional"/>
