@@ -4268,6 +4268,7 @@
                             <xs:enumeration value="OneSidedFront"/>
                             <xs:enumeration value="OneSidedBack"/>
                             <xs:enumeration value="TwoSided"/>
+                            <xs:enumeration value="Unprinted"/>
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
