@@ -6334,7 +6334,7 @@
             <xs:attribute name="SetupProcsets" type="boolean" use="optional"/>
             <xs:attribute name="ShrinkToFit" type="boolean" use="optional"/>
             <xs:attribute name="SuppressCenter" type="boolean" use="optional"/>
-            <xs:attribute name="SuppressRotate" type="boolean" use="required"/>
+            <xs:attribute name="SuppressRotate" type="boolean" use="optional"/>
             <xs:attribute name="TTasT42" type="boolean" use="optional"/>
             <xs:attribute name="UseFontAliasNames" type="boolean" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
