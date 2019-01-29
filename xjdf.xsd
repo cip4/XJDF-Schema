@@ -2914,7 +2914,13 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
-                <xs:attribute name="ChildRefs" type="IDREFS" use="optional"/>
+                <xs:attribute name="ChildRefs" use="optional">
+					<xs:simpleType>
+					<xs:restriction base="IDREFS">
+						<xs:minLength value="2"/>
+					</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
                 <xs:attribute name="CoverColor" type="NamedColor" use="optional"/>
                 <xs:attribute name="CoverColorDetails" type="string" use="optional"/>
             </xs:extension>
