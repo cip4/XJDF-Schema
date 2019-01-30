@@ -795,7 +795,7 @@
 
 	<xs:simpleType name="SourceObjects">
         <xs:list>
-		    <xs:simpleType name="SourceObject">
+		    <xs:simpleType>
         		<xs:restriction base="xs:string">
             		<xs:enumeration value="ImagePhotographic"/>
             		<xs:enumeration value="ImageScreenShot"/>
