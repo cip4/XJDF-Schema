@@ -5620,7 +5620,7 @@
                 <xs:element maxOccurs="unbounded" minOccurs="0" ref="FillMark"/>
                 <xs:element maxOccurs="unbounded" minOccurs="0" ref="IdentificationField"/>
                 <xs:element maxOccurs="1" minOccurs="0" ref="JobField"/>
-                <xs:element maxOccurs="1" minOccurs="1" ref="RefAnchor"/>
+                <xs:element maxOccurs="1" minOccurs="0" ref="RefAnchor"/>
             </xs:sequence>
             <xs:attribute name="AbsoluteHeight" type="float" use="optional"/>
             <xs:attribute name="AbsoluteWidth" type="float" use="optional"/>
