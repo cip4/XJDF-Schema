@@ -1259,6 +1259,7 @@
             <xs:attribute name="ActivityName" type="string" use="optional"/>
             <xs:attribute name="EndTime" type="dateTime" use="optional"/>
             <xs:attribute name="PersonalID" type="NMTOKEN" use="optional"/>
+            <xs:attribute name="Roles" type="NMTOKENS" use="optional"/>
             <xs:attribute name="StartTime" type="dateTime" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
