@@ -105,7 +105,7 @@
     </xs:simpleType>
 
     <xs:simpleType name="dateTime">
-        <xs:restriction base="xs:string"/>
+        <xs:restriction base="xs:dateTime"/>
     </xs:simpleType>
 
     <xs:simpleType name="PDFPath">
@@ -121,7 +121,7 @@
     </xs:simpleType>
 
     <xs:simpleType name="duration">
-        <xs:restriction base="xs:string"/>
+        <xs:restriction base="xs:duration"/>
     </xs:simpleType>
 
     <xs:simpleType name="rectangle">
