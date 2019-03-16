@@ -101,7 +101,7 @@
     </xs:simpleType>
 
     <xs:simpleType name="hexBinary">
-        <xs:restriction base="xs:string"/>
+        <xs:restriction base="xs:hexBinary"/>
     </xs:simpleType>
 
     <xs:simpleType name="dateTime">
@@ -159,7 +159,7 @@
     </xs:simpleType>
 
     <xs:simpleType name="URL">
-        <xs:restriction base="xs:string"/>
+        <xs:restriction base="xs:anyURI"/>
     </xs:simpleType>
 
     <xs:simpleType name="XPath">
@@ -817,6 +817,13 @@
 
     <xs:simpleType name="textElement">
         <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="Score">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="Severity">
@@ -5245,17 +5252,11 @@
                 </xs:sequence>
                 <xs:attribute name="Box" type="rectangle" use="optional"/>
                 <xs:attribute name="Position" type="Face" use="optional"/>
+                <xs:attribute name="QualityBase" type="NMTOKENS" use="optional"/>
                 <xs:attribute name="QualityControlMethods" type="NMTOKENS" use="optional"/>
                 <xs:attribute name="SampleInterval" type="integer" use="optional"/>
-                <xs:attribute name="Severity" use="optional">				
-	               <xs:simpleType>
-                      <xs:restriction base="integer">
-                        <xs:minInclusive value="0"/>
-                        <xs:maxInclusive value="100"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-				</xs:attribute>
-                <xs:attribute name="SourceDeviceID" type="NMTOKEN" use="optional"/>
+                <xs:attribute name="Severity" type="Score" use="optional"/>				
+	            <xs:attribute name="SourceDeviceID" type="NMTOKEN" use="optional"/>
                 <xs:attribute name="TimeInterval" type="duration" use="optional"/>
             </xs:extension>
         </xs:complexContent>
@@ -5269,24 +5270,26 @@
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="BindingQualityMeasurement"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="ColorControlStrip"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
+                    <xs:element maxOccurs="1" minOccurs="0" ref="Inspection"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="RegistrationQuality"/>
                  </xs:sequence>
                 <xs:attribute name="Box" type="rectangle" use="optional"/>
                 <xs:attribute name="End" type="dateTime" use="optional"/>
                 <xs:attribute name="Failed" type="integer" use="optional"/>
                 <xs:attribute name="Measurements" type="integer" use="optional"/>
+                <xs:attribute name="MeasurementUsage" use="optional">	
+					<xs:simpleType>
+                      <xs:restriction base="xs:NMTOKEN">
+                          <xs:enumeration value="Master"/>
+                          <xs:enumeration value="Standard"/>
+                      </xs:restriction>
+					</xs:simpleType>
+ 				</xs:attribute>
                 <xs:attribute name="Passed" type="integer" use="optional"/>
                 <xs:attribute name="Position" type="Face" use="optional"/>
                 <xs:attribute name="QualityControlMethods" type="NMTOKENS" use="optional"/>
                 <xs:attribute name="Sample" type="IntegerRange" use="optional"/>
-                <xs:attribute name="Severity" use="optional">				
-	               <xs:simpleType>
-                      <xs:restriction base="integer">
-                        <xs:minInclusive value="0"/>
-                        <xs:maxInclusive value="100"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-				</xs:attribute>
+                <xs:attribute name="Severity" type="Score" use="optional"/>				
                 <xs:attribute name="SourceDeviceID" type="NMTOKEN" use="optional"/>
                 <xs:attribute name="Start" type="dateTime" use="optional"/>
             </xs:extension>
@@ -5311,6 +5314,48 @@
         </xs:complexType>
     </xs:element>
 
+	   <xs:element name="Inspection">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="Defect"/>
+                <xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
+            </xs:sequence>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+	
+   <xs:element name="Defect">
+        <xs:complexType>
+           <xs:sequence>
+                <xs:element maxOccurs="1" minOccurs="0" ref="Comment"/>
+                <xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
+            </xs:sequence>
+            <xs:attribute name="Box" type="rectangle" use="optional"/>
+            <xs:attribute name="DefectReason" type="NMTOKEN" use="optional"/>
+            <xs:attribute name="DefectType" use="required">
+                    <xs:simpleType>
+                        <xs:list>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:NMTOKEN">
+                                    <xs:enumeration value="FinishingDefect"/>
+                                    <xs:enumeration value="ImageDefect"/>
+                                    <xs:enumeration value="ImageFinishingDefect"/>
+                                    <xs:enumeration value="Other"/>
+                                    <xs:enumeration value="SheetDefect"/>
+                                    <xs:enumeration value="SubstrateDefect"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:list>
+                    </xs:simpleType>
+			</xs:attribute>
+            <xs:attribute name="DefectTypeDetails" type="NMTOKEN" use="optional"/>
+            <xs:attribute name="Face" type="Face" use="optional"/>
+            <xs:attribute name="Severity" type="Score" use="optional"/>
+            <xs:attribute name="Size" type="float" use="optional"/>
+           <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+	
     <xs:element name="RegisterMark" substitutionGroup="SpecificResource" type="RegisterMark"/>
     <xs:complexType name="RegisterMark">
         <xs:complexContent>
