@@ -101,7 +101,7 @@
     </xs:simpleType>
 
     <xs:simpleType name="hexBinary">
-        <xs:restriction base="xs:string"/>
+        <xs:restriction base="xs:hexBinary"/>
     </xs:simpleType>
 
     <xs:simpleType name="dateTime">
@@ -151,7 +151,7 @@
     </xs:simpleType>
 
     <xs:simpleType name="URL">
-        <xs:restriction base="xs:string"/>
+        <xs:restriction base="xs:anyURI"/>
     </xs:simpleType>
 
     <xs:simpleType name="XPath">
