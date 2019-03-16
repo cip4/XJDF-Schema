@@ -5016,7 +5016,7 @@
             <xs:attribute name="ExternalID" type="NMTOKEN" use="optional"/>
             <xs:attribute name="Lab" type="LabColor" use="optional"/>
             <xs:attribute name="NeutralDensity" type="float" use="optional"/>
-            <xs:attribute name="PatchUsage"  use="optional">
+            <xs:attribute name="PatchUsage"  use="required">
                      <xs:simpleType>
                             <xs:restriction base="xs:NMTOKEN">
                                 <xs:enumeration value="Color"/>
