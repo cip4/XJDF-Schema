@@ -1,3 +1,19 @@
+buildscript {
+    // Workaround to generate samples:
+    //      ./gradlew --include-build ../sample-builder clean buildSamples
+    // (where "../sample-builder" points to the code of the sample builder repo)
+    try {
+        def sampleBuilder = gradle.includedBuild('sample-builder')
+        dependencies {
+            for (def module in sampleBuilder.availableModules) {
+                classpath((String) module.left)
+            }
+        }
+    } catch (UnknownDomainObjectException e) {
+        // nothing to do
+    }
+}
+
 plugins {
     id 'groovy'
 }
@@ -14,6 +30,13 @@ dependencies {
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
 
     testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
+}
+
+try {
+    Class.forName('org.cip4.samples.SamplesPlugin');
+    apply plugin: 'org.cip4.samples'
+} catch (ClassNotFoundException e) {
+    // void
 }
 
 test {
