@@ -58,8 +58,8 @@
 	Processes in Prepress, Press and Postpress , please see &lt;http://www.cip4.org/&gt;.
 	
 -->
-<xs:schema targetNamespace="http://www.CIP4.org/JDFSchema_2_1"
-           xmlns="http://www.CIP4.org/JDFSchema_2_1"
+<xs:schema targetNamespace="http://www.CIP4.org/JDFSchema_2_0"
+           xmlns="http://www.CIP4.org/JDFSchema_2_0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">

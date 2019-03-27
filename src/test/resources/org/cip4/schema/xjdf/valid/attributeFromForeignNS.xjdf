@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<xjdf:XJDF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_1"
+<xjdf:XJDF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0"
            xmlns:foo="http://www.foo.org/Schema"
            JobID="SIG-NSA"
            Types="Product">
