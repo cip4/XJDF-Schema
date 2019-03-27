@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="ChangeOrder"
+  JobPartID="Paper" Types="ConventionalPrinting">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:39+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="Component" Usage="Input">
+    <Resource>
+      <AmountPool>
+        <PartAmount Amount="4000"/>
+      </AmountPool>
+      <Part SheetName="Sheet1"/>
+      <Component MediaRef="Media_000005.1"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Media">
+    <Resource ID="Media_000005.1">
+      <Media MediaType="Paper" Weight="120"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

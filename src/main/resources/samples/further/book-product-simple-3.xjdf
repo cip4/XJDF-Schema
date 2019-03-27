@@ -1,0 +1,30 @@
+<xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+<xjdf:ProductList>
+
+    <xjdf:Product Amount="10" DescriptiveName="Banner with Grommets">
+        <xjdf:Intent Name="LayoutIntent">
+            <xjdf:LayoutIntent FinishedDimensions="5669.29 2834.65 0.0"
+                               Pages="2" Sides="OneSided"/>
+        </xjdf:Intent>
+        <xjdf:Intent Name="HoleMakingIntent">
+            <xjdf:HoleMakingIntent>
+                <xjdf:HolePattern Center="141.73 141.73" Extent="56.69 0.0"
+                                  Shape="Round" Pitch="283.46 0.0" HoleCount="19"
+                                  Reinforcement="Grommet" CenterReference="TrailingEdge" />
+                <xjdf:HolePattern Center="141.73 2692.91" Extent="56.69 0.0"
+                                  Shape="Round" Pitch="283.46 0.0" HoleCount="19"
+                                  Reinforcement="Grommet"  CenterReference="TrailingEdge" />
+            </xjdf:HoleMakingIntent>
+        </xjdf:Intent>
+        <xjdf:Intent Name="ColorIntent">
+            <xjdf:ColorIntent>
+                <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
+                                   Surface="Front"/>
+            </xjdf:ColorIntent>
+        </xjdf:Intent>
+        <xjdf:Intent Name="MediaIntent">
+            <xjdf:MediaIntent MediaQuality="500_PVC" MediaType="Paper"/>
+        </xjdf:Intent>
+    </xjdf:Product>
+</xjdf:ProductList>
+</xjdf:XJDF>

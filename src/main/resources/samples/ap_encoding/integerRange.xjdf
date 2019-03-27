@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="intergerrange" Types="Product">
+    <ProductList>
+        <Product ID="I1" IsRoot="true" Amount="1000">
+            <Intent Name="VariableIntent">
+                <VariableIntent ColorsUsedFront="1" NumberOfCopies="1" VariableType="OneLine" VariableQuality="Simple"/>
+            </Intent>
+        </Product>
+    </ProductList>
+    <ResourceSet Name="RunList">
+        <Resource ID="RL1">
+            <!-- START SNIPPET -->
+            <RunList Pages="-3 -5" />
+            <!-- END SNIPPET -->
+        </Resource>
+        <Resource ID="RL2">
+            <!-- START SNIPPET -->
+            <RunList Pages="5 -5" />
+            <!-- END SNIPPET -->
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="Content">
+        <Resource ID="C1">
+            <Content>
+                <PositionObj Anchor="BottomLeft" PositionPolicy="Free" Size="142 28" CTM="1 0 0 1 56 64"/>
+            </Content>
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="NodeInfo">
+        <Resource ID="N1">
+            <NodeInfo/>
+        </Resource>
+    </ResourceSet>
+</XJDF>

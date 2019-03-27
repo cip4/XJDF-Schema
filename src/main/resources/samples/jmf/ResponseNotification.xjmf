@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2017-04-01T01:02:02+02:00"/>
+  <ResponseModifyQueueEntry ReturnCode="5">
+    <Header DeviceID="DeviceID" ID="R1" Time="2017-04-01T01:02:02+02:00" refID="C1"/>
+    <Notification Class="Error">
+      <Comment>StartJob unsuccessful - Device does not handle resume</Comment>
+    </Notification>
+  </ResponseModifyQueueEntry>
+</XJMF>
+<!-- END SNIPPET -->

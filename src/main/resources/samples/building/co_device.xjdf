@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="ChangeOrder"
+  JobPartID="Device" Types="Folding">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:39+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <Part SheetName="Sheet1"/>
+      <NodeInfo Start="2019-03-26T17:00:00+00:00"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Device" Usage="Input">
+    <Resource>
+      <Part SheetName="Sheet1"/>
+      <Device DeviceID="Folder2"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

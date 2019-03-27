@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JDFToXJDF version: using: null null-->
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="JobID"
+  JobPartID="n_004101" Types="Interpreting Rendering DigitalPrinting Stitching">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <!--JDF 1.3 incompatible auditing of module phases the REQUIRED time attributes are not set in the ModulePhase elements
+- note that phases may now arbitrarily overlap
+The modulePhase elements now only specify which modules are involved, times are all defined by the phasetime proper-->
+    <!--The following phaseTime is executed by one module - the RIP,which executes two process steps (Interpreting and Rendering)-->
+    <!--The following phaseTime is executed by two modules - sticher and printer-->
+    <AuditCreated>
+      <Header DeviceID="dummy" ID="a_004102" Time="2019-03-26T14:15:00+00:00"/>
+    </AuditCreated>
+    <AuditStatus>
+      <Header DeviceID="dummy" ID="a_004107" Time="2019-03-26T14:50:00+00:00"/>
+      <DeviceInfo Status="Production">
+        <JobPhase JobID="JobID" JobPartID="n_004101"
+          StartTime="2019-03-26T14:15:00+00:00" Status="Setup"/>
+      </DeviceInfo>
+    </AuditStatus>
+    <AuditStatus>
+      <Header DeviceID="dummy" ID="a_004109" Time="2019-03-26T16:00:00+00:00"/>
+      <DeviceInfo Status="Production">
+        <JobPhase JobID="JobID" JobPartID="n_004101"
+          StartTime="2019-03-26T14:20:00+00:00" Status="InProgress"/>
+      </DeviceInfo>
+    </AuditStatus>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo Status="Waiting"/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet CombinedProcessIndex="1 2" Name="Media" Usage="Input">
+    <Resource>
+      <Media MediaType="Other"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

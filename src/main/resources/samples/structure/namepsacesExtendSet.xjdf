@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF Types="foo:bar" xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="IntentExtension">
+  <AuditPool>
+    <AuditCreated>
+      <Header ID="l_000002" Time="2016-12-28T12:14:40+01:00"  DeviceID="myID"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet ID="NodeInfo_000003" Name="NodeInfo" Usage="Input">
+    <Resource ID="NodeInfo_000003.1">
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+<!-- START SNIPPET -->
+  <ResourceSet ID="FooParams_000004" Name="foo:FooParams" Usage="Input"
+                    xmlns:foo="http://www.foo.org">
+    <Resource ID="FooParams_000004.1">
+      <Part Run="R1"/>
+      <foo:FooParams FooAtt="FooVal"/>
+    </Resource>
+  </ResourceSet>
+<!-- END SNIPPET -->
+</XJDF>

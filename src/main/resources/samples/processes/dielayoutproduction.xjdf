@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Die1" Types="DieLayoutProduction">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:30+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="ShapeDef">
+    <Resource ID="ShapeDef_000004.1">
+      <ShapeDef>
+        <FileSpec URL="file://myserver/myshare/olive.dd3"/>
+      </ShapeDef>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="DieLayoutProductionParams" Usage="Input">
+    <Resource>
+      <DieLayoutProductionParams>
+        <ConvertingConfig SheetHeightMax="2200" SheetHeightMin="2200"
+          SheetWidthMax="2800" SheetWidthMin="2800"/>
+        <ConvertingConfig SheetHeightMax="2500" SheetHeightMin="2500"
+          SheetWidthMax="3400" SheetWidthMin="3400"/>
+        <RepeatDesc LayoutStyle="StraightNest" ShapeDefRef="ShapeDef_000004.1"/>
+      </DieLayoutProductionParams>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="DieLayout" Usage="Output">
+    <Resource DescriptiveName="The die layout">
+      <DieLayout/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

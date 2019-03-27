@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="VariableData" Types="Product">
+    <!-- START SNIPPET -->
+    <ProductList>
+        <Product ID="I1" IsRoot="true" Amount="1000">
+            <!-- END SNIPPET -->
+            <Intent Name="ColorIntent">
+                <ColorIntent>
+                    <SurfaceColor Surface="Front" ColorsUsed="Cyan Magenta Yellow Black"/>
+                    <SurfaceColor Surface="Back" ColorsUsed="Cyan Magenta Yellow Black"/>
+                </ColorIntent>
+            </Intent>
+            <Intent Name="MediaIntent">
+                <MediaIntent MediaType="Paper" MediaQuality="IPG_200"/>
+            </Intent>
+            <Intent Name="LayoutIntent">
+                <LayoutIntent FinishedDimensions="297.64 419.53 0.0" Pages="2" Sides="TwoSidedHeadToHead"/>
+            </Intent>
+            <!-- START SNIPPET -->
+            <Intent Name="VariableIntent">
+                <VariableIntent ColorsUsedFront="1" NumberOfCopies="1" VariableType="OneLine" VariableQuality="Simple"/>
+            </Intent>
+        </Product>
+    </ProductList>
+    <ResourceSet Name="LayoutElementProductionParams" Usage="Input">
+        <Resource>
+            <LayoutElementProductionParams ContentRefs="Content_42">
+                <FileSpec ResourceUsage="DataList"
+                          URL="https://www.someserver.com/card_numbers.csv?access_token=CTbnNB9dZ42H3hTKCnByEmpg"/>
+            </LayoutElementProductionParams>
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="Content">
+        <Resource ID="Content_42">
+            <Content>
+                <PositionObj Anchor="BottomLeft" PositionPolicy="Free" Size="142 28" CTM="1 0 0 1 56 64"/>
+            </Content>
+        </Resource>
+    </ResourceSet>
+    <!-- END SNIPPET -->
+    <ResourceSet Name="RunList" Usage="Input">
+        <Resource>
+            <RunList>
+                <FileSpec URL="https://www.someserver.com/card_design.pdf?access_token=ymZqHEf38QByAxebFtf4QEjW"/>
+            </RunList>
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="NodeInfo" Usage="Input">
+        <Resource>
+            <NodeInfo/>
+        </Resource>
+    </ResourceSet>
+</XJDF>

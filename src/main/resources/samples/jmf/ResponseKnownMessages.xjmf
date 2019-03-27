@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2019-03-26T14:07:48.241+00:00"/>
+  <ResponseKnownMessages ReturnCode="0">
+    <Header DeviceID="DeviceID" ID="R1"
+      Time="2019-03-26T14:07:48.242+00:00" refID="Q1"/>
+    <MessageService ResponseModes="Response" Type="QueryKnownMessages"/>
+    <MessageService ResponseModes="FireAndForget Reliable" Type="QueryStatus"/>
+    <MessageService Type="CommandSubmitQueueEntry"/>
+    <MessageService Type="ResponseReturnQueueEntry"/>
+  </ResponseKnownMessages>
+</XJMF>
+<!-- END SNIPPET -->

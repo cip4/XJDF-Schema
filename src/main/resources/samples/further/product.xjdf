@@ -1,0 +1,38 @@
+<XJDF JobID="JOB-42" Types="Product" xmlns="http://www.CIP4.org/JDFSchema_2_0">
+    <ProductList>
+        <Product Amount="1000" DescriptiveName="FLYER A6">
+            <Intent Name="ColorIntent">
+                <ColorIntent>
+                    <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
+                                       Surface="Front"/>
+                    <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
+                                       Surface="Back"/>
+                </ColorIntent>
+            </Intent>
+            <Intent Name="LayoutIntent">
+                <LayoutIntent FinishedDimensions="297.64 419.53 0.0"
+                                   Pages="2" Sides="TwoSidedHeadToHead"/>
+            </Intent>
+            <Intent Name="MediaIntent">
+                <MediaIntent MediaQuality="135_GLOSS" MediaType="Paper"/>
+            </Intent>
+        </Product>
+    </ProductList>
+    <ResourceSet Name="CustomerInfo">
+        <Resource>
+            <CustomerInfo CustomerID="CUSTOMER-ID"/>
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="NodeInfo">
+        <Resource>
+            <NodeInfo End="2016-10-20T16:00:00Z" JobPriority="80"/>
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="RunList">
+        <Resource>
+            <RunList>
+                <FileSpec URL="http://example.org/my-artwork.pdf"/>
+            </RunList>
+        </Resource>
+    </ResourceSet>
+</XJDF>

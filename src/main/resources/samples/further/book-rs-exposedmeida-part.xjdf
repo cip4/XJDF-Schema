@@ -1,0 +1,33 @@
+<xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+<xjdf:ResourceSet Name="ExposedMedia">
+    <xjdf:Resource>
+        <xjdf:Part Separation="Cyan" PartVersion="German" />
+        <xjdf:Part Separation="Cyan" PartVersion="English" />
+        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+    </xjdf:Resource>
+    <xjdf:Resource>
+        <xjdf:Part Separation="Magenta" PartVersion="German" />
+        <xjdf:Part Separation="Magenta" PartVersion="English" />
+        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+    </xjdf:Resource>
+    <xjdf:Resource>
+        <xjdf:Part Separation="Yellow" PartVersion="German" />
+        <xjdf:Part Separation="Yellow" PartVersion="English" />
+        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+    </xjdf:Resource>
+    <xjdf:Resource>
+        <xjdf:Part Separation="Black" PartVersion="German" />
+        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+    </xjdf:Resource>
+    <xjdf:Resource>
+        <xjdf:Part Separation="Black" PartVersion="English" />
+        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+    </xjdf:Resource>
+</xjdf:ResourceSet>
+
+<xjdf:ResourceSet Name="Media">
+    <xjdf:Resource ID="MEDIA-PLATE-ID">
+        <xjdf:Media MediaType="Plate" />
+    </xjdf:Resource>
+</xjdf:ResourceSet>
+</xjdf:XJDF>

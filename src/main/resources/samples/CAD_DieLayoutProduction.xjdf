@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JDFToXJDF version: using: CIP4 JDF Writer Java 1.6 BLD 009-->
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
+  DescriptiveName="This process describes placement of one-up shapes on a sheet"
+  JobID="CAD" JobPartID="n_000002" Types="DieLayoutProduction">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="dummy" ID="a_000003" Time="2019-03-26T14:14:46+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="CustomerInfo" Usage="Input">
+    <Resource>
+      <CustomerInfo CustomerID="MISCustomerID" CustomerJobName="Customer Job Identifier or Name"/>
+    </Resource>
+  </ResourceSet>
+  <!-- END SNIPPET -->
+  <ResourceSet DescriptiveName="must be done 5 days after start"
+    Name="NodeInfo" Usage="Input">
+    <Resource DescriptiveName="must be done 5 days after start">
+      <NodeInfo FirstStart="2019-03-26T14:14:46+00:00"
+        LastEnd="2019-03-31T14:14:46+00:00" Status="Waiting"/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet
+    DescriptiveName="Additional parameters may be filled by CAD - note also that this shapeDef will be the input of the DieLayoutProduction process"
+    ID="r_000006" Name="ShapeDef" Usage="Input">
+    <Resource DescriptiveName="Additional parameters may be filled by CAD - note also that this shapeDef will be the input of the DieLayoutProduction process">
+      <ShapeDef Area="0.3" FluteDirection="YDirection" GrainDirection="XDirection">
+        <FileSpec URL="file:/host/share/dir1/dir2/OutFile%20with%20ü.cff2"/>
+      </ShapeDef>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="DieLayoutProductionParams" Usage="Input">
+    <Resource>
+      <DieLayoutProductionParams>
+        <ConvertingConfig SheetHeightMax="2267.71653543"
+          SheetHeightMin="1700.78740157" SheetWidthMax="3118.11023622" SheetWidthMin="2551.18110236"/>
+        <RepeatDesc AllowedRotate="None" LayoutStyle="StraightNest" ShapeDefRef="r_000006"/>
+      </DieLayoutProductionParams>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet DescriptiveName="the abstract die layout "
+    Name="DieLayout" Usage="Output">
+    <Resource DescriptiveName="the abstract die layout ">
+      <DieLayout Waste="22">
+        <FileSpec URL="file:/host/share/dir1/dir2/dieLayout.cff2"/>
+      </DieLayout>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

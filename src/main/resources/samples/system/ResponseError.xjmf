@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2017-09-28T14:13:20+00:00"/>
+  <ResponseModifyQueueEntry ReturnCode="105">
+    <Header DeviceID="DeviceID" ID="R1" Time="2017-09-28T14:13:20+00:00" refID="C1"/>
+    <Notification Class="Error">
+      <Comment>Not resuming unknown QueueEntry: YourQueueEntryID</Comment>
+    </Notification>
+  </ResponseModifyQueueEntry>
+</XJMF>
+<!-- END SNIPPET -->

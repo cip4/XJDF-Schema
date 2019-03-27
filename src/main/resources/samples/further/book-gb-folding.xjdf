@@ -1,0 +1,63 @@
+<xjdf:XJDF JobID="JOB-42" Types="Folding"
+           xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:AuditPool>
+        <xjdf:AuditCreated>
+            <xjdf:Header AgentName="MIS" AgentVersion="1.0" DeviceID="myID"
+                         Time="2016-05-30T21:49:47Z" />
+        </xjdf:AuditCreated>
+    </xjdf:AuditPool>
+    <xjdf:ProductList>
+        <xjdf:Product Amount="2500" DescriptiveName="My Folded Leaflet">
+            <xjdf:Intent Name="LayoutIntent">
+                <xjdf:LayoutIntent Dimensions="841.88 595.27"
+                                   Sides="TwoSidedHeadToHead" Pages="2"
+                                   FinishedDimensions="280.69 595.27 0.0"/>
+            </xjdf:Intent>
+            <xjdf:Intent Name="FoldingIntent">
+                <xjdf:FoldingIntent FoldCatalog="F6-2"/>
+            </xjdf:Intent>
+            <xjdf:Intent Name="ColorIntent">
+                <xjdf:ColorIntent>
+                    <xjdf:SurfaceColor Surface="Front"
+                                       ColorsUsed="Cyan Magenta Yellow Black"/>
+                    <xjdf:SurfaceColor Surface="Back"
+                                       ColorsUsed="Cyan Magenta Yellow Black" />
+                </xjdf:ColorIntent>
+            </xjdf:Intent>
+            <xjdf:Intent Name="MediaIntent">
+                <xjdf:MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
+            </xjdf:Intent>
+        </xjdf:Product>
+    </xjdf:ProductList>
+    <xjdf:ResourceSet Name="Component" Usage="Input">
+        <xjdf:Resource ExternalID="COMP_ID_UNFOLDED">
+            <xjdf:Component Dimensions="841.88 595.27 0.42"
+                            MediaRef="MEDIA-ID" />
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+    <xjdf:ResourceSet Name="Component" Usage="Output">
+        <xjdf:Resource ExternalID="COMP_ID_FOLDED">
+            <xjdf:AmountPool>
+                <xjdf:PartAmount Amount="2580" />
+            </xjdf:AmountPool>
+            <xjdf:Component Dimensions="280.69 595.27 1.26"
+                            MediaRef="MEDIA-ID" />
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+    <xjdf:ResourceSet Name="FoldingParams" Usage="Input">
+        <xjdf:Resource>
+            <xjdf:FoldingParams FoldCatalog="F6-2"/>
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+    <xjdf:ResourceSet Name="Media">
+        <xjdf:Resource ID="MEDIA-ID">
+            <xjdf:Media MediaType="Paper" Thickness="150" Weight="135"
+                        ISOPaperSubstrate="PS3" />
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+    <xjdf:ResourceSet Name="NodeInfo" Usage="Input">
+        <xjdf:Resource>
+            <xjdf:NodeInfo Start="2016-08-30T15:00:00Z" />
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+</xjdf:XJDF>

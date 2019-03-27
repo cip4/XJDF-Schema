@@ -1,0 +1,28 @@
+<xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:ProductList>
+        <xjdf:Product Amount="500" DescriptiveName="Notepad A4"
+                      IsRoot="true">
+            <xjdf:Intent Name="BindingIntent">
+                <xjdf:BindingIntent BindingOrder="Gathering"
+                                    BindingSide="Top" BindingType="EdgeGluing"
+                                    ChildRefs="SHEET_ID" />
+            </xjdf:Intent>
+        </xjdf:Product>
+        <xjdf:Product Amount="25" ID="SHEET_ID" IsRoot="false">
+            <xjdf:Intent Name="LayoutIntent">
+                <xjdf:LayoutIntent FinishedDimensions="595.28 841.89 0.0"
+                                   Pages="2" Sides="TwoSidedHeadToHead"/>
+            </xjdf:Intent>
+            <xjdf:Intent Name="ColorIntent">
+                <xjdf:ColorIntent>
+                    <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
+                                       Surface="Front"/>
+                    <xjdf:SurfaceColor ColorsUsed="Black" Surface="Back"/>
+                </xjdf:ColorIntent>
+            </xjdf:Intent>
+            <xjdf:Intent Name="MediaIntent">
+                <xjdf:MediaIntent MediaQuality="80_OFFSET" MediaType="Paper"/>
+            </xjdf:Intent>
+        </xjdf:Product>
+    </xjdf:ProductList>
+</xjdf:XJDF>

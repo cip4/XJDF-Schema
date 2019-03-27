@@ -1,6 +1,6 @@
-package org.cip4.schema.xjdf;
+package org.cip4.schema.xjdf
 
-import junit.framework.AssertionFailedError;
+import org.opentest4j.AssertionFailedError
 import org.w3c.dom.Node;
 
 class Assert {

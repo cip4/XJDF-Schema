@@ -1,0 +1,43 @@
+<xjdf:XJDF JobID="JOB-42" Types="Product" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:ProductList>
+        <xjdf:Product Amount="1000" DescriptiveName="FLYER">
+            <xjdf:Intent Name="ColorIntent">
+                <xjdf:ColorIntent>
+                    <xjdf:SurfaceColor
+                            ColorsUsed="Cyan Magenta Yellow Black"
+                            Surface="Front"/>
+                    <xjdf:SurfaceColor
+                            ColorsUsed="Cyan Magenta Yellow Black"
+                            Surface="Back"/>
+                </xjdf:ColorIntent>
+            </xjdf:Intent>
+            <xjdf:Intent Name="LayoutIntent">
+                <xjdf:LayoutIntent
+                        FinishedDimensions="297.64 419.53 0.0"
+                        Pages="2" Sides="TwoSidedHeadToHead"/>
+            </xjdf:Intent>
+            <xjdf:Intent Name="MediaIntent">
+                <xjdf:MediaIntent MediaQuality="135_GLOSS" MediaType="Paper"/>
+            </xjdf:Intent>
+        </xjdf:Product>
+    </xjdf:ProductList>
+    <xjdf:ResourceSet Name="CustomerInfo">
+        <xjdf:Resource>
+            <xjdf:CustomerInfo CustomerID="CUSTOMER-ID"/>
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+    <xjdf:ResourceSet Name="NodeInfo">
+        <xjdf:Resource>
+            <xjdf:NodeInfo End="2016-10-20T16:00:00Z"
+                           JobPriority="80"/>
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+    <xjdf:ResourceSet Name="RunList">
+        <xjdf:Resource>
+            <xjdf:RunList>
+                <xjdf:FileSpec
+                        URL="http://example.org/artwork.pdf"/>
+            </xjdf:RunList>
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+</xjdf:XJDF>

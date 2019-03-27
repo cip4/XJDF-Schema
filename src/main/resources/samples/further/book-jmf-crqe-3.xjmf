@@ -1,0 +1,10 @@
+<xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:Header ID="XJMF_ID" DeviceID="DEVICE_ID_CONTROLLER"
+                 Time="2016-11-12T12:11:39+02:00" />
+    <xjdf:CommandReturnQueueEntry>
+        <xjdf:Header ID="MESSAGE_ID" DeviceID="DEVICE_ID_CONTROLLER"
+                     Time="2016-11-12T12:11:39+02:00" />
+        <xjdf:ReturnQueueEntryParams QueueEntryID="1"
+                                     URL="http://controller.example.org/xjdf/job-1234.xjdf" />
+    </xjdf:CommandReturnQueueEntry>
+</xjdf:XJMF>

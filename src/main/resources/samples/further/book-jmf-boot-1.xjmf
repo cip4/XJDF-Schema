@@ -1,0 +1,8 @@
+<xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:Header ID="XJMF_ID" DeviceID="MIS_ID"
+                 Time="2016-11-14T19:22:28+02:00" />
+    <xjdf:QueryKnownMessages>
+        <xjdf:Header ID="MESSAGE_ID" DeviceID="MIS_ID"
+                     Time="2016-11-14T19:22:28+02:00" />
+    </xjdf:QueryKnownMessages>
+</xjdf:XJMF>

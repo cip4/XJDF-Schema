@@ -1,0 +1,10 @@
+<xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:Header ID="XJMF_ID" DeviceID="CONTROLLER_ID"
+                 Time="2016-11-11T11:51:14+02:00" />
+    <xjdf:ResponseKnownDevices ReturnCode="0">
+        <xjdf:Header ID="I42" refID="MESSAGE_ID" DeviceID="CONTROLLER_ID"
+                     Time="2016-11-11T11:51:14+02:00" />
+        <xjdf:Device DeviceID="DEVICE-I" />
+        <xjdf:Device DeviceID="DEVICE-II" />
+    </xjdf:ResponseKnownDevices>
+</xjdf:XJMF>

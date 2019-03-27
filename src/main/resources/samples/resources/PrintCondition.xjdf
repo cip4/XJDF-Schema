@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="PrintCondition" Types="ColorSpaceConversion Interpreting Rendering DigitalPrinting">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:37+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="InterpretingParams" Usage="Input">
+    <Resource>
+      <Part PrintCondition="7-Color-gloss"/>
+      <InterpretingParams PrintQuality="High"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Media" Usage="Input">
+    <Resource>
+      <Part PrintCondition="7-Color-gloss"/>
+      <Media MediaType="Paper"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Color" Usage="Input">
+    <Resource>
+      <Part PrintCondition="7-Color-gloss" Separation="Cyan"/>
+      <Color PrintStandard="7-Color"/>
+    </Resource>
+    <Resource>
+      <Part PrintCondition="7-Color-gloss" Separation="Magenta"/>
+      <Color PrintStandard="7-Color"/>
+    </Resource>
+    <Resource>
+      <Part PrintCondition="7-Color-gloss" Separation="Yellow"/>
+      <Color PrintStandard="7-Color"/>
+    </Resource>
+    <Resource>
+      <Part PrintCondition="7-Color-gloss" Separation="Black"/>
+      <Color PrintStandard="7-Color"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="ColorSpaceConversionParams" Usage="Input">
+    <Resource>
+      <Part PrintCondition="7-Color-gloss"/>
+      <ColorSpaceConversionParams>
+        <ColorSpaceConversionOp Operation="Convert"/>
+        <FileSpec URL="file://7-color-gloss.icc"/>
+      </ColorSpaceConversionParams>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:48.281+00:00"/>
+  <QueryStatus>
+    <Header DeviceID="TestSender" ID="Status1" Time="2019-03-26T17:00:00.000+00:00"/>
+    <Subscription RepeatTime="30" URL="http://MIS:1234/xjmfurl"/>
+    <StatusQuParams/>
+  </QueryStatus>
+</XJMF>
+<!-- END SNIPPET -->

@@ -1,0 +1,13 @@
+<XJDF JobID="JOB-42" Types="Folding" xmlns="http://www.CIP4.org/JDFSchema_2_0">
+    <Comment Type="Instruction" TimeStamp="2016-08-20T14:44:02+02:00"
+             PersonalID="cnorris">
+        Please take a special care for the image on the upper right.
+        This is the leading motive of the product.
+    </Comment>
+    <Comment Type="JobDescription" TimeStamp="2016-08-20T14:44:02+02:00"
+             PersonalID="cnorris">
+    Flyer A6
+    4c both sides
+    135 gsm glossy paper
+    </Comment>
+</XJDF>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2019-03-26T14:07:48.863+00:00"/>
+  <ResponseResource>
+    <Header DeviceID="DeviceID" ID="R1"
+      Time="2019-03-26T14:07:48.863+00:00" refID="Q1"/>
+    <ResourceInfo Scope="Allowed">
+      <ResourceSet Name="Media">
+        <Resource DescriptiveName="Good Gloss Paper" ExternalID="ID1">
+          <Part PrintCondition="7-color-gloss"/>
+          <Part PrintCondition="4-color-gloss"/>
+          <Media Coating="Gloss" Dimension="595.27559055 822.04724409"
+            MediaType="Paper" Weight="100"/>
+        </Resource>
+        <Resource DescriptiveName="Cheap Gloss Paper not for 7 color" ExternalID="ID2">
+          <Part PrintCondition="4-color-gloss"/>
+          <Media Coating="Gloss" Dimension="595.27559055 822.04724409"
+            MediaType="Paper" Weight="100"/>
+        </Resource>
+        <Resource DescriptiveName="Good Matte Paper" ExternalID="ID3">
+          <Part PrintCondition="7-color-matte"/>
+          <Part PrintCondition="4-color-matte"/>
+          <Media Coating="Matte" Dimension="595.27559055 822.04724409"
+            MediaType="Paper" Weight="100"/>
+        </Resource>
+        <Resource DescriptiveName="Cheap Matte Paper not for 7 color" ExternalID="ID2">
+          <Part PrintCondition="4-color-matte"/>
+          <Media Coating="Matte" Dimension="595.27559055 822.04724409"
+            MediaType="Paper" Weight="100"/>
+        </Resource>
+        <!-- One Resource element for each paper follows here -->
+      </ResourceSet>
+    </ResourceInfo>
+  </ResponseResource>
+</XJMF>
+<!-- END SNIPPET -->

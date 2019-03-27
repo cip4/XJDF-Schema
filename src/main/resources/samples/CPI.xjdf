@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
+  JobID="CombinedProcessIndex" Types="Cutting Folding">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.5 BLD 92"
+        DeviceID="TestSender" ID="l_000002" Time="2017-02-06T12:40:00+01:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <ResourceSet CombinedProcessIndex="0" Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo Start="2017-02-06T13:00:00+01:00"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet CombinedProcessIndex="1" Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo Start="2017-02-06T17:00:00+01:00"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="CuttingParams" Usage="Input">
+    <Resource/>
+  </ResourceSet>
+  <ResourceSet Name="FoldingParams" Usage="Input">
+    <Resource/>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

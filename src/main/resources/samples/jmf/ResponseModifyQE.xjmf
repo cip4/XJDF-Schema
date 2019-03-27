@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2019-03-26T14:07:48.601+00:00"/>
+  <ResponseModifyQueueEntry ReturnCode="0">
+    <Header DeviceID="DeviceID" ID="R1"
+      Time="2019-03-26T14:07:48.601+00:00" refID="C1"/>
+    <QueueEntry Activation="Active" JobID="j1" QueueEntryID="QE1" Status="Waiting"/>
+  </ResponseModifyQueueEntry>
+</XJMF>
+<!-- END SNIPPET -->

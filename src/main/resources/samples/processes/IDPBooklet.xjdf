@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Layout"
+  JobPartID="Booklet" Types="Stripping Imposition DigitalPrinting Collecting Stitching">
+  <AuditPool>
+    <AuditCreated>
+      <Header DeviceID="TestSender" ID="l_000002" Time="2018-12-25T09:44:37+01:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Layout" Usage="Input">
+    <Resource>
+      <Layout Automated="true" WorkStyle="Perfecting">
+        <Position/>
+      </Layout>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="BinderySignature" Usage="Input">
+    <Resource>
+      <BinderySignature BinderySignatureType="Fold" FoldCatalog="F4-1"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Assembly" Usage="Input">
+    <Resource>
+      <Assembly Order="Collecting"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="DigitalPrintingParams" Usage="Input">
+    <Resource>
+      <DigitalPrintingParams Sides="TwoSided"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="StitchingParams" Usage="Input">
+    <Resource>
+      <StitchingParams NumberOfStitches="3" StitchType="Saddle"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Component" Usage="Output">
+    <Resource>
+      <AmountPool>
+        <PartAmount Amount="42"/>
+      </AmountPool>
+      <Component/>
+    </Resource>
+  </ResourceSet>
+</XJDF>

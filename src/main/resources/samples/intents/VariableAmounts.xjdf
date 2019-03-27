@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Job_0326_020755" Types="Product">
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:55+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <ProductList>
+    <Product Amount="10000" IsRoot="true">
+      <Intent Name="VariableIntent">
+        <VariableIntent ChildRefs="IDBrochure IDBook" VariableType="Area"/>
+      </Intent>
+    </Product>
+    <Product Amount="1000" ID="IDBook" IsRoot="false" ProductType="Book">
+      <Intent Name="BindingIntent">
+        <BindingIntent BindingType="HardCover" ChildRefs="IDBookCover IDBody"/>
+      </Intent>
+    </Product>
+    <Product Amount="1" ID="IDBookCover" IsRoot="false" ProductType="Cover"/>
+    <Product Amount="1" ID="IDBody" IsRoot="false"/>
+    <Product Amount="9000" ID="IDBrochure" IsRoot="false">
+      <Intent Name="BindingIntent">
+        <BindingIntent BindingType="SaddleStitch" ChildRefs="IDBrochureCover IDBody"/>
+      </Intent>
+    </Product>
+    <Product Amount="1" ID="IDBrochureCover" IsRoot="false" ProductType="Cover"/>
+  </ProductList>
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+</XJDF>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="splitDelivery" Types="Product">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:29+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <ProductList>
+    <Product Amount="30" ID="IDBook" IsRoot="true" ProductType="Book"/>
+  </ProductList>
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="Contact" Usage="Input">
+    <Resource>
+      <Part ContactType="Delivery" DropID="Drop1"/>
+      <Contact>
+        <Address City="city1"/>
+        <Person FirstName="Name1"/>
+      </Contact>
+    </Resource>
+    <Resource>
+      <Part ContactType="Delivery" DropID="Drop2"/>
+      <Contact>
+        <Address City="city2"/>
+        <Person FirstName="Name2"/>
+      </Contact>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="DeliveryParams" Usage="Input">
+    <Resource>
+      <Part DropID="Drop1"/>
+      <DeliveryParams>
+        <DropItem Amount="10" ItemRef="IDBook"/>
+      </DeliveryParams>
+    </Resource>
+    <Resource>
+      <Part DropID="Drop2"/>
+      <DeliveryParams>
+        <DropItem Amount="20" ItemRef="IDBook"/>
+      </DeliveryParams>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

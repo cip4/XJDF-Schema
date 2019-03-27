@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Layout"
+  JobPartID="ContentRef" Types="Imposition">
+  <AuditPool>
+    <AuditCreated>
+      <Header DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:36+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="Layout" Usage="Input">
+    <Resource>
+      <Part Side="Front"/>
+      <Layout Automated="true">
+        <PlacedObject CTM="1 0 0 1 0 0" Ord="0">
+          <ContentObject/>
+        </PlacedObject>
+        <PlacedObject CTM="1 0 0 1 500 0" ID="po_1" Ord="1">
+          <ContentObject/>
+          <PageCondition>
+            <Condition PartContext="DocIndex">
+              <Part RunIndex="0 0"/>
+            </Condition>
+          </PageCondition>
+        </PlacedObject>
+        <PlacedObject CTM="1 0 0 1 0 500" Ord="0">
+          <MarkObject>
+            <RegisterMark/>
+          </MarkObject>
+        </PlacedObject>
+        <PlacedObject CTM="1 0 0 1 500 500" Ord="1">
+          <MarkObject ContentRef="po_1">
+            <RegisterMark/>
+          </MarkObject>
+        </PlacedObject>
+      </Layout>
+    </Resource>
+  </ResourceSet>
+  <!-- END SNIPPET -->
+</XJDF>

@@ -1,0 +1,4 @@
+<XJDF JobID="JOB-42" Types="Folding" xmlns="http://www.CIP4.org/JDFSchema_2_0">
+    <GeneralID IDUsage="Height" DataType="float" IDValue="1440.0"/>
+    <GeneralID IDUsage="Width" DataType="float" IDValue="720.0"/>
+</XJDF>

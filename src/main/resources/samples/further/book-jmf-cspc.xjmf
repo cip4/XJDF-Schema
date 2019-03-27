@@ -1,0 +1,9 @@
+<xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:Header ID="XJMF_ID" DeviceID="DEVICE_ID_MIS"
+                 Time="2016-11-15T15:26:59+02:00" />
+    <xjdf:CommandStopPersistentChannel>
+        <xjdf:Header ID="MESSAGE_ID" DeviceID="DEVICE_ID_MIS"
+                     Time="2016-11-15T15:26:59+02:00" />
+        <xjdf:StopPersChParams URL="http://mis.example.org/xjmf" />
+    </xjdf:CommandStopPersistentChannel>
+</xjdf:XJMF>

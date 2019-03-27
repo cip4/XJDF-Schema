@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2019-03-26T14:07:48.552+00:00"/>
+  <ResponseResource>
+    <Header DeviceID="DeviceID" ID="R1"
+      Time="2019-03-26T14:07:48.553+00:00" refID="Q1"/>
+    <ResourceInfo Scope="Allowed">
+      <ResourceSet Name="Media">
+        <Resource DescriptiveName="Paper # 1" ExternalID="ID_1">
+          <Media Dimension="595.27559055 822.04724409" MediaType="Paper" Weight="80"/>
+        </Resource>
+        <Resource DescriptiveName="Paper # 2" ExternalID="ID_2">
+          <Media Dimension="595.27559055 822.04724409" MediaType="Paper" Weight="100"/>
+        </Resource>
+        <!-- One Resource element for each paper follows here -->
+      </ResourceSet>
+    </ResourceInfo>
+  </ResponseResource>
+</XJMF>
+<!-- END SNIPPET -->

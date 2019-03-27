@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2019-03-26T16:59:00.000+00:00"/>
+  <SignalStatus>
+    <Header DeviceID="DeviceID" ID="S1"
+      Time="2019-03-26T16:59:00.000+00:00" refID="Sub1"/>
+    <DeviceInfo Status="Production">
+      <JobPhase JobID="j1" JobPartID="p1"
+        StartTime="2019-03-26T16:00:00.000+00:00" Status="Setup"/>
+    </DeviceInfo>
+  </SignalStatus>
+</XJMF>
+<!-- END SNIPPET -->

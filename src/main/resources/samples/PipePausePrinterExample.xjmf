@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XJDF converter version: using: CIP4 JDF Writer Java 1.6 BLD 009-->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.6 BLD 009"
+    DeviceID="Printer" ID="l_013040" Time="2019-03-26T14:14:25+00:00"/>
+  <CommandPipeControl>
+    <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.6 BLD 009"
+      DeviceID="dummy" ID="m.4570._012038" Time="2019-03-26T14:14:25+00:00"/>
+    <PipeParams JobID="J1" JobPartID="Part" Operation="Pause" PipeID="PipeSheet"/>
+  </CommandPipeControl>
+</XJMF>

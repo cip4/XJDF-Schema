@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Barcode"
+  JobPartID="Metadata" Types="Verification">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:13+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="Component" Usage="Input">
+    <Resource>
+      <Component>
+        <IdentificationField ValueFormat="%6s%3i%2i" ValueTemplate="job doc sheet">
+          <MetadataMap Name="JobID" ValueFormat="Job_%s" ValueTemplate="job"/>
+          <MetadataMap Name="DocIndex" ValueFormat="%i %i" ValueTemplate="doc doc"/>
+          <MetadataMap Name="SheetIndex" ValueFormat="%i %i" ValueTemplate="sheet sheet"/>
+        </IdentificationField>
+      </Component>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2019-03-26T14:07:48.698+00:00"/>
+  <SignalResource>
+    <Header DeviceID="DeviceID" ID="S1"
+      Time="2019-03-26T14:07:48.698+00:00" refID="Sub1"/>
+    <ResourceInfo JobID="Job1" JobPartID="Printing" Scope="Job">
+      <ResourceSet Name="Media" Usage="Input">
+        <Resource ExternalID="MIS-ID">
+          <AmountPool>
+            <PartAmount Amount="4500" Waste="66">
+              <Part LotID="Lot1"/>
+            </PartAmount>
+            <PartAmount Amount="2200" Waste="22">
+              <Part LotID="Lot2"/>
+            </PartAmount>
+          </AmountPool>
+          <Part SheetName="S1"/>
+        </Resource>
+      </ResourceSet>
+    </ResourceInfo>
+  </SignalResource>
+</XJMF>
+<!-- END SNIPPET -->

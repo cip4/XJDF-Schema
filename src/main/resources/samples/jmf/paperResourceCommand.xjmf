@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:48.181+00:00"/>
+  <CommandResource>
+    <Header DeviceID="TestSender" ID="C1" Time="2019-03-26T14:07:48.181+00:00"/>
+    <ResourceCmdParams UpdateMethod="Incremental">
+      <ResourceSet Name="Media">
+        <Resource DescriptiveName="Paper # 1" ExternalID="ID_1">
+          <Media Dimension="595.27559055 822.04724409" MediaType="Paper" Weight="80"/>
+        </Resource>
+        <Resource DescriptiveName="Paper # 2" ExternalID="ID_2">
+          <Media Dimension="595.27559055 822.04724409" MediaType="Paper" Weight="100"/>
+        </Resource>
+        <!-- One Resource element for each paper to upload follows here -->
+      </ResourceSet>
+    </ResourceCmdParams>
+  </CommandResource>
+</XJMF>
+<!-- END SNIPPET -->

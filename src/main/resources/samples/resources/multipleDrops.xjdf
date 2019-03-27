@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="drops" Types="Product">
+    <!-- START SNIPPET -->
+    <ProductList>
+        <Product ID="ProductID" IsRoot="true" Amount="1000"/>
+    </ProductList>
+    <ResourceSet Name="DeliveryParams" Usage="Input">
+        <Resource>
+            <Part DropID="firstDrop"/>
+            <DeliveryParams>
+                <DropItem Amount="600" ItemRef="ProductID"/>
+            </DeliveryParams>
+        </Resource>
+        <Resource>
+            <Part DropID="secondDrop"/>
+            <DeliveryParams>
+                <DropItem Amount="400" ItemRef="ProductID"/>
+            </DeliveryParams>
+        </Resource>
+    </ResourceSet>
+    <!-- END SNIPPET -->
+  </XJDF>

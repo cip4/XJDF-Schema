@@ -1,0 +1,26 @@
+<xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:Header ID="XJMF_ID" DeviceID="CONTROLLER_ID"
+                 Time="2016-11-11T21:07:14+02:00" />
+    <xjdf:ResponseKnownSubscriptions ReturnCode="0">
+        <xjdf:Header ID="I42" refID="MESSAGE_ID" DeviceID="CONTROLLER_ID"
+                     Time="2016-11-11T21:07:14+02:00" />
+        <xjdf:SubscriptionInfo ChannelID="CNL_1" DeviceID="MIS_ID"
+                               MessageType="Status">
+            <xjdf:Subscription URL="http://mis.example.org/jmf"
+                               RepeatTime="30" RetryPolicy="DiscardAtNextSignal"
+                               ChannelMode="Reliable" />
+        </xjdf:SubscriptionInfo>
+        <xjdf:SubscriptionInfo ChannelID="CNL_2" DeviceID="MIS_ID"
+                               MessageType="Notification">
+            <xjdf:Subscription URL="http://mis.example.org/jmf"
+                               RepeatTime="30" RetryPolicy="DiscardAtNextSignal"
+                               ChannelMode="Reliable" />
+        </xjdf:SubscriptionInfo>
+        <xjdf:SubscriptionInfo ChannelID="CNL_2" DeviceID="MIS_ID"
+                               MessageType="Resource">
+            <xjdf:Subscription URL="http://mis.example.org/jmf"
+                               RepeatTime="30" RetryPolicy="DiscardAtNextSignal"
+                               ChannelMode="Reliable" />
+        </xjdf:SubscriptionInfo>
+    </xjdf:ResponseKnownSubscriptions>
+</xjdf:XJMF>

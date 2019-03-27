@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="RawName" Types="ColorSpaceConversion">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:37+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="ColorantControl" Usage="Input">
+    <Resource>
+      <ColorantControl>
+        <ColorantAlias ColorantName="Grün" RawName="4772FC6E" ReplacementColorantName="Spot1"/>
+        <ColorantAlias ColorantName="grün" RawName="6772FC6E" ReplacementColorantName="Spot1"/>
+      </ColorantControl>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Color" Usage="Input">
+    <Resource>
+      <Part Separation="Spot1"/>
+      <Color ActualColorName="Green" RawName="477265656E" sRGB="0 1 0"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

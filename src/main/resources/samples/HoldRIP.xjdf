@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JDFToXJDF version: using: null null-->
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="n_001011"
+  JobPartID="n_000006" Types="LayoutPreparation Interpreting Rendering DigitalPrinting">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header DeviceID="dummy" ID="a_000007" Time="2019-03-26T14:14:59+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo Status="Waiting"/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet CombinedProcessIndex="2"
+    DescriptiveName="Internal RunList for Hold" Name="RunList" Usage="Output">
+    <Dependent JobID="n_001011" JobPartID="n_000006"/>
+    <Resource DescriptiveName="Internal RunList for Hold"/>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

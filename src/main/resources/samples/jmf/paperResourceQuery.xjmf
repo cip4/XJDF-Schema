@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:48.454+00:00"/>
+  <QueryResource>
+    <Header DeviceID="TestSender" ID="Q1" Time="2019-03-26T14:07:48.455+00:00"/>
+    <ResourceQuParams ResourceDetails="Full" ResourceName="Media" Scope="Allowed"/>
+  </QueryResource>
+</XJMF>
+<!-- END SNIPPET -->

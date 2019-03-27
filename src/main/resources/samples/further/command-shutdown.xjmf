@@ -1,0 +1,7 @@
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+    <CommandShutDown>
+        <Header ID="MESSAGE_ID" DeviceID="DEVICE_ID_MIS" Time="2016-11-11T13:03:38+02:00"/>
+        <ShutDownCmdParams ShutDownType="StandBy"/>
+    </CommandShutDown>
+    <Header ID="XJMF_ID" DeviceID="DEVICE_ID_MIS" Time="2016-11-11T13:03:38+02:00"/>
+</XJMF>

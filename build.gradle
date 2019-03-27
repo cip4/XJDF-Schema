@@ -18,27 +18,54 @@ plugins {
     id 'groovy'
 }
 
+configurations.all {
+    resolutionStrategy {
+        failOnVersionConflict()
+        cacheDynamicVersionsFor 30, 'seconds'
+    }
+}
+
 repositories {
     mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.5.2'
+    compile localGroovy()
 
+    testCompile group: 'org.cip4.lib.xjdf', name: 'xJdfLib', version: 'latest.integration'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.1'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.3.1'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
 
     testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
+
+}
+
+test {
+    useJUnitPlatform()
+    maxParallelForks = Runtime.runtime.availableProcessors()
 }
 
 try {
     Class.forName('org.cip4.samples.SamplesPlugin');
     apply plugin: 'org.cip4.samples'
+
+    buildSamples {
+        inputDir = file("src/main/resources/samples")
+        outputDir = file("build/generated-samples")
+    }
+
+    buildSamples.dependsOn test
+
+    gitPublish {
+        repoPath = file('/Users/m.hartmann/Documents/CIP4/jdf-specification')
+        repoUri = 'ssh://git@bitbucket.cip4.org:7999/spec/jdf-specification.git'
+        username = project.property('gitUsername')
+        password = project.property('gitPassword')
+    }
 } catch (ClassNotFoundException e) {
     // void
-}
-
-test {
-    useJUnitPlatform()
 }

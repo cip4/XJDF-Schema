@@ -1,0 +1,16 @@
+<xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:ResourceSet Name="RunList">
+        <xjdf:Resource>
+            <xjdf:Part Side="Front" />
+            <xjdf:RunList>
+                <xjdf:FileSpec URL="http://example.org/files/my-page-1.pdf"/>
+            </xjdf:RunList>
+        </xjdf:Resource>
+        <xjdf:Resource>
+            <xjdf:Part Side="Back" />
+            <xjdf:RunList>
+                <xjdf:FileSpec URL="http://example.org/files/my-page-2.pdf"/>
+            </xjdf:RunList>
+        </xjdf:Resource>
+    </xjdf:ResourceSet>
+</xjdf:XJDF>

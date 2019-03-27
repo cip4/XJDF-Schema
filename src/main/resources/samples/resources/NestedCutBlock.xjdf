@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Bundle" Types="Cutting Cutting">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:14+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet CombinedProcessIndex="0" Name="CuttingParams" Usage="Input">
+    <Resource>
+      <CuttingParams>
+        <CutBlock BlockName="B1" Box="0 0 400 600"/>
+        <CutBlock BlockName="B2" Box="400 0 1200 600"/>
+      </CuttingParams>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet CombinedProcessIndex="1" Name="CuttingParams" Usage="Input">
+    <Resource>
+      <Part BlockName="B1"/>
+      <CuttingParams>
+        <CutBlock BlockName="B1.1" Box="0 0 400 300"/>
+        <CutBlock BlockName="B1.2" Box="0 300 400 600"/>
+      </CuttingParams>
+    </Resource>
+    <Resource>
+      <Part BlockName="B2"/>
+      <CuttingParams>
+        <CutBlock BlockName="B2.1" Box="0 0 800 300"/>
+        <CutBlock BlockName="B2.2" Box="0 300 800 600"/>
+      </CuttingParams>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Component" Usage="Input">
+    <Resource>
+      <Component Dimensions="1200 600 0"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Component" Usage="Output">
+    <Resource>
+      <Part BlockName="B1.1"/>
+      <Component Dimensions="400 300 0"/>
+    </Resource>
+    <Resource>
+      <Part BlockName="B1.2"/>
+      <Component Dimensions="400 300 0"/>
+    </Resource>
+    <Resource>
+      <Part BlockName="B2.1"/>
+      <Component Dimensions="800 300 0"/>
+    </Resource>
+    <Resource>
+      <Part BlockName="B2.2"/>
+      <Component Dimensions="800 300 0"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

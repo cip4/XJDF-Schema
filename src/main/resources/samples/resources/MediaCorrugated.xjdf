@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Converting"
+  JobPartID="Corrugated" Types="ConventionalPrinting">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:12+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="Media" Usage="Input">
+    <Resource>
+      <Media Dimension="2834.64566929 1984.2519685" InsideLoss="1000"
+        MediaType="CorrugatedBoard" MediaTypeDetails="SingleWall"
+        OutsideGain="1380" Thickness="2382">
+        <MediaLayers>
+          <Media MediaType="Paper" Weight="190"/>
+          <Media Flute="B" FluteDirection="XDirection" MediaType="Paper"
+            MediaTypeDetails="Flute" Weight="180"/>
+          <Media MediaType="Paper" Weight="180"/>
+        </MediaLayers>
+      </Media>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:48.756+00:00"/>
+  <CommandResubmitQueueEntry>
+    <Header DeviceID="TestSender" ID="C1" Time="2019-03-26T14:07:48.756+00:00"/>
+    <ResubmissionParams QueueEntryID="qe1"
+      URL="http://jobserver.xjdf.org?job1" UpdateMethod="Incremental"/>
+  </CommandResubmitQueueEntry>
+</XJMF>
+<!-- END SNIPPET -->

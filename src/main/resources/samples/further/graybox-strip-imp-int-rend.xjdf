@@ -1,0 +1,73 @@
+<XJDF JobID="JOB-1234" Types="Stripping Imposition Interpreting Rendering"
+           xmlns="http://www.CIP4.org/JDFSchema_2_0">
+    <AuditPool>
+        <AuditCreated>
+            <Header AgentName="MIS" AgentVersion="1.0" ID="dd" DeviceID="DEVICE_ID" Time="2017-04-02T09:52:24Z"/>
+        </AuditCreated>
+    </AuditPool>
+    <ProductList>
+        <Product Amount="2500" DescriptiveName="My Folded Leaflet">
+            <Intent Name="LayoutIntent">
+                <LayoutIntent Dimensions="841.88 595.27" Sides="TwoSidedHeadToHead"
+                                   Pages="2" FinishedDimensions="280.69 595.27 0.0"/>
+            </Intent>
+            <Intent Name="FoldingIntent">
+                <FoldingIntent FoldCatalog="F6-2"/>
+            </Intent>
+            <Intent Name="ColorIntent">
+                <ColorIntent>
+                    <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
+                                       Surface="Front"/>
+                    <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
+                                       Surface="Back"/>
+                </ColorIntent>
+            </Intent>
+            <Intent Name="MediaIntent">
+                <MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
+            </Intent>
+        </Product>
+    </ProductList>
+    <ResourceSet Name="Layout" Usage="Input">
+        <Resource>
+            <Layout SurfaceContentsBox="0.0 0.0 1293.31 907.09" WorkStyle="WorkAndBack">
+                <Position RelativeBox="0.0 0.0 0.5 1.0" Orientation="Rotate90"
+                               BinderySignatureID="BS-1"/>
+                <Position RelativeBox="0.5 0.0 1.0 1.0" Orientation="Rotate90"
+                               BinderySignatureID="BS-1"/>
+            </Layout>
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="RunList" Usage="Input" ProcessUsage="Document">
+        <Resource>
+            <RunList>
+                <FileSpec URL="http://example.org/artwork/my.pdf"/>
+            </RunList>
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="RunList" Usage="Output">
+        <Resource>
+            <Part Separation="Cyan"/>
+            <RunList>
+                <FileSpec URL="http://example.org/artwork/cyan.tif"/>
+            </RunList>
+        </Resource>
+        <Resource>
+            <Part Separation="Magenta"/>
+            <RunList>
+                <FileSpec URL="http://example.org/artwork/magenta.tif"/>
+            </RunList>
+        </Resource>
+        <Resource>
+            <Part Separation="Yellow"/>
+            <RunList>
+                <FileSpec URL="http://example.org/artwork/yellow.tif"/>
+            </RunList>
+        </Resource>
+        <Resource>
+            <Part Separation="Black"/>
+            <RunList>
+                <FileSpec URL="http://example.org/artwork/black.tif"/>
+            </RunList>
+        </Resource>
+    </ResourceSet>
+</XJDF>

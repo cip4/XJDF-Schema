@@ -1,0 +1,7 @@
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+    <QueryResource ID="d1234" >
+        <Sender DeviceID="DEVICE_ID" Time="2016-11-12T12:11:39+02:00"/>
+        <ResourceQuParams ResourceDetails="Full" ResourceName="Media" />
+    </QueryResource>
+    <Sender DeviceID="CONTROLLER_ID" Time="2016-11-12T12:11:39+02:00"/>
+</XJMF>

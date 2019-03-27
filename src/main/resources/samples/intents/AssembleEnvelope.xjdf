@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Job_0326_020754" Types="Product">
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:54+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <ProductList>
+    <Product Amount="10" IsRoot="true" ProductType="FilledEnvelope">
+      <Intent Name="AssemblingIntent">
+        <AssemblingIntent Container="ID_Envelope">
+          <BlowIn ChildRef="ID_Letter"/>
+        </AssemblingIntent>
+      </Intent>
+    </Product>
+    <Product Amount="1" ExternalID="MISID_Envelope" ID="ID_Envelope"
+      IsRoot="false" ProductType="Envelope"/>
+    <Product Amount="1" ID="ID_Letter" IsRoot="false" ProductType="Letter"/>
+  </ProductList>
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+</XJDF>

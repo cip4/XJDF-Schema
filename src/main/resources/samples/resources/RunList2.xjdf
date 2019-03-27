@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="RunList" Types="Imposition">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:32+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="RunList" Usage="Input">
+    <Resource>
+      <Part Run="R1"/>
+      <RunList NPage="6" Pages="0 5">
+        <FileSpec URL="File:///File1.pdf"/>
+      </RunList>
+    </Resource>
+    <Resource>
+      <Part Run="R2"/>
+      <RunList Pages="0 -1">
+        <FileSpec URL="File:///File2.pdf"/>
+      </RunList>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

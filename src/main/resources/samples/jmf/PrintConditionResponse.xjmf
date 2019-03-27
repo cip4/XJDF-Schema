@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_1">
+  <Header DeviceID="DeviceID" ID="l_000003" Time="2019-03-26T14:07:49.298+00:00"/>
+  <ResponseResource>
+    <Header DeviceID="DeviceID" ID="S1"
+      Time="2019-03-26T14:07:49.298+00:00" refID="Sub1"/>
+    <ResourceInfo Scope="Allowed">
+      <ResourceSet Name="PrintCondition" Usage="Input">
+        <Resource DescriptiveName="draft print condition for Coated">
+          <Part PrintCondition="draftCoated"/>
+          <PrintCondition ColorantOrder="Cyan Magenta Yellow Black"
+            Name="draft" PrintQuality="Draft"/>
+        </Resource>
+        <Resource DescriptiveName="draft print condition for Uncoated">
+          <Part PrintCondition="draftUncoated"/>
+          <PrintCondition ColorantOrder="Cyan Magenta Yellow Black"
+            Name="draft" PrintQuality="Draft"/>
+        </Resource>
+        <Resource DescriptiveName="standard print condition for Coated">
+          <Part PrintCondition="standardCoated"/>
+          <PrintCondition ColorantOrder="Cyan Magenta Yellow Black"
+            Name="standard" PrintQuality="Normal"/>
+        </Resource>
+        <Resource DescriptiveName="standard print condition for Uncoated">
+          <Part PrintCondition="standardUncoated"/>
+          <PrintCondition ColorantOrder="Cyan Magenta Yellow Black"
+            Name="standard" PrintQuality="Normal"/>
+        </Resource>
+        <Resource DescriptiveName="7color print condition for Coated">
+          <Part PrintCondition="7colorCoated"/>
+          <PrintCondition
+            ColorantOrder="Cyan Magenta Yellow Black Orange Green Violet"
+            Name="7color" PrintQuality="Normal"/>
+        </Resource>
+        <Resource DescriptiveName="7color print condition for Uncoated">
+          <Part PrintCondition="7colorUncoated"/>
+          <PrintCondition
+            ColorantOrder="Cyan Magenta Yellow Black Orange Green Violet"
+            Name="7color" PrintQuality="Normal"/>
+        </Resource>
+        <Resource DescriptiveName="7colorVarnish print condition for Coated">
+          <Part PrintCondition="7colorVarnishCoated"/>
+          <PrintCondition
+            ColorantOrder="Cyan Magenta Yellow Black Orange Green Violet Varnish"
+            Name="7colorVarnish" PrintQuality="High"/>
+        </Resource>
+        <Resource DescriptiveName="7colorVarnish print condition for Uncoated">
+          <Part PrintCondition="7colorVarnishUncoated"/>
+          <PrintCondition
+            ColorantOrder="Cyan Magenta Yellow Black Orange Green Violet Varnish"
+            Name="7colorVarnish" PrintQuality="High"/>
+        </Resource>
+      </ResourceSet>
+    </ResourceInfo>
+  </ResponseResource>
+</XJMF>
+<!-- END SNIPPET -->

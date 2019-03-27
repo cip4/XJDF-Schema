@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XJDF converter version: using: null null-->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.5 BLD 93"
+    DeviceID="DFE" ID="l_010613" Time="2017-04-02T11:18:04+02:00"/>
+  <CommandPipeControl>
+    <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.5 BLD 93"
+      DeviceID="RIP" ID="m.2051._009552" Time="2017-04-02T11:18:04+02:00"/>
+    <PipeParams JobID="J1" JobPartID="Part" Operation="Push" PipeID="PipeByteMap">
+      <ResourceSet Name="RunList">
+        <Resource>
+          <Part Separation="Cyan" SetIndex="0 0" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Cover_sheet0_Front_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="0 0" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Cover_sheet0_Front_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="0 0" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Cover_sheet0_Front_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="0 0" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Cover_sheet0_Front_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="0 0" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Cover_sheet0_Back_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="0 0" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Cover_sheet0_Back_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="0 0" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Cover_sheet0_Back_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="0 0" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Cover_sheet0_Back_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="0 0" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet0_Front_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="0 0" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet0_Front_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="0 0" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet0_Front_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="0 0" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet0_Front_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="0 0" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet0_Back_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="0 0" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet0_Back_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="0 0" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet0_Back_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="0 0" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet0_Back_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="0 0" SheetIndex="1 1" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet1_Front_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="0 0" SheetIndex="1 1" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet1_Front_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="0 0" SheetIndex="1 1" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet1_Front_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="0 0" SheetIndex="1 1" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet1_Front_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="0 0" SheetIndex="1 1" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet1_Back_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="0 0" SheetIndex="1 1" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet1_Back_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="0 0" SheetIndex="1 1" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet1_Back_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="0 0" SheetIndex="1 1" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_0_Body_sheet1_Back_Black.tif"/>
+          </RunList>
+        </Resource>
+      </ResourceSet>
+    </PipeParams>
+  </CommandPipeControl>
+  <CommandPipeControl>
+    <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.5 BLD 93"
+      DeviceID="RIP" ID="m.2051._009554" Time="2017-04-02T11:18:04+02:00"/>
+    <PipeParams JobID="J1" JobPartID="Part" Operation="Push" PipeID="PipeByteMap">
+      <ResourceSet Name="RunList">
+        <Resource>
+          <Part Separation="Cyan" SetIndex="1 1" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Cover_sheet0_Front_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="1 1" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Cover_sheet0_Front_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="1 1" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Cover_sheet0_Front_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="1 1" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Cover_sheet0_Front_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="1 1" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Cover_sheet0_Back_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="1 1" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Cover_sheet0_Back_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="1 1" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Cover_sheet0_Back_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="1 1" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Cover_sheet0_Back_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="1 1" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet0_Front_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="1 1" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet0_Front_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="1 1" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet0_Front_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="1 1" SheetIndex="0 0" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet0_Front_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="1 1" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet0_Back_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="1 1" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet0_Back_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="1 1" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet0_Back_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="1 1" SheetIndex="0 0" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet0_Back_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="1 1" SheetIndex="1 1" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet1_Front_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="1 1" SheetIndex="1 1" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet1_Front_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="1 1" SheetIndex="1 1" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet1_Front_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="1 1" SheetIndex="1 1" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet1_Front_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="1 1" SheetIndex="1 1" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet1_Back_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="1 1" SheetIndex="1 1" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet1_Back_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="1 1" SheetIndex="1 1" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet1_Back_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="1 1" SheetIndex="1 1" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet1_Back_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="1 1" SheetIndex="2 2" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet2_Front_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="1 1" SheetIndex="2 2" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet2_Front_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="1 1" SheetIndex="2 2" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet2_Front_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="1 1" SheetIndex="2 2" Side="Front"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet2_Front_Black.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Cyan" SetIndex="1 1" SheetIndex="2 2" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet2_Back_Cyan.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Magenta" SetIndex="1 1" SheetIndex="2 2" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet2_Back_Magenta.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Yellow" SetIndex="1 1" SheetIndex="2 2" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet2_Back_Yellow.tif"/>
+          </RunList>
+        </Resource>
+        <Resource>
+          <Part Separation="Black" SetIndex="1 1" SheetIndex="2 2" Side="Back"/>
+          <RunList Automation="Dynamic">
+            <FileSpec MimeType="image/tiff" URL="http://Set_1_Body_sheet2_Back_Black.tif"/>
+          </RunList>
+        </Resource>
+      </ResourceSet>
+    </PipeParams>
+  </CommandPipeControl>
+</XJMF>

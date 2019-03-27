@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0" xmlns:foo="www.foo.org">
+  <Header DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:49.120+00:00"/>
+  <QueryKnownDevices>
+    <Header DeviceID="TestSender" ID="Q1" Time="2019-03-26T14:07:49.120+00:00"/>
+  </QueryKnownDevices>
+  <foo:QueryBar>
+    <Header DeviceID="TestSender" ID="F1" Time="2019-03-26T14:07:49.120+00:00"/>
+    <foo:BarParams BarDetails="value"/>
+  </foo:QueryBar>
+  <QueryKnownMessages>
+    <Header DeviceID="TestSender" ID="Q2" Time="2019-03-26T14:07:49.120+00:00"/>
+  </QueryKnownMessages>
+</XJMF>
+<!-- END SNIPPET -->

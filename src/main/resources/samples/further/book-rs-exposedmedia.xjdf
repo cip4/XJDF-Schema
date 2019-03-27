@@ -1,0 +1,26 @@
+<XJDF JobID="JOB-42" Types="ConventionalPrinting"
+      xmlns="http://www.CIP4.org/JDFSchema_2_0">
+    <ResourceSet Name="ExposedMedia" Usage="Input" ProcessUsage="Plate">
+        <Resource>
+            <Part Separation="Cyan"/>
+            <ExposedMedia MediaRef="MEDIA-PLATE-ID" PlateType="Exposed" />
+        </Resource>
+        <Resource>
+            <Part Separation="Magenta"/>
+            <ExposedMedia MediaRef="MEDIA-PLATE-ID" PlateType="Exposed" />
+        </Resource>
+        <Resource>
+            <Part Separation="Yellow"/>
+            <ExposedMedia MediaRef="MEDIA-PLATE-ID" PlateType="Exposed" />
+        </Resource>
+        <Resource>
+            <Part Separation="Black"/>
+            <ExposedMedia MediaRef="MEDIA-PLATE-ID" PlateType="Exposed" />
+        </Resource>
+    </ResourceSet>
+    <ResourceSet Name="Media">
+        <Resource ID="MEDIA-PLATE-ID">
+            <Media MediaType="Plate" />
+        </Resource>
+    </ResourceSet>
+</XJDF>

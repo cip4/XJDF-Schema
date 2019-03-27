@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JDFToXJDF version: using: null null-->
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="n_008186"
+  JobPartID="n_007178" Types="Interpreting Reendering DigitalPrinting">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header DeviceID="dummy" ID="a_007179" Time="2019-03-26T14:15:00+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <ResourceSet CombinedProcessIndex="0 2" Name="RunList" Usage="Input">
+    <Resource>
+      <Part Run="Run_007182"/>
+      <RunList Pages="0 -1">
+        <FileSpec MimeType="application/pdf" URL="foo0.pdf"/>
+      </RunList>
+    </Resource>
+    <Resource>
+      <Part Run="Run_007183"/>
+      <RunList Pages="0 -1">
+        <FileSpec MimeType="application/pdf" URL="foo1.pdf"/>
+      </RunList>
+    </Resource>
+    <Resource>
+      <Part Run="Run_007184"/>
+      <RunList Pages="0 -1">
+        <FileSpec MimeType="application/pdf" URL="foo2.pdf"/>
+      </RunList>
+    </Resource>
+  </ResourceSet>
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo Status="Waiting"/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+</XJDF>
+<!-- END SNIPPET -->

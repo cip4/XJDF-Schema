@@ -1,0 +1,11 @@
+<xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+    <xjdf:Header ID="XJMF_ID" DeviceID="DEVICE_ID_MIS"
+                 Time="2016-11-12T12:11:39+02:00" />
+    <xjdf:CommandSubmitQueueEntry>
+        <xjdf:Header ID="MESSAGE_ID" DeviceID="DEVICE_ID_MIS"
+                     Time="2016-11-12T12:11:39+02:00" />
+        <xjdf:QueueSubmissionParams
+                URL="http://mis.example.org/xjdf/job-1234.xjdf"
+                ReturnJMF="http://mis.example.org/xjmf" Priority="42"/>
+    </xjdf:CommandSubmitQueueEntry>
+</xjdf:XJMF>
