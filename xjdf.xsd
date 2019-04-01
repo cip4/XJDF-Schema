@@ -150,6 +150,13 @@
         <xs:restriction base="FloatList"/>
     </xs:simpleType>
 
+	<xs:simpleType name="Version">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2.0"/>
+			<xs:enumeration value="2.1"/>
+		</xs:restriction>
+	</xs:simpleType>
+
     <xs:simpleType name="sRGBColor">
         <xs:restriction base="FloatList">
             <xs:length value="3"/>
@@ -977,6 +984,7 @@
             <xs:attribute name="RelatedJobPartID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="RelatedProjectID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Types" type="xs:NMTOKENS" use="required"/>
+            <xs:attribute name="Version" type="Version" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
@@ -1171,6 +1179,7 @@
              	    <xs:any namespace="##other" processContents="lax"/>
                  </xs:choice>
             </xs:sequence>
+            <xs:attribute name="Version" type="Version" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
