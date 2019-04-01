@@ -63,8 +63,7 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
-      
-     
+           
     <xs:simpleType name="language">
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
@@ -148,13 +147,6 @@
             <xs:length value="3"/>
          </xs:restriction>
     </xs:simpleType>
-    
-	<xs:simpleType name="Version">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="2.0"/>
-			<xs:enumeration value="2.1"/>
-		</xs:restriction>
-	</xs:simpleType>
 
     <xs:simpleType name="FoldCatalog">
         <xs:restriction base="xs:NMTOKEN">
@@ -961,7 +953,6 @@
             <xs:attribute name="RelatedJobPartID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="RelatedProjectID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Types" type="xs:NMTOKENS" use="required"/>
-            <xs:attribute name="Version" type="Version" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
@@ -1155,8 +1146,7 @@
              	    <xs:any namespace="##other" processContents="lax"/>
                  </xs:choice>
             </xs:sequence>
-            <xs:attribute name="Version" type="Version" use="optional"/>
-        <xs:anyAttribute namespace="##other" processContents="lax"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
 
@@ -3448,7 +3438,6 @@
                 <xs:element maxOccurs="unbounded" minOccurs="0" ref="AssemblySection"/>
             </xs:sequence>
             <xs:attribute name="BinderySignatureID" type="xs:NMTOKEN" use="required"/>
-            <xs:attribute name="CommonFolds" type="xs:integer" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
