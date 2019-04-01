@@ -813,10 +813,10 @@
             <xs:attribute name="Brand" type="xs:string" use="optional"/>
             <xs:attribute name="CommentURL" type="URL" use="optional"/>
             <xs:attribute name="DescriptiveName" type="xs:string" use="optional"/>
-            <xs:attribute name="xs:duration" type="xs:duration" use="optional"/>
+            <xs:attribute name="Duration" type="xs:duration" use="optional"/>
             <xs:attribute name="ExternalID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="GrossWeight" type="xs:float" use="optional"/>
-            <xs:attribute name="xs:ID" type="xs:ID" use="optional"/>
+            <xs:attribute name="ID" type="xs:ID" use="optional"/>
             <xs:attribute name="Orientation" type="Orientation" use="optional"/>
             <xs:attribute name="ResourceWeight" type="xs:float" use="optional"/>
             <xs:attribute name="Start" type="xs:dateTime" use="optional"/>
@@ -903,7 +903,7 @@
             <xs:attribute name="CommentURL" type="URL" use="optional"/>
             <xs:attribute name="DescriptiveName" type="xs:string" use="optional"/>
             <xs:attribute name="ExternalID" type="xs:NMTOKEN" use="optional"/>
-            <xs:attribute name="xs:ID" type="xs:ID" use="optional"/>
+            <xs:attribute name="ID" type="xs:ID" use="optional"/>
             <xs:attribute name="IsRoot" type="xs:boolean" use="optional"/>
             <xs:attribute name="MaxAmount" type="xs:integer" use="optional"/>
             <xs:attribute name="MinAmount" type="xs:integer" use="optional"/>
@@ -968,7 +968,7 @@
             <xs:attribute name="CombinedProcessIndex" type="IntegerList" use="optional"/>
             <xs:attribute name="CommentURL" type="URL" use="optional"/>
             <xs:attribute name="DescriptiveName" type="xs:string" use="optional"/>
-            <xs:attribute name="xs:ID" type="xs:ID" use="optional"/>
+            <xs:attribute name="ID" type="xs:ID" use="optional"/>
             <xs:attribute name="Name" type="xs:NMTOKEN" use="required"/>
             <xs:attribute name="ProcessUsage" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Unit" type="xs:NMTOKEN" use="optional"/>
@@ -1208,7 +1208,7 @@
             <xs:attribute name="Author" type="xs:string" use="optional"/>
             <xs:attribute name="DeviceID" type="xs:NMTOKEN" use="required"/>
             <xs:attribute name="ICSVersions" type="xs:NMTOKENS" use="optional"/>
-            <xs:attribute name="xs:ID" type="xs:ID" use="optional"/>
+            <xs:attribute name="ID" type="xs:ID" use="optional"/>
             <xs:attribute name="PersonalID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="refID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Time" type="xs:dateTime" use="required"/>
@@ -2427,7 +2427,7 @@
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" minOccurs="0" ref="Part"/>
             </xs:sequence>
-            <xs:attribute name="xs:duration" type="xs:duration" use="optional"/>
+            <xs:attribute name="Duration" type="xs:duration" use="optional"/>
             <xs:attribute name="End" type="xs:dateTime" use="required"/>
             <xs:attribute name="EndStatus" use="required">
                 <xs:simpleType>
@@ -2459,7 +2459,7 @@
         </xs:attribute>
         <xs:attribute name="Contract" type="xs:boolean" use="optional"/>
         <xs:attribute name="HalfTone" type="xs:boolean" use="optional"/>
-        <xs:attribute name="xs:ID" type="xs:ID" use="optional"/>
+        <xs:attribute name="ID" type="xs:ID" use="optional"/>
         <xs:attribute name="PageIndex" type="IntegerRange" use="optional"/>
         <xs:attribute name="ProofTarget" type="URL" use="optional"/>
         <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -4587,7 +4587,7 @@
             <xs:attribute name="ClipPath" type="PDFPath" use="optional"/>
             <xs:attribute name="CTM" type="matrix" use="required"/>
             <xs:attribute name="HalfTonePhaseOrigin" type="XYPair" use="optional"/>
-            <xs:attribute name="xs:ID" type="xs:ID" use="optional"/>
+            <xs:attribute name="ID" type="xs:ID" use="optional"/>
             <xs:attribute name="Ord" type="xs:integer" use="optional"/>
             <xs:attribute name="PositionRef" type="xs:IDREF" use="optional"/>
             <xs:attribute name="SourceClipPath" type="PDFPath" use="optional"/>
@@ -4949,7 +4949,7 @@
             <xs:attribute name="BinderySignatureID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="BlockName" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="GangElementID" type="xs:NMTOKEN" use="optional"/>
-            <xs:attribute name="xs:ID" type="xs:ID" use="optional"/>
+            <xs:attribute name="ID" type="xs:ID" use="optional"/>
             <xs:attribute name="MarginBottom" type="xs:float" use="optional"/>
             <xs:attribute name="MarginLeft" type="xs:float" use="optional"/>
             <xs:attribute name="MarginRight" type="xs:float" use="optional"/>
@@ -5430,7 +5430,7 @@
             <xs:attribute name="Font" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="FontSize" type="xs:float" use="optional"/>
             <xs:attribute name="HorizontalFitPolicy" type="EnumFitPolicy" use="optional"/>
-            <xs:attribute name="xs:ID" type="xs:ID" use="optional"/>
+            <xs:attribute name="ID" type="xs:ID" use="optional"/>
             <xs:attribute name="MarkName" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Offset" type="XYPair" use="optional"/>
             <xs:attribute name="Orientation" type="Orientation" use="optional"/>
