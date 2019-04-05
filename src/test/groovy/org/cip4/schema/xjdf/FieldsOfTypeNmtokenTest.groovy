@@ -28,7 +28,7 @@ class FieldsOfTypeNmtokenTest {
 
         for (Node elementNode : elements) {
             assertEquals(
-                "NMTOKEN",
+                "xs:NMTOKEN",
                 elementNode.getAttributes().getNamedItem("type").getNodeValue(),
                 String.format("All attributes in XJDF with a name '%s' SHALL be have type NMTOKEN.", fieldName)
             );
