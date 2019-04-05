@@ -83,7 +83,7 @@ class XsdReader {
             }
 
             String parentType = xPath.evaluate(".//xs:extension/@base", complexType);
-            if (!"".equals(parentType) && !"string".equals(parentType)) {
+            if (!"".equals(parentType) && !"xs:string".equals(parentType)) {
                 Node parentComplexTypeNode = (Node) xPath.evaluate(
                         String.format("//xs:complexType[@name='%s']", parentType),
                         schema,
