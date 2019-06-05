@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="RunList"
+  Types="DigitalPrinting" Version="2.1">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 011" DeviceID="TestSender" ID="l_000002" Time="2019-06-05T22:10:51+02:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="RunList" Usage="Input">
+    <Resource>
+      <RunList DocPages="2 8 2" NPage="480">
+        <FileSpec URL="File:///ManyBrochures.pdf"/>
+      </RunList>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Media">
+    <Resource DescriptiveName="Media for front and back covers" ID="Media_000005.1">
+      <Part DocIndex="0 0"/>
+      <Part DocIndex="2 2"/>
+      <Media MediaType="Paper" Weight="150"/>
+    </Resource>
+    <Resource DescriptiveName="Media for inner pages" ID="Media_000005.2">
+      <Part DocIndex="1 1"/>
+      <Media MediaType="Paper" Weight="100"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Component" Usage="Input">
+    <Resource DescriptiveName="Physical media for front and back covers">
+      <Part DocIndex="0 0"/>
+      <Part DocIndex="2 2"/>
+      <Component MediaRef="Media_000005.1"/>
+    </Resource>
+    <Resource>
+      <Part DocIndex="1 1"/>
+      <Component MediaRef="Media_000005.2"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->

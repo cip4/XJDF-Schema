@@ -5395,6 +5395,7 @@
                 <xs:attribute name="ClipPath" type="PDFPath" use="optional"/>
                 <xs:attribute name="ContentRefs" type="xs:IDREFS" use="optional"/>
                 <xs:attribute name="Docs" type="IntegerList" use="optional"/>
+                <xs:attribute name="DocPages" type="IntegerList" use="optional"/>
                 <xs:attribute name="EndOfDocument" type="xs:boolean" use="optional"/>
                 <xs:attribute name="EndOfSet" type="xs:boolean" use="optional"/>
                 <xs:attribute name="FinishedPages" type="xs:int" use="optional"/>
