@@ -4975,7 +4975,6 @@
             </xs:sequence>
             <xs:attribute name="Center" type="XYPair" use="optional"/>
             <xs:attribute name="Density" type="xs:float" use="optional"/>
-            <xs:attribute name="Diameter" type="xs:float" use="optional"/>
             <xs:attribute name="ExternalID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Lab" type="LabColor" use="optional"/>
             <xs:attribute name="NeutralDensity" type="xs:float" use="optional"/>
@@ -4990,6 +4989,7 @@
                         </xs:simpleType>
 			</xs:attribute>
             <xs:attribute name="RGB" type="sRGBColor" use="optional"/>
+            <xs:attribute name="Size" type="XYPair" use="optional"/>
             <xs:attribute name="Spectrum" type="TransferFunction" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
