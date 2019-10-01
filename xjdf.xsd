@@ -265,6 +265,13 @@
             <xs:enumeration value="NoGang"/>
         </xs:restriction>
     </xs:simpleType>
+                
+    <xs:simpleType name="ForceGangPolicy">
+        <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="All"/>
+            <xs:enumeration value="Optimized"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:simpleType name="Edge">
         <xs:restriction base="xs:NMTOKEN">
@@ -475,7 +482,6 @@
             <xs:enumeration value="TopRight"/>
         </xs:restriction>
     </xs:simpleType>
-
 
     <xs:simpleType name="NamedColor">
  		<xs:restriction base="xs:string">
@@ -1143,14 +1149,7 @@
     <xs:element name="GangCmdFilter">
         <xs:complexType>
             <xs:attribute name="GangNames" type="xs:NMTOKENS" use="optional"/>
-            <xs:attribute name="Policy" use="optional">
-                <xs:simpleType>
-                    <xs:restriction base="xs:NMTOKEN">
-                        <xs:enumeration value="All"/>
-                        <xs:enumeration value="Optimized"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
+            <xs:attribute name="Policy" type="ForceGangPolicy" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
@@ -4481,6 +4480,16 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    
+   <xs:element name="GangPreparationParams" substitutionGroup="SpecificResource" type="GangPreparationParams"/>
+    <xs:complexType name="GangPreparationParams">
+        <xs:complexContent>
+            <xs:extension base="SpecificResource">
+                <xs:attribute name="GangName" type="xs:NMTOKEN" use="optional"/>
+                <xs:attribute name="JobIDs" type="xs:NMTOKENS" use="optional"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
 
     <xs:element name="GeneralID">
         <xs:complexType>
@@ -5533,6 +5542,7 @@
     <xs:complexType name="SheetOptimizingParams">
         <xs:complexContent>
             <xs:extension base="SpecificResource">
+            	<xs:attribute name="Policy" type="ForceGangPolicy" use="optional"/>
                 <xs:sequence>
                     <xs:element maxOccurs="unbounded" minOccurs="1" ref="ConvertingConfig"/>
                     <xs:element maxOccurs="unbounded" minOccurs="1" ref="GangElement"/>
