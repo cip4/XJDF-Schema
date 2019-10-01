@@ -2373,6 +2373,7 @@
                 </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="PrintCondition" type="xs:NMTOKEN" use="optional"/>
+            <xs:attribute name="Product" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="ProductPart" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="QualityMeasurement" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Run" type="xs:NMTOKEN" use="optional"/>
@@ -3627,6 +3628,14 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
+    <xs:element name="BindingQuality">
+        <xs:complexType>
+            <xs:attribute name="FlexValue" type="xs:float" use="optional"/>
+            <xs:attribute name="PullOutValue" type="xs:float" use="optional"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
 
     <xs:element name="BindingQualityParams">
         <xs:complexType>
@@ -5212,6 +5221,7 @@
             <xs:extension base="SpecificResource">
                 <xs:sequence>
                     <xs:element maxOccurs="1" minOccurs="0" ref="BindingQualityParams"/>
+                    <xs:element maxOccurs="1" minOccurs="0" ref="BindingQuality"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="ColorControlStrip"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="RegistrationQuality"/>
@@ -5234,6 +5244,7 @@
             <xs:extension base="SpecificResource">
                 <xs:sequence>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="BindingQualityMeasurement"/>
+                    <xs:element maxOccurs="1" minOccurs="0" ref="BindingQuality"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="ColorControlStrip"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="Inspection"/>
