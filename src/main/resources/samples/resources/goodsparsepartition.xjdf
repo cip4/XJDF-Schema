@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Sparse" Types="ManualLabor">
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.6 BLD 015" DeviceID="TestSender" Time="2019-10-25T18:33:30+02:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="ManualLaborParams" Usage="Input">
+    <!-- START SNIPPET -->
+    <Resource DescriptiveName="Good example with sparse Part elements">
+      <Part SheetName="SGood"/>
+      <ManualLaborParams LaborType="PhoneCallToCustomer"/>
+    </Resource>
+    <!-- END SNIPPET -->
+  </ResourceSet>
+</XJDF>
