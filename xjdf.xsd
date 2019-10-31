@@ -1816,6 +1816,7 @@
         <xs:complexContent>
             <xs:extension base="SpecificResource">
                 <xs:sequence>
+                    <xs:element maxOccurs="2" minOccurs="0" ref="FileSpec"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="IconList"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="IdentificationField"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="Module"/>
