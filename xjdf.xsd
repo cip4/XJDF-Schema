@@ -850,6 +850,7 @@
             <xs:attribute name="CommentURL" type="URL" use="optional"/>
             <xs:attribute name="DescriptiveName" type="xs:string" use="optional"/>
             <xs:attribute name="Duration" type="xs:duration" use="optional"/>
+            <xs:attribute name="Expires" type="xs:dateTime" use="optional"/>
             <xs:attribute name="ExternalID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="GrossWeight" type="xs:float" use="optional"/>
             <xs:attribute name="ID" type="xs:ID" use="optional"/>
