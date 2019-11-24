@@ -4421,6 +4421,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="1" minOccurs="0" ref="Disposition"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="NetworkHeader"/>
             </xs:sequence>
             <xs:attribute name="CheckSum" type="xs:hexBinary" use="optional"/>
             <xs:attribute name="Encoding" type="xs:NMTOKEN" use="optional"/>
@@ -4929,6 +4930,14 @@
                 </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="WorkTypeDetails" type="xs:NMTOKEN" use="optional"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="NetworkHeader">
+        <xs:complexType>
+            <xs:attribute name="Name" type="xs:string" use="required"/>
+            <xs:attribute name="Value" type="xs:string" use="required"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
