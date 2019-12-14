@@ -5257,7 +5257,14 @@
                 </xs:sequence>
                 <xs:attribute name="Box" type="rectangle" use="optional"/>
                 <xs:attribute name="Position" type="Face" use="optional"/>
-                <xs:attribute name="QualityBase" type="xs:NMTOKENS" use="optional"/>
+                <xs:attribute name="QualityBase" use="optional">
+					<xs:simpleType>
+                      <xs:restriction base="xs:NMTOKEN">
+                          <xs:enumeration value="Absolute"/>
+                          <xs:enumeration value="Standard"/>
+                      </xs:restriction>
+					</xs:simpleType>
+ 				</xs:attribute>
                 <xs:attribute name="QualityControlMethods" type="xs:NMTOKENS" use="optional"/>
                 <xs:attribute name="SampleInterval" type="xs:int" use="optional"/>
                 <xs:attribute name="Severity" type="Score" use="optional"/>
