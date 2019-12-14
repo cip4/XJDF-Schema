@@ -3887,6 +3887,16 @@
         </xs:complexType>
     </xs:element>
 
+   <xs:element name="ColorMeasurement">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="1" minOccurs="0" ref="ColorControlStrip"/>
+            </xs:sequence>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+
+
     <xs:element name="ColorMeasurementConditions">
         <xs:complexType>
             <xs:attribute name="Aperture" type="xs:float" use="optional"/>
@@ -5252,7 +5262,7 @@
                 <xs:sequence>
                     <xs:element maxOccurs="1" minOccurs="0" ref="BindingQualityParams"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="BindingQuality"/>
-                    <xs:element maxOccurs="1" minOccurs="0" ref="ColorControlStrip"/>
+                    <xs:element maxOccurs="1" minOccurs="0" ref="ColorMeasurement"/>
                     <xs:element maxOccurs="2" minOccurs="0" ref="FileSpec"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="RegistrationQuality"/>
                 </xs:sequence>
@@ -5282,7 +5292,7 @@
                 <xs:sequence>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="BindingQualityMeasurement"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="BindingQuality"/>
-                    <xs:element maxOccurs="1" minOccurs="0" ref="ColorControlStrip"/>
+                    <xs:element maxOccurs="1" minOccurs="0" ref="ColorMeasurement"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="Inspection"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="RegistrationQuality"/>
