@@ -2486,6 +2486,9 @@
 
     <xs:element name="ProofItem" type="ProofItem"/>
     <xs:complexType name="ProofItem">
+        <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
+        </xs:sequence>
         <xs:attribute name="Amount" type="xs:int" use="optional"/>
         <xs:attribute name="ColorType" use="optional">
             <xs:simpleType>
