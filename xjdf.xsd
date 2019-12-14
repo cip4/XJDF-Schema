@@ -1851,7 +1851,8 @@
                 <xs:attribute name="KnownLocalizations" type="languages" use="optional"/>
                 <xs:attribute name="Manufacturer" type="xs:string" use="optional"/>
                 <xs:attribute name="ManufacturerURL" type="URL" use="optional"/>
-                <xs:attribute name="Packaging" use="optional">
+                <xs:attribute name="MaxRunSpeed" type="xs:float" use="optional"/>
+                 <xs:attribute name="Packaging" use="optional">
                     <xs:simpleType>
                         <xs:list>
                             <xs:simpleType>
