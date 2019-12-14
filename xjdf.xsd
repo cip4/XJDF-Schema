@@ -1248,6 +1248,7 @@
             <xs:attribute name="AgentName" type="xs:string" use="optional"/>
             <xs:attribute name="AgentVersion" type="xs:string" use="optional"/>
             <xs:attribute name="Author" type="xs:string" use="optional"/>
+            <xs:attribute name="DescriptiveName" type="xs:string" use="optional"/>
             <xs:attribute name="DeviceID" type="xs:NMTOKEN" use="required"/>
             <xs:attribute name="ICSVersions" type="xs:NMTOKENS" use="optional"/>
             <xs:attribute name="ID" type="xs:ID" use="optional"/>
