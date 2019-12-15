@@ -3309,8 +3309,14 @@
             <xs:attribute name="City" type="xs:string" use="optional"/>
             <xs:attribute name="CivicNumber" type="xs:string" use="optional"/>
             <xs:attribute name="Country" type="xs:string" use="optional"/>
-            <xs:attribute name="CountryCode" type="xs:NMTOKEN" use="optional"/>
-            <xs:attribute name="ExtendedAddress" type="xs:string" use="optional"/>
+            <xs:attribute name="CountryCode" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                       <xs:pattern value="[a-zA-Z][a-zA-Z]"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+           <xs:attribute name="ExtendedAddress" type="xs:string" use="optional"/>
             <xs:attribute name="PostalCode" type="xs:string" use="optional"/>
             <xs:attribute name="PostBox" type="xs:string" use="optional"/>
             <xs:attribute name="Region" type="xs:string" use="optional"/>
