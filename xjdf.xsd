@@ -2809,7 +2809,7 @@
         <xs:complexContent>
             <xs:extension base="SpecificResource">
                 <xs:sequence>
-                    <xs:element ref="FileSpec" minOccurs="0" maxOccurs="3"/>
+                    <xs:element ref="FileSpec" minOccurs="0" maxOccurs="4"/>
                 </xs:sequence>
                 <xs:attribute name="Accepted" type="xs:int" use="optional"/>
                 <xs:attribute name="Rejected" type="xs:int" use="optional"/>
