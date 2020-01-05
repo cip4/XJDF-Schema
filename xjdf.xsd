@@ -5631,7 +5631,7 @@
             <xs:attribute name="NumberUp" type="XYPair" use="optional"/>
             <xs:attribute name="OneSheet" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Operations" type="xs:NMTOKENS" use="optional"/>
-            <xs:attribute name="OrderQuantity" type="xs:int" use="optional"/>
+            <xs:attribute name="OrderQuantity" type="xs:int" use="required"/>
             <xs:attribute name="PageDimension" type="XYPair" use="optional"/>
             <xs:attribute name="Priority" type="xs:int" use="optional"/>
             <xs:attribute name="RotationPolicy" type="PositionPolicy" use="optional"/>
