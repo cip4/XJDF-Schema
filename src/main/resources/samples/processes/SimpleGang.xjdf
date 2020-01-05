@@ -5,8 +5,7 @@
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender"
-        ID="l_190326_140718832_000002" Time="2019-03-26T14:07:18+00:00"/>
+        AgentVersion="1.6 BLD 022" DeviceID="TestSender" Time="2020-01-05T21:48:32+01:00"/>
     </AuditCreated>
   </AuditPool>
   <ResourceSet Name="NodeInfo" Usage="Input">
@@ -17,14 +16,14 @@
   <ResourceSet Name="SheetOptimizingParams" Usage="Input">
     <Resource>
       <SheetOptimizingParams>
-        <ConvertingConfig SheetHeightMax="19842.51968504"
-          SheetHeightMin="19842.51968504" SheetWidthMax="28346.45669291" SheetWidthMin="28346.45669291"/>
-        <GangElement GangElementID="Gang_0" MinQuantity="1000"/>
-        <GangElement GangElementID="Gang_1" MinQuantity="1000"/>
-        <GangElement GangElementID="Gang_2" MinQuantity="1000"/>
-        <GangElement GangElementID="Gang_3" MinQuantity="1000"/>
-        <GangElement GangElementID="Gang_4" MinQuantity="1000"/>
-        <GangElement GangElementID="Gang_5" MinQuantity="1000"/>
+        <ConvertingConfig SheetHeightMax="1984.2519685"
+          SheetHeightMin="1984.2519685" SheetWidthMax="2834.64566929" SheetWidthMin="2834.64566929"/>
+        <GangElement GangElementID="Gang_0" OrderQuantity="1000"/>
+        <GangElement GangElementID="Gang_1" OrderQuantity="1000"/>
+        <GangElement GangElementID="Gang_2" OrderQuantity="1000"/>
+        <GangElement GangElementID="Gang_3" OrderQuantity="1000"/>
+        <GangElement GangElementID="Gang_4" OrderQuantity="1000"/>
+        <GangElement GangElementID="Gang_5" OrderQuantity="1000"/>
       </SheetOptimizingParams>
     </Resource>
   </ResourceSet>
