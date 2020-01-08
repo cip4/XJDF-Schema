@@ -4229,7 +4229,7 @@
             <xs:extension base="SpecificResource">
                 <xs:sequence>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="Device"/>
-                    <xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="FileSpec"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="Media"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="RuleLength"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="Station"/>
