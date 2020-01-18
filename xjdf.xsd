@@ -5325,13 +5325,17 @@
                 <xs:attribute name="Failed" type="xs:int" use="optional"/>
                 <xs:attribute name="Measurements" type="xs:int" use="optional"/>
                 <xs:attribute name="MeasurementUsage" use="optional">
-					<xs:simpleType>
-                      <xs:restriction base="xs:NMTOKEN">
-                          <xs:enumeration value="Master"/>
-                          <xs:enumeration value="Standard"/>
-                      </xs:restriction>
-					</xs:simpleType>
- 				</xs:attribute>
+                 	<xs:simpleType>
+                    	<xs:list>
+                    		<xs:simpleType>
+                        		<xs:restriction base="xs:NMTOKEN">
+                            		<xs:enumeration value="Master"/>
+                                	<xs:enumeration value="Standard"/>
+                            	</xs:restriction>
+					      	</xs:simpleType>
+                    	</xs:list>
+                  	</xs:simpleType>
+   				</xs:attribute>
                 <xs:attribute name="Passed" type="xs:int" use="optional"/>
                 <xs:attribute name="Position" type="Face" use="optional"/>
                 <xs:attribute name="QualityControlMethods" type="xs:NMTOKENS" use="optional"/>
