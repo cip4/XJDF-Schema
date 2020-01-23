@@ -3364,7 +3364,7 @@
             <xs:attribute name="CountryCode" use="optional">
                 <xs:simpleType>
                     <xs:restriction base="xs:NMTOKEN">
-                       <xs:pattern value="[a-zA-Z][a-zA-Z]"/>
+                       <xs:pattern value="[A-Z][A-Z]"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
