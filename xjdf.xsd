@@ -4818,6 +4818,7 @@
             <xs:extension base="SpecificResource">
                 <xs:sequence>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="Certification"/>
+                    <xs:element maxOccurs="1" minOccurs="0" ref="ColorMeasurementConditions"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="HolePattern"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="IdentificationField"/>
                     <xs:element maxOccurs="1" minOccurs="0" ref="MediaLayers"/>
@@ -4831,6 +4832,7 @@
                 <xs:attribute name="BackGlossValue" type="xs:float" use="optional"/>
                 <xs:attribute name="BackISOPaperSubstrate" type="ISOPaperSubstrate" use="optional"/>
                 <xs:attribute name="BackLabColorValue" type="LabColor" use="optional"/>
+                <xs:attribute name="BackSpectrum" type="TransferFunction" use="optional"/>
                 <xs:attribute name="Brightness" type="xs:float" use="optional"/>
                 <xs:attribute name="CIETint" type="xs:float" use="optional"/>
                 <xs:attribute name="CIEWhiteness" type="xs:float" use="optional"/>
@@ -4897,6 +4899,7 @@
                 <xs:attribute name="RollDiameter" type="xs:float" use="optional"/>
                 <xs:attribute name="ShrinkIndex" type="XYPair" use="optional"/>
                 <xs:attribute name="SleeveInterlock" type="xs:NMTOKEN" use="optional"/>
+                <xs:attribute name="Spectrum" type="TransferFunction" use="optional"/>
                 <xs:attribute name="StockType" type="xs:NMTOKEN" use="optional"/>
                 <xs:attribute name="Texture" type="xs:NMTOKEN" use="optional"/>
                 <xs:attribute name="Thickness" type="xs:float" use="optional"/>
