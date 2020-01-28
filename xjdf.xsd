@@ -1979,11 +1979,29 @@
     <xs:element name="FitPolicy">
         <xs:complexType>
             <xs:attribute name="ClipOffset" type="XYPair" use="optional"/>
-            <xs:attribute name="GutterPolicy" use="optional">
+            <xs:attribute name="ExpansionPolicy" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="HorizontalOnly"/>
+                        <xs:enumeration value="HorizontalVertical"/>
+                        <xs:enumeration value="VerticalOnly"/>
+                        <xs:enumeration value="VerticalHorizontal"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+           <xs:attribute name="GutterPolicy" use="optional">
                 <xs:simpleType>
                     <xs:restriction base="xs:NMTOKEN">
                         <xs:enumeration value="Distribute"/>
                         <xs:enumeration value="Fixed"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+          <xs:attribute name="HorizontalGridDirection" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="LeftToRight"/>
+                        <xs:enumeration value="RightToLeft"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
@@ -2001,18 +2019,27 @@
             <xs:attribute name="SizePolicy" use="optional">
                 <xs:simpleType>
                     <xs:restriction base="xs:NMTOKEN">
-                        <xs:enumeration value="ClipToMaxPage"/>
                         <xs:enumeration value="Abort"/>
+                        <xs:enumeration value="ClipToMaxPage"/>
+                        <xs:enumeration value="CompleteGrid"/>
+                        <xs:enumeration value="FillGrid"/>
                         <xs:enumeration value="FitToPage"/>
                         <xs:enumeration value="ReduceToFit"/>
                         <xs:enumeration value="Tile"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
+            <xs:attribute name="VerticalGridDirection" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="BottomToTop"/>
+                        <xs:enumeration value="TopToBottom"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
-
     <xs:element name="GluingParams" substitutionGroup="SpecificResource" type="GluingParams"/>
     <xs:complexType name="GluingParams">
         <xs:complexContent>
