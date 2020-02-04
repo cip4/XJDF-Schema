@@ -4341,7 +4341,7 @@
     <xs:element name="Disjointing">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="1" minOccurs="0" ref="InsertSheet"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="InsertSheet"/>
             </xs:sequence>
             <xs:attribute name="Amount" type="xs:int" use="optional"/>
             <xs:attribute name="Direction" use="optional">
@@ -4677,6 +4677,7 @@
                 <xs:element maxOccurs="unbounded" minOccurs="0" ref="StripMark"/>
             </xs:sequence>
             <xs:attribute name="IsWaste" type="xs:boolean" use="optional"/>
+            <xs:attribute name="MediaRef" type="xs:IDREF" use="optional"/>
             <xs:attribute name="SheetFormat" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="SheetType" use="required">
                 <xs:simpleType>
@@ -4945,17 +4946,7 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="MediaSource" substitutionGroup="SpecificResource" type="MediaSource"/>
-    <xs:complexType name="MediaSource">
-        <xs:complexContent>
-            <xs:extension base="SpecificResource">
-                <xs:attribute name="MediaRef" type="xs:IDREF" use="optional"/>
-                <xs:attribute name="ComponentRef" type="xs:IDREF" use="optional"/>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-
-    <xs:element name="MetadataMap">
+     <xs:element name="MetadataMap">
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" minOccurs="0" ref="Expr"/>
