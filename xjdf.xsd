@@ -5434,7 +5434,11 @@
     <xs:complexType name="RegisterMark">
         <xs:complexContent>
             <xs:extension base="SpecificResource">
-                <xs:attribute name="Center" type="XYPair" use="optional"/>
+               <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="MarkElement"/>
+                </xs:sequence>
+               <xs:attribute name="Center" type="XYPair" use="optional"/>
+                <xs:attribute name="MarkName" type="xs:NMTOKEN" use="optional"/>
                 <xs:attribute name="MarkType" type="xs:NMTOKENS" use="optional"/>
                 <xs:attribute name="MarkUsage" use="optional">
                     <xs:simpleType>
@@ -5451,9 +5455,21 @@
                 </xs:attribute>
                 <xs:attribute name="Rotation" type="xs:float" use="optional"/>
                 <xs:attribute name="Separations" type="xs:NMTOKENS" use="optional"/>
+                <xs:attribute name="Size" type="XYPair" use="optional"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
+   <xs:element name="MarkElement">
+        <xs:complexType>
+            <xs:attribute name="Center" type="XYPair" use="required"/>
+            <xs:attribute name="MarkType" type="xs:NMTOKEN" use="required"/>
+            <xs:attribute name="Rotation" type="xs:float" use="optional"/>
+            <xs:attribute name="Separation" type="xs:NMTOKEN" use="required"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+
 
     <xs:element name="RegistrationQuality">
         <xs:complexType>
