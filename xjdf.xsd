@@ -1481,6 +1481,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
+            <xs:attribute name="ModuleID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="QueueEntryID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Scope" type="Scope" use="optional"/>
             <xs:attribute name="Speed" type="xs:float" use="optional"/>
@@ -5466,6 +5467,7 @@
             <xs:attribute name="MarkType" type="xs:NMTOKEN" use="required"/>
             <xs:attribute name="Rotation" type="xs:float" use="optional"/>
             <xs:attribute name="Separation" type="xs:NMTOKEN" use="required"/>
+            <xs:attribute name="Size" type="XYPair" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
