@@ -4,7 +4,7 @@
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:28+00:00"/>
+        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T18:58:16+01:00"/>
     </AuditCreated>
   </AuditPool>
   <ResourceSet Name="NodeInfo" Usage="Input">
@@ -14,7 +14,7 @@
   </ResourceSet>
   <!-- START SNIPPET -->
   <ResourceSet Name="foo:FooParams" Usage="Input" xmlns:foo="http://www.foo.org">
-    <Resource ID="r_000006">
+    <Resource>
       <Part Run="R1"/>
       <foo:FooParams FooAtt="FooVal"/>
     </Resource>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
 <XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
-  <Header DeviceID="VeggieController" ID="l_000002" Time="2019-03-26T14:07:48.651+00:00"/>
+  <Header DeviceID="VeggieController" ID="l_000002" Time="2020-03-01T19:56:15.072+01:00"/>
   <ResponseKnownDevices ReturnCode="0">
     <Header DeviceID="VeggieController" ID="R1"
-      Time="2019-03-26T14:07:48.651+00:00" refID="Q1"/>
-    <Device DeviceID="dev1" DeviceType="ACME Linda potato press V16-12" XJMFURL="http://acmepotato1:1234/xjmfurl"/>
+      Time="2020-03-01T19:56:15.110+01:00" refID="Q1"/>
+    <Device DeviceID="dev1"
+      DeviceType="ACME Linda potato press V16-12" XJMFURL="http://acmepotato1:1234/xjmfurl"/>
     <Device DeviceID="dev2"
       DeviceType="ACME Baldrick turnip press V42-66" XJMFURL="http://acmeturnip1:1234/xjmfurl"/>
     <!-- One Device element for each known device follows here -->

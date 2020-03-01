@@ -5,7 +5,7 @@
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:30+00:00"/>
+        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:56:20+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -17,7 +17,7 @@
   </ResourceSet>
   <!-- START SNIPPET -->
   <ResourceSet Name="ShapeDef">
-    <Resource ID="ShapeDef_000004.1">
+    <Resource ID="r_000007">
       <ShapeDef>
         <FileSpec URL="file://myserver/myshare/olive.dd3"/>
       </ShapeDef>
@@ -26,11 +26,11 @@
   <ResourceSet Name="DieLayoutProductionParams" Usage="Input">
     <Resource>
       <DieLayoutProductionParams>
-        <ConvertingConfig SheetHeightMax="2200" SheetHeightMin="2200"
-          SheetWidthMax="2800" SheetWidthMin="2800"/>
-        <ConvertingConfig SheetHeightMax="2500" SheetHeightMin="2500"
-          SheetWidthMax="3400" SheetWidthMin="3400"/>
-        <RepeatDesc LayoutStyle="StraightNest" ShapeDefRef="ShapeDef_000004.1"/>
+        <ConvertingConfig SheetHeightMax="2200"
+          SheetHeightMin="2200" SheetWidthMax="2800" SheetWidthMin="2800"/>
+        <ConvertingConfig SheetHeightMax="2500"
+          SheetHeightMin="2500" SheetWidthMax="3400" SheetWidthMin="3400"/>
+        <RepeatDesc LayoutStyle="StraightNest" ShapeDefRef="r_000007"/>
       </DieLayoutProductionParams>
     </Resource>
   </ResourceSet>

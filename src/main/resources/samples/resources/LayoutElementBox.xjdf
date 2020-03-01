@@ -6,7 +6,7 @@
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:41+00:00"/>
+        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:55:50+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -19,11 +19,11 @@
   <!-- START SNIPPET -->
   <ResourceSet Name="LayoutElementProductionParams" Usage="Input">
     <Resource>
-      <LayoutElementProductionParams ShapeDefRef="ShapeDef_000005.1"/>
+      <LayoutElementProductionParams ShapeDefRef="r_000008"/>
     </Resource>
   </ResourceSet>
   <ResourceSet Name="ShapeDef">
-    <Resource ID="ShapeDef_000005.1">
+    <Resource ID="r_000008">
       <ShapeDef>
         <FileSpec URL="file://myserver/myshare/olive.dd3"/>
       </ShapeDef>

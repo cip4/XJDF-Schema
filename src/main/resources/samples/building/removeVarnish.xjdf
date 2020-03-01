@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="ChangeOrder"
-  JobPartID="RemoveVarnish" Types="Varnishing">
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
+  JobID="ChangeOrder" JobPartID="RemoveVarnish" Types="Varnishing">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:39+00:00"/>
+        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:56:13+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->

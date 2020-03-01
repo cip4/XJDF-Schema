@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="PaperAudit" Types="ConventionalPrinting">
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
+  JobID="PaperAudit" Types="ConventionalPrinting">
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:33+00:00"/>
+      <Header AgentName="Writer" AgentVersion="V_2.0"
+        DeviceID="TestSender" Time="2020-03-01T19:55:57+01:00"/>
     </AuditCreated>
     <AuditResource>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000007" Time="2019-03-26T14:07:33+00:00"/>
+      <Header AgentName="Writer" AgentVersion="V_2.0"
+        DeviceID="TestSender" Time="2020-03-01T19:55:57+01:00"/>
       <ResourceInfo>
         <ResourceSet Name="Component" Usage="Input">
           <Resource>
@@ -22,8 +23,8 @@
       </ResourceInfo>
     </AuditResource>
     <AuditResource>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000009" Time="2019-03-26T14:07:33+00:00"/>
+      <Header AgentName="Writer" AgentVersion="V_2.0"
+        DeviceID="TestSender" Time="2020-03-01T19:55:57+01:00"/>
       <ResourceInfo>
         <ResourceSet Name="Media">
           <Resource>
@@ -41,7 +42,7 @@
   </ResourceSet>
   <!-- START SNIPPET -->
   <ResourceSet Name="Media">
-    <Resource ID="Media_000004.1">
+    <Resource ID="r_000007">
       <Part SheetName="S1"/>
       <Media MediaType="Paper" Weight="80"/>
     </Resource>
@@ -52,7 +53,7 @@
         <PartAmount Amount="400"/>
       </AmountPool>
       <Part SheetName="S1"/>
-      <Component MediaRef="Media_000004.1"/>
+      <Component MediaRef="r_000007"/>
     </Resource>
   </ResourceSet>
 </XJDF>

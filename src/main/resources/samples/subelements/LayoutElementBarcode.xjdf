@@ -6,7 +6,7 @@
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:40+00:00"/>
+        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:55:48+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -19,11 +19,11 @@
   <!-- START SNIPPET -->
   <ResourceSet Name="LayoutElementProductionParams" Usage="Input">
     <Resource>
-      <LayoutElementProductionParams ContentRefs="Content_000005.1"/>
+      <LayoutElementProductionParams ContentRefs="r_000007"/>
     </Resource>
   </ResourceSet>
   <ResourceSet Name="Content">
-    <Resource ID="Content_000005.1">
+    <Resource ID="r_000007">
       <Content ContentType="Page">
         <BarcodeProductionParams>
           <BarcodeReproParams Height="73.5" Magnification="1">
