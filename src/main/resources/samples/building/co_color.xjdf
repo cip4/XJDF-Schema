@@ -42,8 +42,8 @@
   <ResourceSet Name="ColorantControl" Usage="Input">
     <Resource>
       <Part SheetName="Sheet1" Side="Front"/>
-      <ColorantControl
-        ColorantOrder="Cyan Magenta Yellow Black Spot1" ColorantParams="Cyan Magenta Yellow Black Spot1"/>
+      <ColorantControl ColorantOrder="Cyan Magenta Yellow Black Spot1"
+        ColorantParams="Cyan Magenta Yellow Black Spot1"/>
     </Resource>
   </ResourceSet>
 </XJDF>
