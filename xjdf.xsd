@@ -3644,6 +3644,7 @@
         <xs:complexContent>
             <xs:extension base="SpecificResource">
                 <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="MultiPageFold"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="SignatureCell"/>
                 </xs:sequence>
                 <xs:attribute name="BinderySignatureSize" type="XYPair" use="optional"/>
@@ -5000,6 +5001,14 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:element name="MultiPageFold">
+        <xs:complexType>
+            <xs:attribute name="BinderySignatureID" type="xs:NMTOKEN" use="required"/>
+            <xs:attribute name="Orientation" type="Orientation" use="required"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+
     <xs:element name="NetworkHeader">
         <xs:complexType>
             <xs:attribute name="Name" type="xs:string" use="required"/>
@@ -5181,6 +5190,7 @@
             <xs:attribute name="MarginRight" type="xs:float" use="optional"/>
             <xs:attribute name="MarginTop" type="xs:float" use="optional"/>
             <xs:attribute name="Orientation" type="Orientation" use="optional"/>
+            <xs:attribute name="PositionOrd" type="xs:int" use="optional"/>
             <xs:attribute name="RelativeBox" type="rectangle" use="optional"/>
             <xs:attribute name="StackDepth" type="xs:int" use="optional"/>
             <xs:attribute name="StackOrd" type="xs:int" use="optional"/>
