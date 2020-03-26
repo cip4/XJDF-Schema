@@ -4557,16 +4557,6 @@
         </xs:complexContent>
     </xs:complexType>
     
-   <xs:element name="GangPreparationParams" substitutionGroup="SpecificResource" type="GangPreparationParams"/>
-    <xs:complexType name="GangPreparationParams">
-        <xs:complexContent>
-            <xs:extension base="SpecificResource">
-                <xs:attribute name="GangName" type="xs:NMTOKEN" use="optional"/>
-                <xs:attribute name="JobIDs" type="xs:NMTOKENS" use="optional"/>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-
     <xs:element name="GeneralID">
         <xs:complexType>
             <xs:attribute name="DataType" use="optional">
@@ -5691,6 +5681,7 @@
             <xs:attribute name="Operations" type="xs:NMTOKENS" use="optional"/>
             <xs:attribute name="OrderQuantity" type="xs:int" use="required"/>
             <xs:attribute name="PageDimension" type="XYPair" use="optional"/>
+            <xs:attribute name="PlacedQuantity" type="xs:int" use="optional"/>
             <xs:attribute name="Priority" type="xs:int" use="optional"/>
             <xs:attribute name="RotationPolicy" type="PositionPolicy" use="optional"/>
             <xs:attribute name="RunListRef" type="xs:IDREF" use="optional"/>
