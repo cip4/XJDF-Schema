@@ -4762,6 +4762,7 @@
                 <xs:attribute name="PaperRef" type="xs:IDREF" use="optional"/>
                 <xs:attribute name="PlateRef" type="xs:IDREF" use="optional"/>
                 <xs:attribute name="ProofPaperRef" type="xs:IDREF" use="optional"/>
+                <xs:attribute name="SheetLay" type="SheetLay" use="optional"/>
                 <xs:attribute name="SurfaceContentsBox" type="rectangle" use="optional"/>
                 <xs:attribute name="WorkStyle" type="WorkStyle" use="optional"/>
             </xs:extension>
