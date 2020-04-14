@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="job"
+  JobPartID="root" Types="SheetOptimizing">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.7 BLD 005" DeviceID="TestSender" Time="2020-03-22T09:35:00+01:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="SheetOptimizingParams" Usage="Input">
+    <Resource>
+      <SheetOptimizingParams>
+        <ConvertingConfig SheetHeightMax="2125.98425197"
+          SheetHeightMin="1984.2519685"
+          SheetWidthMax="2976.37795276" SheetWidthMin="2834.64566929"/>
+        <GangElement GangElementID="Gang_0" JobID="Gang_0" OrderQuantity="1025"/>
+        <GangElement GangElementID="Gang_1" JobID="Gang_10" OrderQuantity="975"/>
+        <GangElement GangElementID="Gang_2" JobID="Gang_20" OrderQuantity="925"/>
+        <GangElement GangElementID="Gang_3" JobID="Gang_30" OrderQuantity="875"/>
+      </SheetOptimizingParams>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Layout" Usage="Output">
+    <Resource>
+      <AmountPool>
+        <PartAmount Amount="513"/>
+      </AmountPool>
+      <Part SheetName="Sheet1"/>
+      <Layout>
+        <Position GangElementID="Gang_0" RelativeBox="0 0 0.5 0.25"/>
+        <Position GangElementID="Gang_0" RelativeBox="0 0.25 0.5 0.5"/>
+        <Position GangElementID="Gang_1" RelativeBox="0 0.5 0.5 0.75"/>
+        <Position GangElementID="Gang_1" RelativeBox="0 0.75 0.5 1"/>
+        <Position GangElementID="Gang_2" RelativeBox="0.5 0 1 0.25"/>
+        <Position GangElementID="Gang_2" RelativeBox="0.5 0.25 1 0.5"/>
+        <Position GangElementID="Gang_3" RelativeBox="0.5 0.5 1 0.75"/>
+        <Position GangElementID="Gang_3" RelativeBox="0.5 0.75 1 1"/>
+      </Layout>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->
