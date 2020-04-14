@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="job"
+  JobPartID="root" Types="SheetOptimizing" Version="2.1">
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="1.7 BLD 005" DeviceID="TestSender" Time="2020-03-22T10:59:14+01:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="SheetOptimizingParams" Usage="Input">
+    <Resource>
+      <SheetOptimizingParams>
+        <ConvertingConfig SheetHeightMax="2125.98425197"
+          SheetHeightMin="1984.2519685"
+          SheetWidthMax="2976.37795276" SheetWidthMin="2834.64566929"/>
+        <GangElement GangElementID="Gang_0" JobID="Gang_0" OrderQuantity="1025"/>
+        <GangElement GangElementID="Gang_1" JobID="Gang_10" OrderQuantity="975"/>
+        <GangElement GangElementID="Gang_2" JobID="Gang_20" OrderQuantity="925"/>
+        <GangElement GangElementID="Gang_3" JobID="Gang_30" OrderQuantity="875"/>
+      </SheetOptimizingParams>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="Layout" Usage="Output">
+    <Resource>
+      <Part SheetName="Sheet1"/>
+      <Layout>
+        <Position BinderySignatureID="BS_0_0"
+          GangElementID="Gang_0" PositionOrd="0" RelativeBox="0 0 0.5 0.5"/>
+        <Position BinderySignatureID="BS_0_0"
+          GangElementID="Gang_0" PositionOrd="0" RelativeBox="0 0.5 0.5 1"/>
+        <Position BinderySignatureID="BS_1_0"
+          GangElementID="Gang_1" PositionOrd="1" RelativeBox="0.5 0 1 0.5"/>
+        <Position BinderySignatureID="BS_1_0"
+          GangElementID="Gang_1" PositionOrd="1" RelativeBox="0.5 0.5 1 1"/>
+      </Layout>
+    </Resource>
+    <Resource>
+      <Part SheetName="Sheet2"/>
+      <Layout>
+        <Position BinderySignatureID="BS_2_0"
+          GangElementID="Gang_2" PositionOrd="2" RelativeBox="0 0 0.5 0.5"/>
+        <Position BinderySignatureID="BS_2_0"
+          GangElementID="Gang_2" PositionOrd="2" RelativeBox="0 0.5 0.5 1"/>
+        <Position BinderySignatureID="BS_3_0"
+          GangElementID="Gang_3" PositionOrd="3" RelativeBox="0.5 0 1 0.5"/>
+        <Position BinderySignatureID="BS_3_0"
+          GangElementID="Gang_3" PositionOrd="3" RelativeBox="0.5 0.5 1 1"/>
+      </Layout>
+    </Resource>
+  </ResourceSet>
+  <!-- END SNIPPET -->
+  <ResourceSet Name="BinderySignature" Usage="Input">
+    <Resource>
+      <Part BinderySignatureID="BS_0_0"/>
+      <BinderySignature BinderySignatureType="Grid"/>
+    </Resource>
+    <Resource>
+      <Part BinderySignatureID="BS_1_0"/>
+      <BinderySignature BinderySignatureType="Grid"/>
+    </Resource>
+    <Resource>
+      <Part BinderySignatureID="BS_2_0"/>
+      <BinderySignature BinderySignatureType="Grid"/>
+    </Resource>
+    <Resource>
+      <Part BinderySignatureID="BS_3_0"/>
+      <BinderySignature BinderySignatureType="Grid"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
