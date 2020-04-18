@@ -5670,6 +5670,11 @@
 
     <xs:element name="GangElement">
         <xs:complexType>
+           <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="GeneralID"/>
+                <xs:element maxOccurs="1" minOccurs="0" ref="Media"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="RunList"/>
+            </xs:sequence>
             <xs:attribute name="BinderySignatureIDs" type="xs:NMTOKENS" use="optional"/>
             <xs:attribute name="CollapseBleeds" type="xs:boolean" use="optional"/>
             <xs:attribute name="Dimension" type="XYPair" use="optional"/>
