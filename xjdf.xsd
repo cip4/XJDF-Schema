@@ -5652,10 +5652,18 @@
         <xs:complexContent>
             <xs:extension base="SpecificResource">
                 <xs:sequence>
-                    <xs:element maxOccurs="unbounded" minOccurs="1" ref="ConvertingConfig"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="ConvertingConfig"/>
                     <xs:element maxOccurs="unbounded" minOccurs="1" ref="GangElement"/>
                 </xs:sequence>
-            	<xs:attribute name="Policy" type="ForceGangPolicy" use="optional"/>
+            	<xs:attribute name="Policy" use="optional">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="All"/>
+                        <xs:enumeration value="Collect"/>
+                        <xs:enumeration value="Optimized"/>
+                    </xs:restriction>
+                 </xs:simpleType>
+            	</xs:attribute>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
