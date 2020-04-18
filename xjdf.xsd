@@ -1130,7 +1130,7 @@
         <xs:complexType>
             <xs:attribute name="GangNames" type="xs:NMTOKENS" use="optional"/>
             <xs:attribute name="Policy" use="optional">
-        		<xs:simpleType name="ForceGangPolicy">
+        		<xs:simpleType>
               		<xs:restriction base="xs:NMTOKEN">
             			<xs:enumeration value="All"/>
             			<xs:enumeration value="Optimized"/>
