@@ -6,7 +6,7 @@
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.7 BLD 003" DeviceID="TestSender" Time="2020-02-06T22:50:06+01:00"/>
+        AgentVersion="1.7 BLD 005" DeviceID="TestSender" Time="2020-03-22T09:35:00+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -21,18 +21,19 @@
     <Resource>
       <SheetOptimizingParams>
         <ConvertingConfig SheetHeightMax="2125.98425197"
-          SheetHeightMin="1984.2519685" SheetWidthMax="2976.37795276" SheetWidthMin="2834.64566929"/>
-        <GangElement GangElementID="Gang_0" OrderQuantity="1000"/>
-        <GangElement GangElementID="Gang_1" OrderQuantity="950"/>
-        <GangElement GangElementID="Gang_2" OrderQuantity="900"/>
-        <GangElement GangElementID="Gang_3" OrderQuantity="850"/>
+          SheetHeightMin="1984.2519685"
+          SheetWidthMax="2976.37795276" SheetWidthMin="2834.64566929"/>
+        <GangElement GangElementID="Gang_0" JobID="Gang_0" OrderQuantity="1025"/>
+        <GangElement GangElementID="Gang_1" JobID="Gang_10" OrderQuantity="975"/>
+        <GangElement GangElementID="Gang_2" JobID="Gang_20" OrderQuantity="925"/>
+        <GangElement GangElementID="Gang_3" JobID="Gang_30" OrderQuantity="875"/>
       </SheetOptimizingParams>
     </Resource>
   </ResourceSet>
   <ResourceSet Name="Layout" Usage="Output">
     <Resource>
       <AmountPool>
-        <PartAmount Amount="500"/>
+        <PartAmount Amount="513"/>
       </AmountPool>
       <Part SheetName="Sheet1"/>
       <Layout>
