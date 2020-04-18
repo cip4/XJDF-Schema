@@ -266,13 +266,6 @@
         </xs:restriction>
     </xs:simpleType>
                 
-    <xs:simpleType name="ForceGangPolicy">
-        <xs:restriction base="xs:NMTOKEN">
-            <xs:enumeration value="All"/>
-            <xs:enumeration value="Optimized"/>
-        </xs:restriction>
-    </xs:simpleType>
-
     <xs:simpleType name="Edge">
         <xs:restriction base="xs:NMTOKEN">
             <xs:enumeration value="Bottom"/>
@@ -1136,7 +1129,14 @@
     <xs:element name="GangCmdFilter">
         <xs:complexType>
             <xs:attribute name="GangNames" type="xs:NMTOKENS" use="optional"/>
-            <xs:attribute name="Policy" type="ForceGangPolicy" use="optional"/>
+            <xs:attribute name="Policy" use="optional">
+        		<xs:simpleType name="ForceGangPolicy">
+              		<xs:restriction base="xs:NMTOKEN">
+            			<xs:enumeration value="All"/>
+            			<xs:enumeration value="Optimized"/>
+        			</xs:restriction>
+    			</xs:simpleType>
+           </xs:attribute>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
