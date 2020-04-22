@@ -1203,6 +1203,7 @@
             <xs:attribute name="StatusDetails" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="ToolIDs" type="xs:NMTOKENS" use="optional"/>
             <xs:attribute name="Waste" type="xs:float" use="optional"/>
+            <xs:attribute name="WorkStepID" type="xs:NMTOKEN" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
