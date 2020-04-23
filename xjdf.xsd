@@ -801,10 +801,12 @@
 
     <xs:simpleType name="DeviceStatus">
         <xs:restriction base="xs:string">
+            <xs:enumeration value="Cleanup"/>
             <xs:enumeration value="Idle"/>
             <xs:enumeration value="NonProductive"/>
             <xs:enumeration value="Offline"/>
             <xs:enumeration value="Production"/>
+            <xs:enumeration value="Setup"/>
             <xs:enumeration value="Stopped"/>
         </xs:restriction>
     </xs:simpleType>
@@ -5683,6 +5685,8 @@
             </xs:sequence>
             <xs:attribute name="BinderySignatureIDs" type="xs:NMTOKENS" use="optional"/>
             <xs:attribute name="CollapseBleeds" type="xs:boolean" use="optional"/>
+            <xs:attribute name="CustomerID" type="xs:NMTOKEN" use="optional"/>
+            <xs:attribute name="DeliveryDate" type="xs:dateTime" use="optional"/>
             <xs:attribute name="Dimension" type="XYPair" use="optional"/>
             <xs:attribute name="DueDate" type="xs:dateTime" use="optional"/>
             <xs:attribute name="ExternalID" type="xs:NMTOKEN" use="optional"/>
