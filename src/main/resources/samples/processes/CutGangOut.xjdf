@@ -6,7 +6,7 @@
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.7 BLD 007" DeviceID="TestSender" Time="2020-04-26T20:03:31+02:00"/>
+        AgentVersion="1.7 BLD 007" DeviceID="TestSender" Time="2020-05-01T12:33:36+02:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -59,24 +59,12 @@
           GangElementID="Gang_3" RelativeBox="0.5 0.5 1 1"/>
       </Layout>
     </Resource>
-    <Resource>
-      <Layout/>
-    </Resource>
   </ResourceSet>
   <ResourceSet Name="BinderySignature" Usage="Input">
     <Resource>
       <Part BinderySignatureID="BS0"/>
-      <BinderySignature BinderySignatureType="Grid" NumberUp="1 1"/>
-    </Resource>
-    <Resource>
       <Part BinderySignatureID="BS1"/>
-      <BinderySignature BinderySignatureType="Grid" NumberUp="1 1"/>
-    </Resource>
-    <Resource>
       <Part BinderySignatureID="BS2"/>
-      <BinderySignature BinderySignatureType="Grid" NumberUp="1 1"/>
-    </Resource>
-    <Resource>
       <Part BinderySignatureID="BS3"/>
       <BinderySignature BinderySignatureType="Grid" NumberUp="1 1"/>
     </Resource>
