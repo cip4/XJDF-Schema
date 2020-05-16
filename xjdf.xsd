@@ -427,6 +427,7 @@
             <xs:enumeration value="NewsPlus"/>
             <xs:enumeration value="SCPlus"/>
             <xs:enumeration value="SCStandard"/>
+            <xs:enumeration value="SNP"/>
         </xs:restriction>
     </xs:simpleType>
 
