@@ -4753,6 +4753,7 @@
                 </xs:sequence>
                 <xs:attribute name="Anchor" type="Anchor" use="optional"/>
                 <xs:attribute name="Automated" type="xs:boolean" use="optional"/>
+                <xs:attribute name="ExpansionBox" type="rectangle" use="optional"/>
                 <xs:attribute name="FilmRef" type="xs:IDREF" use="optional"/>
                 <xs:attribute name="InnermostShingling" type="xs:float" use="optional"/>
                 <xs:attribute name="MaxCollect" type="xs:int" use="optional"/>
