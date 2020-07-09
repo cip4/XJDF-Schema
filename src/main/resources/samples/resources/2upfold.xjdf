@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--create a stripping in a layout
+ Stripping now consumes a layout-->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="2up" Types="Stripping">
+  <!-- START SNIPPET -->
+  <ResourceSet Name="Layout" Usage="Input">
+    <Resource>
+      <Layout SurfaceContentsBox="0 0 2834.64566929 1984.2519685">
+        <Position BinderySignatureID="BS1" Orientation="Rotate90"/>
+      </Layout>
+    </Resource>
+  </ResourceSet>
+  <!-- END SNIPPET -->
+  <!-- START SNIPPET -->
+  <ResourceSet Name="BinderySignature" Usage="Input">
+    <Resource>
+      <Part BinderySignatureID="BS1"/>
+      <BinderySignature BinderySignatureType="Fold" FoldCatalog="F16-7">
+        <MultiPageFold BinderySignatureID="BS1" Orientation="Rotate0"/>
+        <MultiPageFold BinderySignatureID="BS1" Orientation="Rotate0"/>
+      </BinderySignature>
+    </Resource>
+  </ResourceSet>
+  <!-- END SNIPPET -->
+</XJDF>
