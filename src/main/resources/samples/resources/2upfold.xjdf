@@ -6,7 +6,7 @@
   <ResourceSet Name="Layout" Usage="Input">
     <Resource>
       <Layout SurfaceContentsBox="0 0 2834.64566929 1984.2519685">
-        <Position BinderySignatureID="BS1" Orientation="Rotate90"/>
+        <Position BinderySignatureID="BS1"/>
       </Layout>
     </Resource>
   </ResourceSet>
@@ -15,7 +15,7 @@
   <ResourceSet Name="BinderySignature" Usage="Input">
     <Resource>
       <Part BinderySignatureID="BS1"/>
-      <BinderySignature BinderySignatureType="Fold" FoldCatalog="F16-7">
+      <BinderySignature BinderySignatureType="Fold" FoldCatalog="F16-14">
         <MultiPageFold BinderySignatureID="BS1" Orientation="Rotate0"/>
         <MultiPageFold BinderySignatureID="BS1" Orientation="Rotate0"/>
       </BinderySignature>
