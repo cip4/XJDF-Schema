@@ -1,0 +1,58 @@
+name: Publish XJDF Samples
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  publish-samples:
+    runs-on: windows-latest
+    steps:
+      - name: Get GitHub Access Token
+        id: access_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.CIP4_GITHUB_ACTIONS_APP_ID }}
+          private_key: ${{ secrets.CIP4_GITHUB_ACTIONS_APP_KEY }} 
+
+      - name: Check out 'XJDF Schema'...
+        uses: actions/checkout@v2
+        with:
+          path: 'schema'
+
+      - name: Check out 'JDF Specificaion'...
+        uses: actions/checkout@v2
+        with:
+          repository: 'cip4/JDF-Specification'
+          token: ${{ steps.access_token.outputs.token }}
+          path: 'spec'
+
+      - name: Check out 'Sample Builder'...
+        uses: actions/checkout@v2
+        with:
+          repository: 'cip4/cip4-sample-builder'
+          token: ${{ steps.access_token.outputs.token }}
+          path: 'cip4-sample-builder'
+
+      - name: Generate XJDF Samples
+        run: ./gradlew.bat --include-build ../cip4-sample-builder clean buildSamples
+        working-directory: ./schema
+
+      - name: Replace XJDF Samples in Specification 
+        run: |
+          rm -r -fo spec\FrameMaker\Examples\xjdf
+          move schema\build\generated-samples spec\FrameMaker\Examples\xjdf
+          
+      - name: Add Version Details
+        run: echo build $env:GITHUB_RUN_NUMBER > version.txt
+        working-directory: ./spec/FrameMaker/Examples/xjdf
+          
+      - name: Push changes
+        run: |
+          git config --global user.email "infrastructure@cip4.org"
+          git config --global user.name "R2D2"
+          git add --all
+          git commit -m "Update XJDF Samples"
+          git push
+        working-directory: ./spec
+        
