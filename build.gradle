@@ -59,14 +59,6 @@ try {
     }
 
     buildSamples.dependsOn test
-
-    gitPublish {
-        repoPath = file('../spec')
-        repoUri = 'ssh://git@bitbucket.cip4.org:7999/spec/jdf-specification.git'
-        relativeTargetPath = new File('FrameMaker/generated/examples/xjdf')
-        username = project.property('gitUsername')
-        password = project.property('gitPassword')
-    }
 } catch (ClassNotFoundException e) {
     // void
 }

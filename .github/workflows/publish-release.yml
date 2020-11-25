@@ -1,0 +1,32 @@
+name: Publish Release
+
+on:
+  push:
+    branches: [ release/* ]
+
+env:
+  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  RUN_REGION: europe-west1
+
+jobs:
+  publish-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out sources...
+        uses: actions/checkout@v2
+
+      - name: Setup GCloud CLI
+        uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+        with:
+          version: '298.0.0'
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+
+      - name: Copy files to GCloud Bucket
+        run: gsutil cp ./*.xsd  gs://schema.cip4.org/jdfschema_2_${GITHUB_REF##*JDF_2.}
+
+      - name: Create ZIP Archive
+        run: zip jdfschema_2_${GITHUB_REF##*JDF_2.}.zip *.xsd
+
+      - name: Copy ZIP Archive to GCloud Bucket
+        run: gsutil cp ./*.zip  gs://schema.cip4.org/
