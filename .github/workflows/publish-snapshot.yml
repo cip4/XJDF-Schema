@@ -23,7 +23,7 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
 
       - name: Copy files to GCloud Bucket
-        run: gsutil cp ./*.xsd  gs://schema.cip4.org/jdfschema_2_dev
+        run: gsutil cp ./*.xsd  gs://schema.cip4.org/jdfschema_2_dev/
 
       - name: Create ZIP Archive
         run: zip jdfschema_2_dev.zip *.xsd
