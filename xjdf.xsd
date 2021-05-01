@@ -6816,10 +6816,10 @@
     <xs:complexType name="QueryKnownDevices">
         <xs:complexContent>
             <xs:extension base="Query">
-                <xs:attribute name="Languages" type="languages" use="optional"/>
                 <xs:sequence>
                     <xs:element maxOccurs="1" minOccurs="0" ref="DeviceFilter"/>
                 </xs:sequence>
+                <xs:attribute name="Languages" type="languages" use="optional"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -6901,10 +6901,10 @@
     <xs:complexType name="QueryNotification">
         <xs:complexContent>
             <xs:extension base="Query">
-                <xs:attribute name="Languages" type="languages" use="optional"/>
                 <xs:sequence>
                     <xs:element maxOccurs="1" minOccurs="0" ref="NotificationFilter"/>
                 </xs:sequence>
+                <xs:attribute name="Languages" type="languages" use="optional"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -7036,10 +7036,10 @@
     <xs:complexType name="QueryResource">
         <xs:complexContent>
             <xs:extension base="Query">
-               <xs:attribute name="Languages" type="languages" use="optional"/>
                <xs:sequence>
                     <xs:element maxOccurs="1" minOccurs="1" ref="ResourceQuParams"/>
                 </xs:sequence>
+               <xs:attribute name="Languages" type="languages" use="optional"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -7126,10 +7126,10 @@
     <xs:complexType name="QueryStatus">
         <xs:complexContent>
             <xs:extension base="Query">
-                <xs:attribute name="Languages" type="languages" use="optional"/>
                 <xs:sequence>
                     <xs:element maxOccurs="1" minOccurs="0" ref="StatusQuParams"/>
                 </xs:sequence>
+                <xs:attribute name="Languages" type="languages" use="optional"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
