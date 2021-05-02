@@ -14,10 +14,10 @@ jobs:
     steps:
       - name: Check out sources...
         uses: actions/checkout@v2
-
+        
       - name: Update Parameters
         run: |
-          sed -i "s|@@branch@@|$GITHUB_REF|g" *.xsd
+          sed -i "s|@@branch@@|${GITHUB_REF}|g" *.xsd
 
       - name: Setup GCloud CLI
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
