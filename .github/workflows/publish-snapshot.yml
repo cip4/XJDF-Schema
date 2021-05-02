@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Check out sources...
         uses: actions/checkout@v2
-        
+
       - name: Update Parameters
         run: |
           sed -i "s|@@branch@@|${GITHUB_REF}|g" *.xsd
@@ -40,3 +40,10 @@ jobs:
 
       - name: Copy tar.gz Archive to GCloud Bucket
         run: gsutil cp ./*.tar.gz  gs://schema.cip4.org/
+
+      # Upload artifact
+      - name: Upload Document
+        uses: actions/upload-artifact@v2
+        with:
+          name: xsd-artifact
+          path: xjdf.xsd
