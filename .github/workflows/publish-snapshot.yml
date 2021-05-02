@@ -19,7 +19,7 @@ jobs:
         run: |
           NOW=$(TZ=GMT date +"%Y-%m-%d %H:%M:%SZ")
           sed -i "s|@@branch@@|${GITHUB_REF#refs/heads/}|g" *.xsd
-          sed -i "s|@@version@@|2.x-SNAPSHOT-${GITHUB_SHA:0:7}|g" *.xsd
+          sed -i "s|@@version@@|2.x.${GITHUB_RUN_NUMBER}-SNAPSHOT-${GITHUB_SHA:0:7}|g" *.xsd
           sed -i "s|@@buildTime@@|${NOW}|g" *.xsd
       - name: Setup GCloud CLI
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
