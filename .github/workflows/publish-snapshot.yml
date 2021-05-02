@@ -9,7 +9,7 @@ env:
   RUN_REGION: europe-west1
 
 jobs:
-  publish-samples:
+  publish-snapshot:
     runs-on: ubuntu-latest
     steps:
       - name: Check out sources...
