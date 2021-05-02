@@ -15,6 +15,13 @@ jobs:
       - name: Check out sources...
         uses: actions/checkout@v2
 
+      - name: Update Parameters
+        run: |
+          NOW=$(TZ=GMT date +"%Y-%m-%d %H:%M:%SZ")
+          sed -i "s|@@branch@@|${GITHUB_REF#refs/heads/}|g" *.xsd
+          sed -i "s|@@version@@|${GITHUB_REF#refs/heads/release/JDF_}.${GITHUB_RUN_NUMBER}-${GITHUB_SHA:0:7}|g" *.xsd
+          sed -i "s|@@buildTime@@|${NOW}|g" *.xsd
+
       - name: Setup GCloud CLI
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
@@ -36,3 +43,9 @@ jobs:
 
       - name: Copy tar.gz Archive to GCloud Bucket
         run: gsutil cp ./*.tar.gz  gs://schema.cip4.org/
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: xsd-artifact
+          path: xjdf.xsd
