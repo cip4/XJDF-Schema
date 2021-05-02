@@ -17,8 +17,9 @@ jobs:
 
       - name: Update Parameters
         run: |
-          sed -i "s|@@branch@@|${GITHUB_REF}|g" *.xsd
-
+          sed -i "s|@@branch@@|${GITHUB_REF#refs/heads/}|g" *.xsd
+          sed -i "s|@@version@@|SNAPSHOT|g" *.xsd
+          sed -i "s|@@commitId@@|${GITHUB_SHA:0:7}|g" *.xsd
       - name: Setup GCloud CLI
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
