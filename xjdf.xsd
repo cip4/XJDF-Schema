@@ -9,7 +9,7 @@
     Issue Tracking: https://jira.cip4.org/projects/JDF
     
     Copyright (c) 2001-@@year@@. All rights reserved.
-    License: https://github.com/cip4/JDF-Schema/blob/@@branch@@/LICENSE.md
+    License: https://github.com/cip4/XJDF-Schema/blob/@@branch@@/LICENSE.md
 -->
 <xs:schema targetNamespace="http://www.CIP4.org/JDFSchema_2_0"
            xmlns="http://www.CIP4.org/JDFSchema_2_0"
