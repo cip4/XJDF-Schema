@@ -15,7 +15,7 @@
            xmlns="http://www.CIP4.org/JDFSchema_2_0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
-           attributeFormDefault="unqualified
+           attributeFormDefault="unqualified"
            version="@@version@@">
            
     <xs:simpleType name="language">
