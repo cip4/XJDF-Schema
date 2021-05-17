@@ -6625,7 +6625,7 @@
     <xs:complexType name="PrintCondition">
         <xs:complexContent>
             <xs:extension base="SpecificResource">
-                  <xs:attribute name="ColorantOrder" type="xs:NMTOKENS" use="required"/>
+                  <xs:attribute name="ColorantOrder" type="xs:NMTOKENS" use="optional"/>
                   <xs:attribute name="Name" type="xs:NMTOKEN" use="required"/>
                   <xs:attribute name="PrintQuality" type="PrintQuality" use="optional"/>
             </xs:extension>
