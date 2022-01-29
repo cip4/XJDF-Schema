@@ -3682,21 +3682,25 @@
 
     <xs:element name="BoxFoldAction">
         <xs:complexType>
+        	<xs:sequence>
+                    <xs:element ref="Glue"maxOccurs="0" minOccurs="1"/>
+			</xs:sequence>
             <xs:attribute name="Action" use="required">
                 <xs:simpleType>
                     <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="BackFoldComplete"/>
+                        <xs:enumeration value="BackFoldDiagonal"/>
+                        <xs:enumeration value="BackFoldCompleteDiagonal"/>
+                        <xs:enumeration value="FrontFoldComplete"/>
+                        <xs:enumeration value="FrontFoldDiagonal"/>
+                        <xs:enumeration value="FrontFoldCompleteDiagonal"/>
+                        <xs:enumeration value="Glue"/>
                         <xs:enumeration value="LongFoldLeftToRight"/>
                         <xs:enumeration value="LongFoldRightToLeft"/>
                         <xs:enumeration value="LongPreFoldLeftToRight"/>
                         <xs:enumeration value="LongPreFoldRightToLeft"/>
-                        <xs:enumeration value="FrontFoldComplete"/>
-                        <xs:enumeration value="FrontFoldDiagonal"/>
-                        <xs:enumeration value="FrontFoldCompleteDiagonal"/>
-                        <xs:enumeration value="BackFoldComplete"/>
-                        <xs:enumeration value="BackFoldDiagonal"/>
-                        <xs:enumeration value="BackFoldCompleteDiagonal"/>
-                        <xs:enumeration value="ReverseFold"/>
                         <xs:enumeration value="Milling"/>
+                        <xs:enumeration value="ReverseFold"/>
                         <xs:enumeration value="Rotate90"/>
                         <xs:enumeration value="Rotate180"/>
                         <xs:enumeration value="Rotate270"/>
