@@ -1485,6 +1485,7 @@
             </xs:attribute>
             <xs:attribute name="ResourceName" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="Scope" type="Scope" use="required"/>
+            <xs:attribute name="Types" type="xs:NMTOKENS" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
@@ -1530,7 +1531,13 @@
 
     <xs:element name="StatusQuParams">
         <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="Part"/>
+            </xs:sequence>
+            <xs:attribute name="JobID" type="xs:NMTOKEN" use="optional"/> 
+            <xs:attribute name="JobPartID" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="QueueEntryID" type="xs:NMTOKEN" use="optional"/>
+            <xs:attribute name="Types" type="xs:NMTOKENS" use="optional"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
         </xs:complexType>
     </xs:element>
