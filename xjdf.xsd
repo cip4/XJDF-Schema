@@ -3690,7 +3690,7 @@
     <xs:element name="BoxFoldAction">
         <xs:complexType>
         	<xs:sequence>
-                    <xs:element ref="Glue"maxOccurs="0" minOccurs="1"/>
+                    <xs:element ref="Glue" maxOccurs="0" minOccurs="1"/>
 			</xs:sequence>
             <xs:attribute name="Action" use="required">
                 <xs:simpleType>
