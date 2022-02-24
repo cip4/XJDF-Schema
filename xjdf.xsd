@@ -209,6 +209,7 @@
     <xs:simpleType name="Scope">
         <xs:restriction base="xs:NMTOKEN">
             <xs:enumeration value="Allowed"/>
+            <xs:enumeration value="Device"/>
             <xs:enumeration value="Estimate"/>
             <xs:enumeration value="Job"/>
             <xs:enumeration value="Present"/>
