@@ -15,6 +15,16 @@ jobs:
       - name: Check out sources...
         uses: actions/checkout@v2
 
+      - name: Setup JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: 11
+          cache: 'gradle'
+
+      - name: Verify
+        run: ./gradlew test --no-daemon
+
       - name: Update Parameters
         run: |
           NOW=$(TZ=GMT date +"%Y-%m-%d %H:%M:%SZ")
