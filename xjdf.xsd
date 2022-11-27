@@ -2774,6 +2774,7 @@
                 <xs:sequence>
                     <xs:element maxOccurs="unbounded" minOccurs="0" ref="IdentificationField"/>
                 </xs:sequence>
+                <xs:attribute name="SerialNumber" type="xs:string" use="optional"/>
                 <xs:attribute name="ToolType" type="xs:NMTOKEN" use="optional"/>
             </xs:extension>
         </xs:complexContent>
