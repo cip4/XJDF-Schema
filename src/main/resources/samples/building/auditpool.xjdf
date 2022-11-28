@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_1_1">
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" 
+  JobID="ChangeOrder" JobPartID="Amount" Types="Folding">
   <AuditPool>
     <AuditCreated>
       <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:21+01:00"/>
     </AuditCreated>
     <AuditStatus>
       <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:21+01:00"/>
-      <DeviceInfo/>
+      <DeviceInfo Status="Idle"/>
     </AuditStatus>
     <AuditResource>
       <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:21+01:00"/>
-      <ResourceInfo/>
+      <ResourceInfo>
+        <ResourceSet Name="Component">
+        </ResourceSet>
+      </ResourceInfo>
     </AuditResource>
     <AuditStatus>
       <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:21+01:00"/>
-      <DeviceInfo TotalProductionCounter="424242"/>
+      <DeviceInfo TotalProductionCounter="424242" Status="Idle"/>
     </AuditStatus>
     <AuditResource>
       <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:31+01:00"/>
-      <ResourceInfo/>
+      <ResourceInfo>
+        <ResourceSet Name="Component">
+        </ResourceSet>
+      </ResourceInfo>
     </AuditResource>
     <AuditNotification>
       <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:31+01:00"/>
+      <Notification Class="Information"/>
     </AuditNotification>
     <AuditProcessRun>
       <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:31+01:00"/>
+      <ProcessRun Start="2022-11-06T14:57:31+01:00" End="2022-11-06T14:57:31+01:00" EndStatus="Completed" />
     </AuditProcessRun>
   </AuditPool>
 </XJDF>
