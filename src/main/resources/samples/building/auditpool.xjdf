@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_1_1">
+  <AuditPool>
+    <AuditCreated>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:21+01:00"/>
+    </AuditCreated>
+    <AuditStatus>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:21+01:00"/>
+      <DeviceInfo/>
+    </AuditStatus>
+    <AuditResource>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:21+01:00"/>
+      <ResourceInfo/>
+    </AuditResource>
+    <AuditStatus>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:21+01:00"/>
+      <DeviceInfo TotalProductionCounter="424242"/>
+    </AuditStatus>
+    <AuditResource>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:31+01:00"/>
+      <ResourceInfo/>
+    </AuditResource>
+    <AuditNotification>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:31+01:00"/>
+    </AuditNotification>
+    <AuditProcessRun>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2022-11-06T14:57:31+01:00"/>
+    </AuditProcessRun>
+  </AuditPool>
+</XJDF>
+<!-- END SNIPPET -->
