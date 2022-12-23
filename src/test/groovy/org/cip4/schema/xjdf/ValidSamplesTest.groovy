@@ -5,7 +5,7 @@ import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
 
 import javax.xml.XMLConstants
-import javax.xml.bind.ValidationException
+import jakarta.xml.bind.ValidationException
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource
 import javax.xml.validation.Schema
