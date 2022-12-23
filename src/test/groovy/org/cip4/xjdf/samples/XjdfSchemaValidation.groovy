@@ -1,6 +1,5 @@
 package org.cip4.xjdf.samples
 
-import org.cip4.lib.xjdf.xml.XJdfValidator
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.params.ParameterizedTest
@@ -8,8 +7,8 @@ import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.MethodSource
 import groovy.io.FileType
 
+import jakarta.xml.bind.ValidationException
 import javax.xml.XMLConstants
-import javax.xml.bind.ValidationException
 import javax.xml.transform.stream.StreamSource
 import javax.xml.validation.SchemaFactory
 import javax.xml.validation.Validator
