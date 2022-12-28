@@ -3369,7 +3369,7 @@
     <xs:element name="Address">
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" maxOccurs="unbounded" ref="AddressLine"/>
+                <xs:element type="textElement" minOccurs="0" maxOccurs="unbounded" name="AddressLine"/>
             </xs:sequence>
             <xs:attribute name="AddressUsage" type="xs:NMTOKEN" use="optional"/>
             <xs:attribute name="City" type="xs:string" use="optional"/>
@@ -3391,16 +3391,6 @@
         </xs:complexType>
     </xs:element>
     
-    <xs:element name="AddressLine">
-        <xs:complexType>
-            <xs:simpleContent>
-                <xs:extension base="xs:string">
-                    <xs:anyAttribute namespace="##other" processContents="lax"/>
-                </xs:extension>
-            </xs:simpleContent>
-        </xs:complexType>
-    </xs:element>
-
     <xs:element name="AdvancedParams">
         <xs:complexType>
             <xs:attribute name="AllowPSXObjects" type="xs:boolean" use="optional"/>
