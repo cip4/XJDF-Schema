@@ -1851,8 +1851,10 @@
                                     <xs:enumeration value="1.5"/>
                                     <xs:enumeration value="1.6"/>
                                     <xs:enumeration value="1.7"/>
+                                    <xs:enumeration value="1.8"/>
                                     <xs:enumeration value="2.0"/>
                                     <xs:enumeration value="2.1"/>
+                                    <xs:enumeration value="2.2"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:list>
