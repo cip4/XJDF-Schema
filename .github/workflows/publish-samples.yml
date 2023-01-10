@@ -3,8 +3,6 @@ name: Publish XJDF Samples
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-    - '.github/**'
 
 jobs:
   publish-samples:
