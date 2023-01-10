@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <XJDF JobID="JOB-42" Types="ConventionalPrinting"
       xmlns="http://www.CIP4.org/JDFSchema_2_0">
     <ResourceSet Name="ExposedMedia" Usage="Input" ProcessUsage="Plate">

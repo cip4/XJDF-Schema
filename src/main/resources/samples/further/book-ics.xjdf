@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJDF JobID="JOB-1234" Types="Collecting Stitching Trimming"
            Category="MISFin.StitchFin" ICSVersions="MISFin_L1-2.0"
            xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">

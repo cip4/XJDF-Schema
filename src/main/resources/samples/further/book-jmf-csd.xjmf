@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
     <xjdf:Header ID="XJMF_ID" DeviceID="DEVICE_ID_MIS"
                  Time="2016-11-11T13:03:38+02:00" />

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
     <ResponseKnownDevices ID="d42" refID="MESSAGE_ID" ReturnCode="0">
         <Sender DeviceID="DEVICE_ID_CONTROLLER" Time="2016-11-11T11:51:14+02:00" />
