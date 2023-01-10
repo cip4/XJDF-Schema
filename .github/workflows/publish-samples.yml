@@ -36,6 +36,12 @@ jobs:
           token: ${{ steps.access_token.outputs.token }}
           path: 'cip4-sample-builder'
 
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'gradle'
+
       - name: Generate XJDF Samples
         run: ./gradlew.bat --include-build ../cip4-sample-builder clean buildSamples
         working-directory: ./schema
