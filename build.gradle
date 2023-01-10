@@ -3,11 +3,9 @@ buildscript {
     //      ./gradlew --include-build ../sample-builder clean buildSamples
     // (where "../sample-builder" points to the code of the sample builder repo)
     try {
-        def sampleBuilder = gradle.includedBuild('sample-builder')
+        gradle.includedBuild('cip4-sample-builder')
         dependencies {
-            for (def module in sampleBuilder.availableModules) {
-                classpath((String) module.left)
-            }
+            classpath("org.cip4:cip4-sample-builder:1.0-SNAPSHOT")
         }
     } catch (UnknownDomainObjectException e) {
         // nothing to do
