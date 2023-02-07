@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="MediaLayers" Types="Product">
+<!-- START SNIPPET -->
+<ResourceSet Name="Media" Usage="Input">
+  <Resource>
+    <Media MediaType="SelfAdhesive">
+      <MediaLayers>
+        <Media MediaType="Paper"/>
+        <Glue AreaGlue="true"/>
+        <Media MediaType="Paper"/>
+      </MediaLayers>
+    </Media>
+  </Resource>
+</ResourceSet>
+  <!-- END SNIPPET -->
+</XJDF>
