@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="J1"
+  Types="Product" Version="2.2">
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="2.1.7.33"
+        DeviceID="CIP4_JDF_Writer_Java" Time="2023-03-21T15:50:34+01:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource DescriptiveName="my node">
+      <Part SheetName="Sheet1"/>
+      <NodeInfo Start="2023-03-21T15:50:34+01:00" Status="Waiting"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
