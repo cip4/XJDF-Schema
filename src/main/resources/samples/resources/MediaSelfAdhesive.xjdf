@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- START SNIPPET -->
 <XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Converting"
-  JobPartID="Corrugated" Types="ConventionalPrinting">
+  JobPartID="Corrugated" Types="ConventionalPrinting" Version="2.1">
+  <!-- START SNIPPET -->
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:11+00:00"/>
+        AgentVersion="2.1.7 BLD 034" DeviceID="CIP4_JDF_Writer_Java" Time="2023-03-29T15:26:17+02:00"/>
     </AuditCreated>
   </AuditPool>
-  <!-- START SNIPPET -->
-  <!-- END SNIPPET -->
   <ResourceSet Name="NodeInfo" Usage="Input">
     <Resource>
       <NodeInfo/>
@@ -29,5 +27,5 @@
       </Media>
     </Resource>
   </ResourceSet>
+  <!-- END SNIPPET -->
 </XJDF>
-<!-- END SNIPPET -->
