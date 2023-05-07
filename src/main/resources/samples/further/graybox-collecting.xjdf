@@ -49,15 +49,15 @@
     <ResourceSet Name="BinderySignature" Usage="Input">
         <Resource>
             <Part BinderySignatureID="BS-1" ProductPart="COVER-ID"/>
-            <BinderySignature FoldCatalog="F4-1"/>
+            <BinderySignature FoldCatalog="F4-1" BinderySignatureType="Fold"/>
         </Resource>
         <Resource>
             <Part BinderySignatureID="BS-2" ProductPart="BODY-ID"/>
-            <BinderySignature FoldCatalog="F16-7"/>
+            <BinderySignature FoldCatalog="F16-7" BinderySignatureType="Fold"/>
         </Resource>
         <Resource>
             <Part BinderySignatureID="BS-3" ProductPart="BODY-ID"/>
-            <BinderySignature FoldCatalog="F4-1"/>
+            <BinderySignature FoldCatalog="F4-1" BinderySignatureType="Fold"/>
         </Resource>
     </ResourceSet>
     <ResourceSet Name="Component" Usage="Input">

@@ -22,7 +22,7 @@ class XjdfSchemaValidation {
     static Collection<Arguments> data() {
         List<Arguments> files = new ArrayList<>();
         new File(XjdfSchemaValidation.class.getResource("/samples").getFile()).eachFileRecurse(FileType.FILES) { File file ->
-            if (file.name.endsWith('.xjdf') && !file.absolutePath.contains('further')) {
+            if (file.name.endsWith('.xjdf') || file.name.endsWith('.xjmf')) {
                 files.add(Arguments.of(file))
             }
         }

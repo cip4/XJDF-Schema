@@ -8,19 +8,19 @@
         <xjdf:SubscriptionInfo ChannelID="CNL_1" DeviceID="MIS_ID"
                                MessageType="Status">
             <xjdf:Subscription URL="http://mis.example.org/jmf"
-                               RepeatTime="30" RetryPolicy="DiscardAtNextSignal"
+                               RepeatTime="30"
                                ChannelMode="Reliable" />
         </xjdf:SubscriptionInfo>
         <xjdf:SubscriptionInfo ChannelID="CNL_2" DeviceID="MIS_ID"
                                MessageType="Notification">
             <xjdf:Subscription URL="http://mis.example.org/jmf"
-                               RepeatTime="30" RetryPolicy="DiscardAtNextSignal"
+                               RepeatTime="30"
                                ChannelMode="Reliable" />
         </xjdf:SubscriptionInfo>
         <xjdf:SubscriptionInfo ChannelID="CNL_2" DeviceID="MIS_ID"
                                MessageType="Resource">
             <xjdf:Subscription URL="http://mis.example.org/jmf"
-                               RepeatTime="30" RetryPolicy="DiscardAtNextSignal"
+                               RepeatTime="30"
                                ChannelMode="Reliable" />
         </xjdf:SubscriptionInfo>
     </xjdf:ResponseKnownSubscriptions>

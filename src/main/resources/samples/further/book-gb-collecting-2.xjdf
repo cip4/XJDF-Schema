@@ -61,15 +61,15 @@
         <xjdf:Resource>
             <xjdf:Part BinderySignatureID="BS-1"
                        ProductPart="COVER-ID" />
-            <xjdf:BinderySignature FoldCatalog="F4-1"/>
+            <xjdf:BinderySignature FoldCatalog="F4-1" BinderySignatureType="Fold"/>
         </xjdf:Resource>
         <xjdf:Resource>
             <xjdf:Part BinderySignatureID="BS-2" ProductPart="BODY-ID" />
-            <xjdf:BinderySignature FoldCatalog="F16-7"/>
+            <xjdf:BinderySignature FoldCatalog="F16-7" BinderySignatureType="Fold"/>
         </xjdf:Resource>
         <xjdf:Resource>
             <xjdf:Part BinderySignatureID="BS-3" ProductPart="BODY-ID" />
-            <xjdf:BinderySignature FoldCatalog="F4-1"/>
+            <xjdf:BinderySignature FoldCatalog="F4-1" BinderySignatureType="Fold"/>
         </xjdf:Resource>
     </xjdf:ResourceSet>
     <xjdf:ResourceSet Name="Component" Usage="Input">
