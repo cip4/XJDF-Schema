@@ -5151,6 +5151,7 @@
 			<xs:extension base="SpecificResource">
 				<xs:sequence>
 					<xs:element maxOccurs="unbounded" minOccurs="0" ref="FileSpec"/>
+					<xs:element maxOccurs="unbounded" minOccurs="0" ref="RuleLength"/>
 					<xs:element maxOccurs="unbounded" minOccurs="0" ref="Shape"/>
 				</xs:sequence>
 				<xs:attribute name="Area" type="xs:float" use="optional"/>
