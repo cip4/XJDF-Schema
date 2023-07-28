@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- START SNIPPET -->
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
+  JobID="PDLCreationExample" Types="PDLCreation" Version="2.1">
+  <!-- END SNIPPET -->
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java"
+        AgentVersion="2.1.7 BLD 034" DeviceID="TestSender" Time="2023-07-28T19:20:45+02:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <!-- START SNIPPET -->
+  <!-- END SNIPPET -->
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet Name="PDLCreationParams" Usage="Input">
+    <Resource>
+      <PDLCreationParams MimeType="application/pdf"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="RunList" Usage="Input">
+    <Resource>
+      <Part PageNumber="0 0"/>
+      <RunList NPage="1">
+        <FileSpec MimeType="image/tiff" URL="file://page0.tif"/>
+      </RunList>
+    </Resource>
+    <Resource>
+      <Part PageNumber="1 1"/>
+      <RunList NPage="1">
+        <FileSpec MimeType="image/tiff" URL="file://page1.tif"/>
+      </RunList>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="RunList" Usage="Output">
+    <Resource>
+      <RunList NPage="2">
+        <FileSpec MimeType="application/pdf" URL="file://2page.pdf"/>
+      </RunList>
+    </Resource>
+  </ResourceSet>
+</XJDF>
+<!-- END SNIPPET -->
