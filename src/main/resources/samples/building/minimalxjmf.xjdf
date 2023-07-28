@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0" Version="2.1">
+  <Header DeviceID="CIP4_JDF_Writer_Java" ID="l_230725_181523745_000000" Time="2023-07-25T18:15:23+02:00"/>
+  <SignalNotification>
+    <Header DeviceID="CIP4_JDF_Writer_Java"
+      ID="l_230725_181523772_000001" Time="2023-07-25T18:15:23+02:00"/>
+    <Notification Class="Event"/>
+  </SignalNotification>
+</XJMF>

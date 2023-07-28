@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="J1"
+  Types="Product" Version="2.1">
+  <AuditPool>
+    <AuditCreated>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2023-07-25T19:31:00+02:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <Comment Author="Wyle E Coyote" PersonalID="p123">line 1 
+line 2</Comment>
+</XJDF>

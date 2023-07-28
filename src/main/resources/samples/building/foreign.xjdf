@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="J1"
+  Types="Product" Version="2.1">
+  <AuditPool>
+    <AuditCreated>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2023-07-25T19:31:00+02:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet Name="Foo:FooBar" Usage="Input">
+    <Resource>
+      <Foo:FooBar xmlns:Foo="www.foo.com"/>
+    </Resource>
+  </ResourceSet>
+</XJDF>
