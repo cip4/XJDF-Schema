@@ -1,0 +1,33 @@
+name: Pull Request
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  verify-samples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out 'XJDF Schema'...
+        uses: actions/checkout@v3
+        with:
+          path: 'schema'
+
+      - name: Check out 'Sample Builder'...
+        uses: actions/checkout@v3
+        with:
+          repository: 'cip4/cip4-sample-builder'
+          token: ${{ steps.access_token.outputs.token }}
+          path: 'cip4-sample-builder'
+
+      - name: Setup JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 11
+          cache: 'gradle'
+
+      - name: Verify
+        run: ./gradlew --include-build ../cip4-sample-builder clean test buildSamples --no-daemon
+        working-directory: ./schema
