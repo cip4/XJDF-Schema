@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="J1"
+  Types="Product" Version="2.2">
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="2.1.7.38"
+        DeviceID="CIP4_JDF_Writer_Java" Time="2023-09-10T09:49:15+02:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet Name="Contact" Usage="Input">
+    <Resource>
+      <!-- START SNIPPET -->
+      <Contact>
+        <Company OrganizationName="ACME">
+          <OrganizationalUnit>ACME Unit 1</OrganizationalUnit>
+          <OrganizationalUnit>ACME Unit 2</OrganizationalUnit>
+          <OrganizationalUnit>ACME Unit 3</OrganizationalUnit>
+        </Company>
+      </Contact>
+      <!-- END SNIPPET -->
+    </Resource>
+  </ResourceSet>
+</XJDF>
