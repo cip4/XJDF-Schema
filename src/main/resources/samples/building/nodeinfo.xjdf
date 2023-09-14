@@ -3,13 +3,13 @@
   Types="Product" Version="2.2">
   <AuditPool>
     <AuditCreated>
-      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2023-07-25T19:31:01+02:00"/>
+      <Header DeviceID="CIP4_JDF_Writer_Java" Time="2023-09-10T09:49:17+02:00"/>
     </AuditCreated>
   </AuditPool>
   <ResourceSet Name="NodeInfo" Usage="Input">
     <Resource DescriptiveName="my node">
       <Part SheetName="Sheet1"/>
-      <NodeInfo Start="2023-07-25T19:31:01+02:00" Status="Waiting"/>
+      <NodeInfo Start="2023-09-10T09:49:17+02:00" Status="Waiting"/>
     </Resource>
   </ResourceSet>
 </XJDF>
