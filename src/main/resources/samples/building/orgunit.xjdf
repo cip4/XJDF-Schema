@@ -10,8 +10,6 @@
   <ResourceSet Name="Contact" Usage="Input">
     <!-- START SNIPPET -->
     <Resource>
-      <!-- START SNIPPET -->
-      <!-- END SNIPPET -->
       <Contact>
         <Company OrganizationName="ACME">
           <OrganizationalUnit>ACME Unit 1</OrganizationalUnit>
