@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Layout"
-  JobPartID="Tiling" Types="Imposition">
+  JobPartID="Tiling" Types="Imposition" Version="2.1">
   <AuditPool>
     <AuditCreated>
-      <Header DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:36+00:00"/>
+      <Header DeviceID="TestSender" Time="2024-03-21T19:31:30+01:00"/>
     </AuditCreated>
   </AuditPool>
   <ResourceSet Name="NodeInfo" Usage="Input">
@@ -15,17 +15,19 @@
   <ResourceSet Name="Layout" Usage="Input">
     <Resource>
       <Part Side="Front" TileID="0 0"/>
-      <Layout SurfaceContentsBox="0 0 600 420">
-        <PlacedObject CTM="1 0 0 1 0 0" ClipBox="0 0 600 420" Ord="0">
+      <Layout SurfaceContentsBox="0 0 1820 1220">
+        <PlacedObject CTM="1 0 0 1 0 0" ClipBox="0 0 620 420" Ord="0"
+          TrimCTM="1 0 0 1 -10 -10" TrimSize="600 400">
           <ContentObject/>
         </PlacedObject>
       </Layout>
     </Resource>
-    <!--More tiles here-->
+    <!--7 further tiles '0 1' to '2 1' omitted for brevity-->
     <Resource>
-      <Part Side="Front" TileID="1 1"/>
-      <Layout SurfaceContentsBox="0 0 600 420">
-        <PlacedObject CTM="1 0 0 1 -600 -420" ClipBox="0 0 600 420" Ord="0">
+      <Part Side="Front" TileID="2 2"/>
+      <Layout SurfaceContentsBox="0 0 1820 1220">
+        <PlacedObject CTM="1 0 0 1 -1200 -800" ClipBox="0 0 620 420"
+          Ord="0" TrimCTM="1 0 0 1 -1210 -810" TrimSize="600 400">
           <ContentObject/>
         </PlacedObject>
       </Layout>
