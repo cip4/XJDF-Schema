@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
 <XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="RunList"
-  Types="DigitalPrinting" Version="2.1">
+  Types="DigitalPrinting" Version="2.2">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 011" DeviceID="TestSender" ID="l_000002" Time="2019-06-05T22:10:51+02:00"/>
+        AgentVersion="2.1.7 BLD 034" DeviceID="TestSender" Time="2024-03-26T19:58:29+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -25,13 +25,10 @@
     </Resource>
   </ResourceSet>
   <ResourceSet Name="Media">
-    <Resource DescriptiveName="Media for front and back covers" ID="Media_000005.1">
-      <Part DocIndex="0 0"/>
-      <Part DocIndex="2 2"/>
+    <Resource DescriptiveName="Media for front and back covers" ID="M2">
       <Media MediaType="Paper" Weight="150"/>
     </Resource>
-    <Resource DescriptiveName="Media for inner pages" ID="Media_000005.2">
-      <Part DocIndex="1 1"/>
+    <Resource DescriptiveName="Media for inner pages" ID="M1">
       <Media MediaType="Paper" Weight="100"/>
     </Resource>
   </ResourceSet>
@@ -39,11 +36,11 @@
     <Resource DescriptiveName="Physical media for front and back covers">
       <Part DocIndex="0 0"/>
       <Part DocIndex="2 2"/>
-      <Component MediaRef="Media_000005.1"/>
+      <Component MediaRef="M2"/>
     </Resource>
     <Resource>
       <Part DocIndex="1 1"/>
-      <Component MediaRef="Media_000005.2"/>
+      <Component MediaRef="M1"/>
     </Resource>
   </ResourceSet>
 </XJDF>
