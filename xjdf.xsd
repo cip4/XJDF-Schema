@@ -1366,6 +1366,7 @@
 			</xs:sequence>
 			<xs:attribute name="ChannelID" type="xs:NMTOKEN" use="required"/>
 			<xs:attribute name="DeviceID" type="xs:NMTOKEN" use="optional"/>
+			<xs:attribute name="Languages" type="languages" use="optional"/>			
 			<xs:attribute name="MessageType" type="xs:NMTOKEN" use="required"/>
 			<xs:anyAttribute namespace="##other" processContents="lax"/>
 		</xs:complexType>
