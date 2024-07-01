@@ -1455,6 +1455,7 @@
 				<xs:element maxOccurs="unbounded" minOccurs="0" ref="BundleItem"/>
 			</xs:sequence>
 			<xs:attribute name="Amount" type="xs:int" use="required"/>
+			<xs:attribute name="BundleItemName" type="xs:NMTOKEN" use="optional"/>
 			<xs:attribute name="BundleType" type="BundleType" use="optional"/>
 			<xs:attribute name="ItemRef" type="xs:IDREF" use="optional"/>
 			<xs:attribute name="TotalAmount" type="xs:int" use="optional"/>
