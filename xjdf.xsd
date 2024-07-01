@@ -2124,6 +2124,7 @@
 		<xs:complexType>
 			<xs:attribute name="BinderySignatureID" type="xs:NMTOKEN" use="optional"/>
 			<xs:attribute name="BlockName" type="xs:NMTOKEN" use="optional"/>
+			<xs:attribute name="BundleItemName" type="xs:NMTOKEN" use="optional"/>
 			<xs:attribute name="ContactType" type="xs:NMTOKEN" use="optional"/>
 			<xs:attribute name="DocIndex" type="IntegerRange" use="optional"/>
 			<xs:attribute name="DropID" type="xs:NMTOKEN" use="optional"/>
