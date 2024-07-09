@@ -4447,6 +4447,7 @@
 				<xs:attribute name="BackGlossValue" type="xs:float" use="optional"/>
 				<xs:attribute name="BackISOPaperSubstrate" type="ISOPaperSubstrate" use="optional"/>
 				<xs:attribute name="BackLabColorValue" type="LabColor" use="optional"/>
+				<xs:attribute name="BackOpticalBrightening type="xs:float" use="optional"/>
 				<xs:attribute name="BackSpectrum" type="TransferFunction" use="optional"/>
 				<xs:attribute name="Brightness" type="xs:float" use="optional"/>
 				<xs:attribute name="CIETint" type="xs:float" use="optional"/>
@@ -4490,6 +4491,7 @@
 				</xs:attribute>
 				<xs:attribute name="Opacity" type="EnumOpacity" use="optional"/>
 				<xs:attribute name="OpacityLevel" type="xs:float" use="optional"/>
+				<xs:attribute name="OpticalBrightening type="xs:float" use="optional"/>
 				<xs:attribute name="OuterCoreDiameter" type="xs:float" use="optional"/>
 				<xs:attribute name="OutsideGain" type="xs:float" use="optional"/>
 				<xs:attribute name="PlateTechnology" use="optional">
