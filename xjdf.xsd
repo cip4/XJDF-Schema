@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    XJDF Schema @@version@@ (@@buildTime@@)
+    
+	XJDF Schema @@version@@ (@@buildTime@@)
 
     CIP4 Organization
     https://www.cip4.org
@@ -12,6 +13,7 @@
     
     Copyright (c) 2001-@@year@@. All rights reserved.
     License: https://github.com/cip4/XJDF-Schema/blob/@@branch@@/LICENSE.md
+	
 -->
 <xs:schema targetNamespace="http://www.CIP4.org/JDFSchema_2_0" xmlns="http://www.CIP4.org/JDFSchema_2_0" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="@@version@@">
 	<xs:simpleType name="language">
