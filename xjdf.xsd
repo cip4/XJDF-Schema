@@ -1058,7 +1058,7 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:element name="Signal" substitutionGroup="Message" type="Signal"/>
+	<xs:element abstract="true" name="Signal" substitutionGroup="Message" type="Signal"/>
 	<xs:complexType name="Signal">
 		<xs:complexContent>
 			<xs:extension base="Message">
