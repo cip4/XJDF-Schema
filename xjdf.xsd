@@ -1059,7 +1059,7 @@
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:element abstract="true" name="Signal" substitutionGroup="Message" type="Signal"/>
-	<xs:complexType name="Signal">
+	<xs:complexType abstract="true" name="Signal">
 		<xs:complexContent>
 			<xs:extension base="Message">
 				<xs:attribute name="ChannelMode" type="EnumChannelMode" use="optional"/>
