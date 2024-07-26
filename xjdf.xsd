@@ -1243,7 +1243,7 @@
         </xs:complexContent>
     </xs:complexType>
 
-    <xs:element name="Signal" substitutionGroup="Message" type="Signal"/>
+    <xs:element abstract="true" name="Signal" substitutionGroup="Message" type="Signal"/>
     <xs:complexType name="Signal">
         <xs:complexContent>
             <xs:extension base="Message">
@@ -2811,7 +2811,7 @@
         </xs:complexContent>
     </xs:complexType>
 
-    <xs:element name="VerificationResult" substitutionGroup="SpecificResource" type="VerificationParams"/>
+    <xs:element name="VerificationResult" substitutionGroup="SpecificResource" type="VerificationResult"/>
     <xs:complexType name="VerificationResult">
         <xs:complexContent>
             <xs:extension base="SpecificResource">
