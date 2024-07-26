@@ -2552,7 +2552,7 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:element name="VerificationResult" substitutionGroup="SpecificResource" type="VerificationParams"/>
+	<xs:element name="VerificationResult" substitutionGroup="SpecificResource" type="VerificationResult"/>
 	<xs:complexType name="VerificationResult">
 		<xs:complexContent>
 			<xs:extension base="SpecificResource">
