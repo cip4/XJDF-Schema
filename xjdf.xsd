@@ -2317,11 +2317,9 @@
 	<xs:element name="ScavengerArea">
 		<xs:complexType>
 			<xs:complexContent>
-				<xs:extension base="SpecificResource">
-					<xs:attribute name="Center" type="XYPair" use="required"/>
-					<xs:attribute name="Separations" type="xs:NMTOKENS" use="optional"/>
-					<xs:attribute name="Size" type="XYPair" use="optional"/>
-				</xs:extension>
+				<xs:attribute name="Center" type="XYPair" use="required"/>
+				<xs:attribute name="Separations" type="xs:NMTOKENS" use="optional"/>
+				<xs:attribute name="Size" type="XYPair" use="optional"/>
 			</xs:complexContent>
 		</xs:complexType>
 	</xs:element>
