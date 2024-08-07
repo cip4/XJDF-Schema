@@ -2316,11 +2316,10 @@
 	</xs:element>
 	<xs:element name="ScavengerArea">
 		<xs:complexType>
-			<xs:complexContent>
-				<xs:attribute name="Center" type="XYPair" use="required"/>
-				<xs:attribute name="Separations" type="xs:NMTOKENS" use="optional"/>
-				<xs:attribute name="Size" type="XYPair" use="optional"/>
-			</xs:complexContent>
+			<xs:attribute name="Center" type="XYPair" use="required"/>
+			<xs:attribute name="Separations" type="xs:NMTOKENS" use="optional"/>
+			<xs:attribute name="Size" type="XYPair" use="optional"/>
+			<xs:anyAttribute namespace="##other" processContents="lax"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="ShapeCuttingParams" substitutionGroup="SpecificResource" type="ShapeCuttingParams"/>
