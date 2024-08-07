@@ -3049,12 +3049,6 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:element name="SizeIntent" substitutionGroup="ProductIntent" type="SizeIntent"/>
-	<xs:complexType name="SizeIntent">
-		<xs:complexContent>
-			<xs:extension base="ProductIntent"/>
-		</xs:complexContent>
-	</xs:complexType>
 	<xs:element name="Address">
 		<xs:complexType>
 			<xs:sequence>
