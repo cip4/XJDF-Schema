@@ -4375,6 +4375,7 @@
 			<xs:sequence>
 				<xs:element maxOccurs="unbounded" minOccurs="1" ref="Condition"/>
 			</xs:sequence>
+			<xs:attribute name="Amount" type="xs:int" use="optional"/>
 			<xs:anyAttribute namespace="##other" processContents="lax"/>
 		</xs:complexType>
 	</xs:element>
