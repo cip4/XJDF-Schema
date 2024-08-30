@@ -1,61 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XJDF JobID="JOB-42" Types="Folding" xmlns="http://www.CIP4.org/JDFSchema_2_0">
-    <AuditPool>
-        <AuditCreated>
-            <Header AgentName="MIS" AgentVersion="1.0" ID="dd" DeviceID="DEVICE_ID" Time="2017-03-30T21:49:47Z"/>
-        </AuditCreated>
-    </AuditPool>
-    <ProductList>
-        <Product Amount="2500" DescriptiveName="My Folded Leaflet">
-            <Intent Name="LayoutIntent">
-                <LayoutIntent Dimensions="841.88 595.27" Sides="TwoSidedHeadToHead"
-                                   Pages="2" FinishedDimensions="280.69 595.27 0.0"/>
-            </Intent>
-            <Intent Name="FoldingIntent">
-                <FoldingIntent FoldCatalog="F6-2"/>
-            </Intent>
-            <Intent Name="ColorIntent">
-                <ColorIntent>
-                    <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
-                                       Surface="Front"/>
-                    <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
-                                       Surface="Back"/>
-                </ColorIntent>
-            </Intent>
-            <Intent Name="MediaIntent">
-                <MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
-            </Intent>
-        </Product>
-    </ProductList>
-    <ResourceSet Name="Component" Usage="Input">
-        <Resource ExternalID="COMP_ID_UNFOLDED">
-            <Component Dimensions="841.88 595.27 0.42"
-                            MediaRef="MEDIA-ID"/>
-        </Resource>
-    </ResourceSet>
-    <ResourceSet Name="Component" Usage="Output">
-        <Resource ExternalID="COMP-FOLDED">
-            <AmountPool>
-                <PartAmount Amount="2580"/>
-            </AmountPool>
-            <Component Dimensions="280.69 595.27 1.26"
-                            MediaRef="MEDIA-ID"/>
-        </Resource>
-    </ResourceSet>
-    <ResourceSet Name="FoldingParams" Usage="Input">
-        <Resource>
-            <FoldingParams FoldCatalog="F6-2"/>
-        </Resource>
-    </ResourceSet>
-    <ResourceSet Name="Media">
-        <Resource ID="MEDIA-ID">
-            <Media MediaType="Paper" Thickness="150" Weight="135"
-                        ISOPaperSubstrate="PS3"/>
-        </Resource>
-    </ResourceSet>
-    <ResourceSet Name="NodeInfo" Usage="Input">
-        <Resource>
-            <NodeInfo Start="2016-08-30T15:00:00Z"/>
-        </Resource>
-    </ResourceSet>
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="MIS" AgentVersion="1.0" DeviceID="DEVICE_ID" ID="dd" Time="2024-03-30T21:49:47+00:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ProductList>
+    <Product Amount="2500" DescriptiveName="My Folded Leaflet">
+      <Intent Name="LayoutIntent">
+        <LayoutIntent Dimensions="841.88 595.27" FinishedDimensions="280.69 595.27 0.0"
+          Pages="2" Sides="TwoSidedHeadToHead"/>
+      </Intent>
+      <Intent Name="FoldingIntent">
+        <FoldingIntent FoldCatalog="F6-2"/>
+      </Intent>
+      <Intent Name="ColorIntent">
+        <ColorIntent>
+          <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Front"/>
+          <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Back"/>
+        </ColorIntent>
+      </Intent>
+      <Intent Name="MediaIntent">
+        <MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
+      </Intent>
+    </Product>
+  </ProductList>
+  <ResourceSet Name="Component" Usage="Input">
+    <Resource ExternalID="COMP_ID_UNFOLDED">
+      <Component Dimensions="841.88 595.27 0.42" MediaRef="MEDIA-ID"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Component" Usage="Output">
+    <Resource ExternalID="COMP-FOLDED">
+      <AmountPool>
+        <PartAmount Amount="2580"/>
+      </AmountPool>
+      <Component Dimensions="280.69 595.27 1.26" MediaRef="MEDIA-ID"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="FoldingParams" Usage="Input">
+    <Resource>
+      <FoldingParams FoldCatalog="F6-2"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="Media">
+    <Resource ID="MEDIA-ID">
+      <Media ISOPaperSubstrate="PS3" MediaType="Paper" Thickness="150" Weight="135"/>
+    </Resource>
+  </ResourceSet>
+  <ResourceSet Name="NodeInfo" Usage="Input">
+    <Resource>
+      <NodeInfo Start="2024-08-30T15:00:00+00:00"/>
+    </Resource>
+  </ResourceSet>
 </XJDF>

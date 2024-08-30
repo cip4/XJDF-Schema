@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:ResourceSet Name="BinderySignature" Usage="Input">
-        <xjdf:Resource>
-            <xjdf:Part BinderySignatureID="BS-1" ProductPart="COVER-ID" />
-            <xjdf:BinderySignature FoldCatalog="F4-1" BinderySignatureType="Fold"/>
-        </xjdf:Resource>
-        <xjdf:Resource>
-            <xjdf:Part BinderySignatureID="BS-2" ProductPart="BODY-ID" />
-            <xjdf:BinderySignature FoldCatalog="F16-7" BinderySignatureType="Fold"/>
-        </xjdf:Resource>
-        <xjdf:Resource>
-            <xjdf:Part BinderySignatureID="BS-3" ProductPart="BODY-ID" />
-            <xjdf:BinderySignature FoldCatalog="F4-1" BinderySignatureType="Fold"/>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="BinderySignature" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:Part BinderySignatureID="BS-1" ProductPart="COVER-ID"/>
+      <xjdf:BinderySignature BinderySignatureType="Fold" FoldCatalog="F4-1"/>
+    </xjdf:Resource>
+    <xjdf:Resource>
+      <xjdf:Part BinderySignatureID="BS-2" ProductPart="BODY-ID"/>
+      <xjdf:BinderySignature BinderySignatureType="Fold" FoldCatalog="F16-7"/>
+    </xjdf:Resource>
+    <xjdf:Resource>
+      <xjdf:Part BinderySignatureID="BS-3" ProductPart="BODY-ID"/>
+      <xjdf:BinderySignature BinderySignatureType="Fold" FoldCatalog="F4-1"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
 </xjdf:XJDF>

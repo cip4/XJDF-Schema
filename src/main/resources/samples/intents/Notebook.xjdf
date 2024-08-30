@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Job_0326_020755" Types="Product">
+<XJDF JobID="Job_0326_020755" Types="Product" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:55+00:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.6 BLD 009" DeviceID="TestSender"
+        ID="l_000002" Time="2024-03-26T14:07:55+00:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->

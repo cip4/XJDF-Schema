@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:Header ID="XJMF_ID" DeviceID="DEVICE_ID_CONTROLLER"
-                 Time="2016-11-12T12:11:39+02:00" />
-    <xjdf:SignalStatus>
-        <xjdf:Header ID="I1234" refID="MESSAGE_ID" DeviceID="DEVICE_ID"
-                     Time="2016-11-12T12:11:39+02:00" />
-        <xjdf:DeviceInfo Speed="12500" ProductionCounter="5425"
-                         Status="Production" />
-    </xjdf:SignalStatus>
+  <xjdf:Header DeviceID="DEVICE_ID_CONTROLLER" ID="XJMF_ID" Time="2024-11-12T12:11:39+02:00"/>
+  <xjdf:SignalStatus>
+    <xjdf:Header DeviceID="DEVICE_ID" ID="I1234" Time="2024-11-12T12:11:39+02:00" refID="MESSAGE_ID"/>
+    <xjdf:DeviceInfo ProductionCounter="5425" Speed="12500" Status="Production"/>
+  </xjdf:SignalStatus>
 </xjdf:XJMF>

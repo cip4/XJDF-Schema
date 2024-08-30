@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xjdf:XJDF JobID="JOB-1234" Types="Collecting Stitching Trimming"
-           xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-<xjdf:AuditPool>
+<xjdf:XJDF JobID="JOB-1234" Types="Collecting Stitching Trimming" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+  <xjdf:AuditPool>
     <xjdf:AuditResource>
-        <xjdf:Header ID="I43" DeviceID="DEV_ID"
-                     Time="2017-01-11T13:58:19Z" />
-        <xjdf:ResourceInfo>
-            <xjdf:ResourceSet Name="Component" Usage="Output">
-                <xjdf:Resource ExternalID="COMP-MAGAZINE">
-                    <xjdf:AmountPool>
-                        <xjdf:PartAmount Amount="1053" Waste="89" />
-                    </xjdf:AmountPool>
-                    <xjdf:Component Dimensions="841.88 595.27 5.26" />
-                </xjdf:Resource>
-            </xjdf:ResourceSet>
-        </xjdf:ResourceInfo>
+      <xjdf:Header DeviceID="DEV_ID" ID="I43" Time="2024-01-11T13:58:19+00:00"/>
+      <xjdf:ResourceInfo>
+        <xjdf:ResourceSet Name="Component" Usage="Output">
+          <xjdf:Resource ExternalID="COMP-MAGAZINE">
+            <xjdf:AmountPool>
+              <xjdf:PartAmount Amount="1053" Waste="89"/>
+            </xjdf:AmountPool>
+            <xjdf:Component Dimensions="841.88 595.27 5.26"/>
+          </xjdf:Resource>
+        </xjdf:ResourceSet>
+      </xjdf:ResourceInfo>
     </xjdf:AuditResource>
-</xjdf:AuditPool>
+  </xjdf:AuditPool>
 </xjdf:XJDF>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--create a stripping in a layout
  Stripping now consumes a layout-->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="2up" Types="Stripping">
+<XJDF JobID="2up" Types="Stripping" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- START SNIPPET -->
   <ResourceSet Name="Layout" Usage="Input">
     <Resource>

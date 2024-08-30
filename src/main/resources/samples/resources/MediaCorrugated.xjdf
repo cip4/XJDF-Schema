@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
-  JobID="Converting" JobPartID="Corrugated" Types="ConventionalPrinting">
+<XJDF JobID="Converting" JobPartID="Corrugated" Types="ConventionalPrinting" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:55:43+01:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2024-03-01T19:55:43+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -19,13 +17,12 @@
   <!-- START SNIPPET -->
   <ResourceSet Name="Media" Usage="Input">
     <Resource>
-      <Media Dimension="2834.64566929 1984.2519685"
-        InsideLoss="1000" MediaType="CorrugatedBoard"
-        MediaTypeDetails="SingleWall" OutsideGain="1380" Thickness="2382">
+      <Media Dimension="2834.64566929 1984.2519685" InsideLoss="1000"
+        MediaType="CorrugatedBoard" MediaTypeDetails="SingleWall" OutsideGain="1380" Thickness="2382">
         <MediaLayers>
           <Media MediaType="Paper" Weight="190"/>
-          <Media Flute="B" FluteDirection="XDirection"
-            MediaType="Paper" MediaTypeDetails="Flute" Weight="180"/>
+          <Media Flute="B" FluteDirection="XDirection" MediaType="Paper"
+            MediaTypeDetails="Flute" Weight="180"/>
           <Media MediaType="Paper" Weight="180"/>
         </MediaLayers>
       </Media>

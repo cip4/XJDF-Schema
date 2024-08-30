@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="J1"
-  Types="Product" Version="2.2">
+<XJDF JobID="J1" Types="Product" Version="2.2" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <ResourceSet Name="Foo:FooBar" Usage="Input">
     <Resource>
       <Foo:FooBar xmlns:Foo="www.foo.com"/>

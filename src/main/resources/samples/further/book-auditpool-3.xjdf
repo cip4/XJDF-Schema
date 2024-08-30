@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-
-<xjdf:AuditPool>
+  <xjdf:AuditPool>
     <xjdf:AuditNotification>
-        <xjdf:Header DeviceID="DEVICE_ID" ID="MESSAGE_ID"
-                     Time="2016-11-14T16:57:24+02:00" />
-        <xjdf:Notification Class="Error" JobID="JOB_ID">
-            <xjdf:Comment>
+      <xjdf:Header DeviceID="DEVICE_ID" ID="MESSAGE_ID" Time="2024-11-14T16:57:24+02:00"/>
+      <xjdf:Notification Class="Error" JobID="JOB_ID">
+        <xjdf:Comment>
                 Some kind of error has been occurred.
             </xjdf:Comment>
-        </xjdf:Notification>
+      </xjdf:Notification>
     </xjdf:AuditNotification>
-</xjdf:AuditPool>
+  </xjdf:AuditPool>
 </xjdf:XJDF>

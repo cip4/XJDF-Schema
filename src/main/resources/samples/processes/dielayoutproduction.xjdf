@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Die1" Types="DieLayoutProduction">
+<XJDF JobID="Die1" Types="DieLayoutProduction" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:56:20+01:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2024-03-01T19:56:20+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -26,10 +25,8 @@
   <ResourceSet Name="DieLayoutProductionParams" Usage="Input">
     <Resource>
       <DieLayoutProductionParams>
-        <ConvertingConfig SheetHeightMax="2200"
-          SheetHeightMin="2200" SheetWidthMax="2800" SheetWidthMin="2800"/>
-        <ConvertingConfig SheetHeightMax="2500"
-          SheetHeightMin="2500" SheetWidthMax="3400" SheetWidthMin="3400"/>
+        <ConvertingConfig SheetHeightMax="2200" SheetHeightMin="2200" SheetWidthMax="2800" SheetWidthMin="2800"/>
+        <ConvertingConfig SheetHeightMax="2500" SheetHeightMin="2500" SheetWidthMax="3400" SheetWidthMin="3400"/>
         <RepeatDesc LayoutStyle="StraightNest" ShapeDefRef="r_000007"/>
       </DieLayoutProductionParams>
     </Resource>

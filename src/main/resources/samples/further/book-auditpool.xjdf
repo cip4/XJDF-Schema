@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XJDF JobID="JOB-42" Types="Folding" xmlns="http://www.CIP4.org/JDFSchema_2_0">
-    <AuditPool>
-        <AuditCreated>
-            <Header ID="a42" DeviceID="DEV_ID" Time="2016-12-28T10:45:05Z" />
-        </AuditCreated>
-        <AuditStatus>
-            <Header ID="a43" DeviceID="DEV_ID" Time="2016-12-28T10:47:19Z" />
-            <DeviceInfo Status="Production" Speed="6000" />
-        </AuditStatus>
-        <AuditNotification>
-            <Header ID="a44" DeviceID="DEV_ID" Time="2016-12-28T10:49:26Z" />
-            <Notification Class="Information">
-                <Event EventID="3092" EventValue="Paper stock is low." />
-            </Notification>
-        </AuditNotification>
-    </AuditPool>
+  <AuditPool>
+    <AuditCreated>
+      <Header DeviceID="DEV_ID" ID="a42" Time="2024-12-28T10:45:05+00:00"/>
+    </AuditCreated>
+    <AuditStatus>
+      <Header DeviceID="DEV_ID" ID="a43" Time="2024-12-28T10:47:19+00:00"/>
+      <DeviceInfo Speed="6000" Status="Production"/>
+    </AuditStatus>
+    <AuditNotification>
+      <Header DeviceID="DEV_ID" ID="a44" Time="2024-12-28T10:49:26+00:00"/>
+      <Notification Class="Information">
+        <Event EventID="3092" EventValue="Paper stock is low."/>
+      </Notification>
+    </AuditNotification>
+  </AuditPool>
 </XJDF>

@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XJDF JobID="JOB-42" Types="Folding" xmlns="http://www.CIP4.org/JDFSchema_2_0">
-    <ProductList>
-        <Product Amount="250" IsRoot="true">
-            <Intent Name="ColorIntent">
-                <ColorIntent>
-                    <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
-                                  Surface="Front"/>
-                </ColorIntent>
-            </Intent>
-            <Intent Name="LayoutIntent">
-                <LayoutIntent FinishedDimensions="1683.779 2383.937 0.0"
-                              Sides="OneSided"/>
-            </Intent>
-            <Intent Name="MediaIntent">
-                <MediaIntent MediaQuality="135_GLOSS" MediaType="Paper"/>
-            </Intent>
-        </Product>
-        <Product Amount="1000" IsRoot="true">
-            <Intent Name="ColorIntent">
-                <ColorIntent>
-                    <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
-                                  Surface="Front"/>
-                </ColorIntent>
-            </Intent>
-            <Intent Name="LayoutIntent">
-                <LayoutIntent FinishedDimensions="841.889 1190.551 0.0"
-                              Sides="OneSided"/>
-            </Intent>
-            <Intent Name="MediaIntent">
-                <MediaIntent MediaQuality="135_GLOSS" MediaType="Paper"/>
-            </Intent>
-        </Product>
-    </ProductList>
+  <ProductList>
+    <Product Amount="250" IsRoot="true">
+      <Intent Name="ColorIntent">
+        <ColorIntent>
+          <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Front"/>
+        </ColorIntent>
+      </Intent>
+      <Intent Name="LayoutIntent">
+        <LayoutIntent FinishedDimensions="1683.779 2383.937 0.0" Sides="OneSided"/>
+      </Intent>
+      <Intent Name="MediaIntent">
+        <MediaIntent MediaQuality="135_GLOSS" MediaType="Paper"/>
+      </Intent>
+    </Product>
+    <Product Amount="1000" IsRoot="true">
+      <Intent Name="ColorIntent">
+        <ColorIntent>
+          <SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Front"/>
+        </ColorIntent>
+      </Intent>
+      <Intent Name="LayoutIntent">
+        <LayoutIntent FinishedDimensions="841.889 1190.551 0.0" Sides="OneSided"/>
+      </Intent>
+      <Intent Name="MediaIntent">
+        <MediaIntent MediaQuality="135_GLOSS" MediaType="Paper"/>
+      </Intent>
+    </Product>
+  </ProductList>
 </XJDF>

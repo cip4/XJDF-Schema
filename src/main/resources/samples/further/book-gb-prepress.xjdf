@@ -1,79 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xjdf:XJDF JobID="JOB-1234"
-           Types="Stripping Imposition Interpreting Rendering"
-           xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:AuditPool>
-        <xjdf:AuditCreated>
-            <xjdf:Header AgentName="MIS" AgentVersion="1.0" DeviceID="myID"
-                         Time="2016-11-02T09:52:24Z"/>
-        </xjdf:AuditCreated>
-    </xjdf:AuditPool>
-    <xjdf:ProductList>
-        <xjdf:Product Amount="2500" DescriptiveName="My Folded Leaflet">
-            <xjdf:Intent Name="LayoutIntent">
-                <xjdf:LayoutIntent Dimensions="841.88 595.27"
-                                   Sides="TwoSidedHeadToHead" Pages="2"
-                                   FinishedDimensions="280.69 595.27 0.0"/>
-            </xjdf:Intent>
-            <xjdf:Intent Name="FoldingIntent">
-                <xjdf:FoldingIntent FoldCatalog="F6-2"/>
-            </xjdf:Intent>
-            <xjdf:Intent Name="ColorIntent">
-                <xjdf:ColorIntent>
-                    <xjdf:SurfaceColor Surface="Front"
-                                       ColorsUsed="Cyan Magenta Yellow Black" />
-                    <xjdf:SurfaceColor Surface="Back"
-                                       ColorsUsed="Cyan Magenta Yellow Black" />
-                </xjdf:ColorIntent>
-            </xjdf:Intent>
-            <xjdf:Intent Name="MediaIntent">
-                <xjdf:MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
-            </xjdf:Intent>
-        </xjdf:Product>
-    </xjdf:ProductList>
-    <xjdf:ResourceSet Name="Layout" Usage="Input">
-        <xjdf:Resource>
-            <xjdf:Layout SurfaceContentsBox="0.0 0.0 1293.31 907.09"
-                         WorkStyle="WorkAndBack">
-                <xjdf:Position RelativeBox="0.0 0.0 0.5 1.0"
-                               Orientation="Rotate90" BinderySignatureID="BS-1" />
-                <xjdf:Position RelativeBox="0.5 0.0 1.0 1.0"
-                               Orientation="Rotate90" BinderySignatureID="BS-1" />
-            </xjdf:Layout>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="RunList" Usage="Input"
-                      ProcessUsage="Document">
-        <xjdf:Resource>
-            <xjdf:RunList>
-                <xjdf:FileSpec URL="http://example.org/artwork/my.pdf"/>
-            </xjdf:RunList>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="RunList" Usage="Output">
-        <xjdf:Resource>
-            <xjdf:Part Separation="Cyan" />
-            <xjdf:RunList>
-                <xjdf:FileSpec URL="http://example.org/cyan.tif"/>
-            </xjdf:RunList>
-        </xjdf:Resource>
-        <xjdf:Resource>
-            <xjdf:Part Separation="Magenta" />
-            <xjdf:RunList>
-                <xjdf:FileSpec URL="http://example.org/magenta.tif"/>
-            </xjdf:RunList>
-        </xjdf:Resource>
-        <xjdf:Resource>
-            <xjdf:Part Separation="Yellow" />
-            <xjdf:RunList>
-                <xjdf:FileSpec URL="http://example.org/yellow.tif"/>
-            </xjdf:RunList>
-        </xjdf:Resource>
-        <xjdf:Resource>
-            <xjdf:Part Separation="Black" />
-            <xjdf:RunList>
-                <xjdf:FileSpec URL="http://example.org/black.tif"/>
-            </xjdf:RunList>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
+<xjdf:XJDF JobID="JOB-1234" Types="Stripping Imposition Interpreting Rendering" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+  <xjdf:AuditPool>
+    <xjdf:AuditCreated>
+      <xjdf:Header AgentName="MIS" AgentVersion="1.0" DeviceID="myID" Time="2024-11-02T09:52:24+00:00"/>
+    </xjdf:AuditCreated>
+  </xjdf:AuditPool>
+  <xjdf:ProductList>
+    <xjdf:Product Amount="2500" DescriptiveName="My Folded Leaflet">
+      <xjdf:Intent Name="LayoutIntent">
+        <xjdf:LayoutIntent Dimensions="841.88 595.27" FinishedDimensions="280.69 595.27 0.0"
+          Pages="2" Sides="TwoSidedHeadToHead"/>
+      </xjdf:Intent>
+      <xjdf:Intent Name="FoldingIntent">
+        <xjdf:FoldingIntent FoldCatalog="F6-2"/>
+      </xjdf:Intent>
+      <xjdf:Intent Name="ColorIntent">
+        <xjdf:ColorIntent>
+          <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Front"/>
+          <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Back"/>
+        </xjdf:ColorIntent>
+      </xjdf:Intent>
+      <xjdf:Intent Name="MediaIntent">
+        <xjdf:MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
+      </xjdf:Intent>
+    </xjdf:Product>
+  </xjdf:ProductList>
+  <xjdf:ResourceSet Name="Layout" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:Layout SurfaceContentsBox="0.0 0.0 1293.31 907.09" WorkStyle="WorkAndBack">
+        <xjdf:Position BinderySignatureID="BS-1" Orientation="Rotate90" RelativeBox="0.0 0.0 0.5 1.0"/>
+        <xjdf:Position BinderySignatureID="BS-1" Orientation="Rotate90" RelativeBox="0.5 0.0 1.0 1.0"/>
+      </xjdf:Layout>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="RunList" ProcessUsage="Document" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:RunList>
+        <xjdf:FileSpec URL="http://example.org/artwork/my.pdf"/>
+      </xjdf:RunList>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="RunList" Usage="Output">
+    <xjdf:Resource>
+      <xjdf:Part Separation="Cyan"/>
+      <xjdf:RunList>
+        <xjdf:FileSpec URL="http://example.org/cyan.tif"/>
+      </xjdf:RunList>
+    </xjdf:Resource>
+    <xjdf:Resource>
+      <xjdf:Part Separation="Magenta"/>
+      <xjdf:RunList>
+        <xjdf:FileSpec URL="http://example.org/magenta.tif"/>
+      </xjdf:RunList>
+    </xjdf:Resource>
+    <xjdf:Resource>
+      <xjdf:Part Separation="Yellow"/>
+      <xjdf:RunList>
+        <xjdf:FileSpec URL="http://example.org/yellow.tif"/>
+      </xjdf:RunList>
+    </xjdf:Resource>
+    <xjdf:Resource>
+      <xjdf:Part Separation="Black"/>
+      <xjdf:RunList>
+        <xjdf:FileSpec URL="http://example.org/black.tif"/>
+      </xjdf:RunList>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
 </xjdf:XJDF>

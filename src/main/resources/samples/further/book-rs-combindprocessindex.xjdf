@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xjdf:XJDF JobID="JOB-1234" Types="Cutting Folding Cutting"
-           xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:ResourceSet Name="CuttingParams" Usage="Input"
-                      CombinedProcessIndex="0">
-        <xjdf:Resource>
-            <xjdf:CuttingParams>
-            </xjdf:CuttingParams>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="CuttingParams" Usage="Input"
-                      CombinedProcessIndex="2">
-        <xjdf:Resource>
-            <xjdf:CuttingParams>
-            </xjdf:CuttingParams>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="FoldingParams" Usage="Input">
-        <xjdf:Resource>
-            <xjdf:FoldingParams FoldCatalog="F16-7"/>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-
-
+<xjdf:XJDF JobID="JOB-1234" Types="Cutting Folding Cutting" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+  <xjdf:ResourceSet CombinedProcessIndex="0" Name="CuttingParams" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:CuttingParams/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet CombinedProcessIndex="2" Name="CuttingParams" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:CuttingParams/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="FoldingParams" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:FoldingParams FoldCatalog="F16-7"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
 </xjdf:XJDF>

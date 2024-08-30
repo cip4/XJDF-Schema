@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Flexo"
-  JobPartID="Sleeve" Types="ConventionalPrinting">
+<XJDF JobID="Flexo" JobPartID="Sleeve" Types="ConventionalPrinting" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:12+00:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.6 BLD 009" DeviceID="TestSender"
+        ID="l_000002" Time="2024-03-26T14:07:12+00:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->

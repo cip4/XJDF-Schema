@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="J1"
-  Types="Product" Version="2.2">
+<XJDF JobID="J1" Types="Product" Version="2.2" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java" AgentVersion="2.1.7.38"
-        DeviceID="CIP4_JDF_Writer_Java" Time="2023-09-08T15:02:01+02:00"/>
+        DeviceID="CIP4_JDF_Writer_Java" Time="2024-09-08T15:02:01+02:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
-  <Comment Author="Wyle E Coyote" PersonalID="p123">line 1 
+  <Comment PersonalID="p123">line 1 
 line 2</Comment>
   <!-- END SNIPPET -->
 </XJDF>

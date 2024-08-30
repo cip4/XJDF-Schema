@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Bundle"
-  Types="Palletizing" Version="2.1">
+<XJDF JobID="Bundle" Types="Palletizing" Version="2.2" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 019" DeviceID="TestSender" Time="2019-12-14T13:54:40+01:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.6 BLD 019" DeviceID="TestSender" Time="2024-12-14T13:54:40+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
   <ProductList>
-    <Product Amount="4200" ExternalID="BookExternalID"
-      ID="BookProductID" IsRoot="true"/>
+    <Product Amount="4200" ExternalID="BookExternalID" ID="BookProductID" IsRoot="true"/>
   </ProductList>
   <!-- END SNIPPET -->
   <ResourceSet Name="NodeInfo" Usage="Input">
@@ -42,8 +39,7 @@
     <Resource>
       <Bundle>
         <BundleItem Amount="10" BundleType="Pallet" TotalAmount="4200">
-          <BundleItem Amount="10" BundleType="Carton"
-            ItemRef="BookProductID" TotalAmount="420"/>
+          <BundleItem Amount="10" BundleType="Carton" ItemRef="BookProductID" TotalAmount="420"/>
         </BundleItem>
       </Bundle>
     </Resource>

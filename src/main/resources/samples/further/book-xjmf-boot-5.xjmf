@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:Header ID="XJMF_ID" DeviceID="CONTROLLER_ID"
-                 Time="2016-11-11T21:07:14+02:00" />
-    <xjdf:ResponseKnownSubscriptions ReturnCode="0">
-        <xjdf:Header ID="I42" refID="MESSAGE_ID" DeviceID="CONTROLLER_ID"
-                     Time="2016-11-11T21:07:14+02:00" />
-        <xjdf:SubscriptionInfo ChannelID="CNL_1" DeviceID="MIS_ID"
-                               MessageType="Status">
-            <xjdf:Subscription URL="http://mis.example.org/jmf"
-                               RepeatTime="30"
-                               ChannelMode="Reliable" />
-        </xjdf:SubscriptionInfo>
-        <xjdf:SubscriptionInfo ChannelID="CNL_2" DeviceID="MIS_ID"
-                               MessageType="Notification">
-            <xjdf:Subscription URL="http://mis.example.org/jmf"
-                               RepeatTime="30"
-                               ChannelMode="Reliable" />
-        </xjdf:SubscriptionInfo>
-        <xjdf:SubscriptionInfo ChannelID="CNL_2" DeviceID="MIS_ID"
-                               MessageType="Resource">
-            <xjdf:Subscription URL="http://mis.example.org/jmf"
-                               RepeatTime="30"
-                               ChannelMode="Reliable" />
-        </xjdf:SubscriptionInfo>
-    </xjdf:ResponseKnownSubscriptions>
+  <xjdf:Header DeviceID="CONTROLLER_ID" ID="XJMF_ID" Time="2024-11-11T21:07:14+02:00"/>
+  <xjdf:ResponseKnownSubscriptions ReturnCode="0">
+    <xjdf:Header DeviceID="CONTROLLER_ID" ID="I42" Time="2024-11-11T21:07:14+02:00" refID="MESSAGE_ID"/>
+    <xjdf:SubscriptionInfo ChannelID="CNL_1" DeviceID="MIS_ID" MessageType="Status">
+      <xjdf:Subscription ChannelMode="Reliable" RepeatTime="30" URL="http://mis.example.org/jmf"/>
+    </xjdf:SubscriptionInfo>
+    <xjdf:SubscriptionInfo ChannelID="CNL_2" DeviceID="MIS_ID" MessageType="Notification">
+      <xjdf:Subscription ChannelMode="Reliable" RepeatTime="30" URL="http://mis.example.org/jmf"/>
+    </xjdf:SubscriptionInfo>
+    <xjdf:SubscriptionInfo ChannelID="CNL_2" DeviceID="MIS_ID" MessageType="Resource">
+      <xjdf:Subscription ChannelMode="Reliable" RepeatTime="30" URL="http://mis.example.org/jmf"/>
+    </xjdf:SubscriptionInfo>
+  </xjdf:ResponseKnownSubscriptions>
 </xjdf:XJMF>

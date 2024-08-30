@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
-  JobID="ChangeOrder" JobPartID="AddColor" Types="ConventionalPrinting">
+<XJDF JobID="ChangeOrder" JobPartID="AddColor" Types="ConventionalPrinting" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:56:13+01:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2024-03-01T19:56:13+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -42,8 +40,7 @@
   <ResourceSet Name="ColorantControl" Usage="Input">
     <Resource>
       <Part SheetName="Sheet1" Side="Front"/>
-      <ColorantControl ColorantOrder="Cyan Magenta Yellow Black Spot1"
-        ColorantParams="Cyan Magenta Yellow Black Spot1"/>
+      <ColorantControl ColorantOrder="Cyan Magenta Yellow Black Spot1" ColorantParams="Cyan Magenta Yellow Black Spot1"/>
     </Resource>
   </ResourceSet>
 </XJDF>

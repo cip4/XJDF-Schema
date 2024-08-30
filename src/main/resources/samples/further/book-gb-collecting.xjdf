@@ -1,126 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xjdf:XJDF JobID="JOB-1234" Types="Collecting Stitching Trimming"
-           xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:AuditPool>
-        <xjdf:AuditCreated>
-            <xjdf:Header AgentName="MIS" AgentVersion="1.0"
-                         Time="2017-04-21T22:06:47Z"  DeviceID="myID"/>
-        </xjdf:AuditCreated>
-    </xjdf:AuditPool>
-    <xjdf:ProductList>
-        <xjdf:Product Amount="1000" DescriptiveName="My Magazine A4"
-                      IsRoot="true">
-            <xjdf:Intent Name="BindingIntent">
-                <xjdf:BindingIntent BindingOrder="Collecting"
-                                    BindingSide="Left" BindingType="SaddleStitch"
-                                    ChildRefs="COVER-ID BODY-ID"/>
-            </xjdf:Intent>
-        </xjdf:Product>
-        <xjdf:Product ID="COVER-ID" IsRoot="false">
-            <xjdf:Intent Name="ColorIntent">
-                <xjdf:ColorIntent>
-                    <xjdf:SurfaceColor Surface="Front"
-                                       ColorsUsed="Cyan Magenta Yellow Black" />
-                    <xjdf:SurfaceColor Surface="Back"
-                                       ColorsUsed="Cyan Magenta Yellow Black" />
-                </xjdf:ColorIntent>
-            </xjdf:Intent>
-            <xjdf:Intent Name="LayoutIntent">
-                <xjdf:LayoutIntent Sides="TwoSidedHeadToHead" Pages="4"
-                                   FinishedDimensions="841.88 595.27 0.0"/>
-            </xjdf:Intent>
-            <xjdf:Intent Name="MediaIntent">
-                <xjdf:MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
-            </xjdf:Intent>
-        </xjdf:Product>
-        <xjdf:Product ID="BODY-ID" IsRoot="false">
-            <xjdf:Intent Name="ColorIntent">
-                <xjdf:ColorIntent>
-                    <xjdf:SurfaceColor Surface="Front"
-                                       ColorsUsed="Black" />
-                    <xjdf:SurfaceColor Surface="Back"
-                                       ColorsUsed="Black" />
-                </xjdf:ColorIntent>
-            </xjdf:Intent>
-            <xjdf:Intent Name="LayoutIntent">
-                <xjdf:LayoutIntent Sides="TwoSidedHeadToHead" Pages="20"
-                                   FinishedDimensions="841.88 595.27 0.0"/>
-            </xjdf:Intent>
-            <xjdf:Intent Name="MediaIntent">
-                <xjdf:MediaIntent MediaQuality="80_MATT" MediaType="Paper"/>
-            </xjdf:Intent>
-        </xjdf:Product>
-    </xjdf:ProductList>
-    <xjdf:ResourceSet Name="Assembly" Usage="Input">
-        <xjdf:Resource>
-            <xjdf:Assembly BinderySignatureIDs="BS-1 BS-2 BS-3"
-                           Order="Collecting" />
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="BinderySignature" Usage="Input">
-        <xjdf:Resource>
-            <xjdf:Part BinderySignatureID="BS-1"
-                       ProductPart="COVER-ID" />
-            <xjdf:BinderySignature FoldCatalog="F4-1" BinderySignatureType="Fold"/>
-        </xjdf:Resource>
-        <xjdf:Resource>
-            <xjdf:Part BinderySignatureID="BS-2" ProductPart="BODY-ID" />
-            <xjdf:BinderySignature FoldCatalog="F16-7" BinderySignatureType="Fold"/>
-        </xjdf:Resource>
-        <xjdf:Resource>
-            <xjdf:Part BinderySignatureID="BS-3" ProductPart="BODY-ID" />
-            <xjdf:BinderySignature FoldCatalog="F4-1" BinderySignatureType="Fold"/>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="Component" Usage="Input">
-        <xjdf:Resource ExternalID="COMP-BS-1">
-            <xjdf:Part BinderySignatureID="BS-1" />
-            <xjdf:Component Dimensions="852.68 603.67 1.42"
-                            MediaRef="MEDIA-COVER-ID" />
-        </xjdf:Resource>
-        <xjdf:Resource ExternalID="COMP-BS-2">
-            <xjdf:Part BinderySignatureID="BS-2" />
-            <xjdf:Component Dimensions="852.68 603.67 3.34"
-                            MediaRef="MEDIA-BODY-ID" />
-        </xjdf:Resource>
-        <xjdf:Resource ExternalID="COMP-BS-3">
-            <xjdf:Part BinderySignatureID="BS-3" />
-            <xjdf:Component Dimensions="852.68 603.67 0.92"
-                            MediaRef="MEDIA-BODY-ID" />
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="Component" Usage="Output">
-        <xjdf:Resource ExternalID="COMP-MAGAZINE">
-            <xjdf:AmountPool>
-                <xjdf:PartAmount Amount="1050" />
-            </xjdf:AmountPool>
-            <xjdf:Component Dimensions="841.88 595.27 5.26" />
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="StitchingParams" Usage="Input">
-        <xjdf:Resource>
-            <xjdf:StitchingParams StitchType="Saddle"
-                                  StapleShape="Eyelet"/>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="TrimmingParams" Usage="Input">
-        <xjdf:Resource>
-            <xjdf:TrimmingParams Height="841.88" Width="595.27"/>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="Media">
-        <xjdf:Resource ID="MEDIA-COVER-ID">
-            <xjdf:Media MediaType="Paper" Thickness="150" Weight="135"
-                        ISOPaperSubstrate="PS3" />
-        </xjdf:Resource>
-        <xjdf:Resource ID="MEDIA-BODY-ID">
-            <xjdf:Media MediaType="Paper" Thickness="90" Weight="80"
-                        ISOPaperSubstrate="PS3" />
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="NodeInfo" Usage="Input">
-        <xjdf:Resource>
-            <xjdf:NodeInfo Start="2016-09-26T22:00:00Z" />
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
+<xjdf:XJDF JobID="JOB-1234" Types="Collecting Stitching Trimming" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
+  <xjdf:AuditPool>
+    <xjdf:AuditCreated>
+      <xjdf:Header AgentName="MIS" AgentVersion="1.0" DeviceID="myID" Time="2024-04-21T22:06:47+00:00"/>
+    </xjdf:AuditCreated>
+  </xjdf:AuditPool>
+  <xjdf:ProductList>
+    <xjdf:Product Amount="1000" DescriptiveName="My Magazine A4" IsRoot="true">
+      <xjdf:Intent Name="BindingIntent">
+        <xjdf:BindingIntent BindingOrder="Collecting" BindingSide="Left"
+          BindingType="SaddleStitch" ChildRefs="COVER-ID BODY-ID"/>
+      </xjdf:Intent>
+    </xjdf:Product>
+    <xjdf:Product ID="COVER-ID" IsRoot="false">
+      <xjdf:Intent Name="ColorIntent">
+        <xjdf:ColorIntent>
+          <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Front"/>
+          <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Back"/>
+        </xjdf:ColorIntent>
+      </xjdf:Intent>
+      <xjdf:Intent Name="LayoutIntent">
+        <xjdf:LayoutIntent FinishedDimensions="841.88 595.27 0.0" Pages="4" Sides="TwoSidedHeadToHead"/>
+      </xjdf:Intent>
+      <xjdf:Intent Name="MediaIntent">
+        <xjdf:MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
+      </xjdf:Intent>
+    </xjdf:Product>
+    <xjdf:Product ID="BODY-ID" IsRoot="false">
+      <xjdf:Intent Name="ColorIntent">
+        <xjdf:ColorIntent>
+          <xjdf:SurfaceColor ColorsUsed="Black" Surface="Front"/>
+          <xjdf:SurfaceColor ColorsUsed="Black" Surface="Back"/>
+        </xjdf:ColorIntent>
+      </xjdf:Intent>
+      <xjdf:Intent Name="LayoutIntent">
+        <xjdf:LayoutIntent FinishedDimensions="841.88 595.27 0.0" Pages="20" Sides="TwoSidedHeadToHead"/>
+      </xjdf:Intent>
+      <xjdf:Intent Name="MediaIntent">
+        <xjdf:MediaIntent MediaQuality="80_MATT" MediaType="Paper"/>
+      </xjdf:Intent>
+    </xjdf:Product>
+  </xjdf:ProductList>
+  <xjdf:ResourceSet Name="Assembly" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:Assembly BinderySignatureIDs="BS-1 BS-2 BS-3" Order="Collecting"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="BinderySignature" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:Part BinderySignatureID="BS-1" ProductPart="COVER-ID"/>
+      <xjdf:BinderySignature BinderySignatureType="Fold" FoldCatalog="F4-1"/>
+    </xjdf:Resource>
+    <xjdf:Resource>
+      <xjdf:Part BinderySignatureID="BS-2" ProductPart="BODY-ID"/>
+      <xjdf:BinderySignature BinderySignatureType="Fold" FoldCatalog="F16-7"/>
+    </xjdf:Resource>
+    <xjdf:Resource>
+      <xjdf:Part BinderySignatureID="BS-3" ProductPart="BODY-ID"/>
+      <xjdf:BinderySignature BinderySignatureType="Fold" FoldCatalog="F4-1"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="Component" Usage="Input">
+    <xjdf:Resource ExternalID="COMP-BS-1">
+      <xjdf:Part BinderySignatureID="BS-1"/>
+      <xjdf:Component Dimensions="852.68 603.67 1.42" MediaRef="MEDIA-COVER-ID"/>
+    </xjdf:Resource>
+    <xjdf:Resource ExternalID="COMP-BS-2">
+      <xjdf:Part BinderySignatureID="BS-2"/>
+      <xjdf:Component Dimensions="852.68 603.67 3.34" MediaRef="MEDIA-BODY-ID"/>
+    </xjdf:Resource>
+    <xjdf:Resource ExternalID="COMP-BS-3">
+      <xjdf:Part BinderySignatureID="BS-3"/>
+      <xjdf:Component Dimensions="852.68 603.67 0.92" MediaRef="MEDIA-BODY-ID"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="Component" Usage="Output">
+    <xjdf:Resource ExternalID="COMP-MAGAZINE">
+      <xjdf:AmountPool>
+        <xjdf:PartAmount Amount="1050"/>
+      </xjdf:AmountPool>
+      <xjdf:Component Dimensions="841.88 595.27 5.26"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="StitchingParams" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:StitchingParams StapleShape="Eyelet" StitchType="Saddle"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="TrimmingParams" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:TrimmingParams Height="841.88" Width="595.27"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="Media">
+    <xjdf:Resource ID="MEDIA-COVER-ID">
+      <xjdf:Media ISOPaperSubstrate="PS3" MediaType="Paper" Thickness="150" Weight="135"/>
+    </xjdf:Resource>
+    <xjdf:Resource ID="MEDIA-BODY-ID">
+      <xjdf:Media ISOPaperSubstrate="PS3" MediaType="Paper" Thickness="90" Weight="80"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="NodeInfo" Usage="Input">
+    <xjdf:Resource>
+      <xjdf:NodeInfo Start="2024-09-26T22:00:00+00:00"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
 </xjdf:XJDF>

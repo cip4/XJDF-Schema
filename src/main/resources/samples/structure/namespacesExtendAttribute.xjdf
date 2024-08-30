@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Extension" Types="Product">
+<XJDF JobID="Extension" Types="Product" xmlns="http://www.CIP4.org/JDFSchema_2_0" xmlns:foo="http://www.foo.org">
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T18:58:16+01:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2024-03-01T18:58:16+01:00"/>
     </AuditCreated>
   </AuditPool>
   <ResourceSet Name="NodeInfo" Usage="Input">
@@ -15,7 +14,7 @@
     <!-- START SNIPPET -->
     <Resource>
       <Part SheetName="S1"/>
-      <Media MediaType="Paper" xmlns:foo="http://www.foo.org" foo:FooAtt="FooVal"/>
+      <Media MediaType="Paper" foo:FooAtt="FooVal" xmlns:foo="http://www.foo.org"/>
     </Resource>
     <!-- END SNIPPET -->
   </ResourceSet>

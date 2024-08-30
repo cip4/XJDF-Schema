@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0" Version="2.2">
-  <Header DeviceID="CIP4_JDF_Writer_Java" ID="l_230910_094905994_000000" Time="2023-09-10T09:49:05+02:00"/>
+<XJMF Version="2.2" xmlns="http://www.CIP4.org/JDFSchema_2_0">
+  <Header DeviceID="CIP4_JDF_Writer_Java" ID="l_230910_094905994_000000" Time="2024-09-10T09:49:05+02:00"/>
   <SignalNotification>
-    <Header DeviceID="CIP4_JDF_Writer_Java"
-      ID="l_230910_094906015_000001" Time="2023-09-10T09:49:06+02:00"/>
+    <Header DeviceID="CIP4_JDF_Writer_Java" ID="l_230910_094906015_000001" Time="2024-09-10T09:49:06+02:00"/>
     <Notification Class="Event"/>
   </SignalNotification>
 </XJMF>

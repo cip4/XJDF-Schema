@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:Header ID="XJMF_ID" DeviceID="DEVICE_ID_MIS"
-                 Time="2016-11-15T13:22:01+02:00" />
-    <xjdf:QueryStatus>
-        <xjdf:Header ID="MESSAGE_ID" DeviceID="DEVICE_ID_MIS"
-                     Time="2016-11-15T13:22:01+02:00" />
-        <xjdf:Subscription RepeatTime="30"
-                           URL="http://mis.example.org/xjmf" />
-        <xjdf:StatusQuParams />
-    </xjdf:QueryStatus>
+  <xjdf:Header DeviceID="DEVICE_ID_MIS" ID="XJMF_ID" Time="2024-11-15T13:22:01+02:00"/>
+  <xjdf:QueryStatus>
+    <xjdf:Header DeviceID="DEVICE_ID_MIS" ID="MESSAGE_ID" Time="2024-11-15T13:22:01+02:00"/>
+    <xjdf:Subscription RepeatTime="30" URL="http://mis.example.org/xjmf"/>
+    <xjdf:StatusQuParams/>
+  </xjdf:QueryStatus>
 </xjdf:XJMF>

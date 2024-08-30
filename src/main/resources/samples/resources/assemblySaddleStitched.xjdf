@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XJDF JobID="j1" xmlns="http://www.CIP4.org/JDFSchema_2_0" Types="Product">
+<XJDF JobID="j1" Types="Product" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <ProductList>
-    <Product ID="ProductID" IsRoot="true" Amount="1000"/>
+    <Product Amount="1000" ID="ProductID" IsRoot="true"/>
   </ProductList>
   <!-- Assembly Resource Example for Saddle Stitched -->
   <!-- START SNIPPET -->
   <ResourceSet Name="Assembly" Usage="Input">
     <Resource>
       <Assembly Order="List">
-        <AssemblySection BinderySignatureID="Ass_Cover" >
-          <AssemblySection BinderySignatureID="Ass_Body1" >
-            <AssemblySection BinderySignatureID="Ass_Body2" >
-              <AssemblySection BinderySignatureID="Ass_Body3" >
-                <AssemblySection BinderySignatureID="Ass_Body4" />
-              </AssemblySection >
-            </AssemblySection >
-          </AssemblySection >
-        </AssemblySection >
+        <AssemblySection BinderySignatureID="Ass_Cover">
+          <AssemblySection BinderySignatureID="Ass_Body1">
+            <AssemblySection BinderySignatureID="Ass_Body2">
+              <AssemblySection BinderySignatureID="Ass_Body3">
+                <AssemblySection BinderySignatureID="Ass_Body4"/>
+              </AssemblySection>
+            </AssemblySection>
+          </AssemblySection>
+        </AssemblySection>
       </Assembly>
     </Resource>
   </ResourceSet>

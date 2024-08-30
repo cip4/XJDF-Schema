@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="Converting"
-  JobPartID="Corrugated" Types="ConventionalPrinting" Version="2.1">
+<XJDF JobID="Converting" JobPartID="Corrugated" Types="ConventionalPrinting" Version="2.2" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- START SNIPPET -->
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
       <Header AgentName="CIP4 JDF Writer Java" AgentVersion="2.1.7.37"
-        DeviceID="CIP4_JDF_Writer_Java" Time="2023-07-25T19:37:06+02:00"/>
+        DeviceID="CIP4_JDF_Writer_Java" Time="2024-07-25T19:37:06+02:00"/>
     </AuditCreated>
   </AuditPool>
   <ResourceSet Name="NodeInfo" Usage="Input">
@@ -17,8 +16,7 @@
   <!-- START SNIPPET -->
   <ResourceSet Name="Media" Usage="Input">
     <Resource>
-      <Media Dimension="1190.5511811 0" MediaType="SelfAdhesive"
-        MediaUnit="Roll" Thickness="900">
+      <Media Dimension="1190.5511811 0" MediaType="SelfAdhesive" MediaUnit="Roll" Thickness="900">
         <MediaLayers>
           <Media MediaType="Paper" Weight="90"/>
           <Glue AreaGlue="true" GlueType="Removable"/>

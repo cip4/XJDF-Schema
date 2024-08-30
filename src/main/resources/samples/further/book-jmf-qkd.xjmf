@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:Header ID="XJMF_ID" DeviceID="DEVICE_ID_MIS"
-                 Time="2016-11-10T21:35:14+02:00" />
-    <xjdf:QueryKnownDevices>
-        <xjdf:Header ID="MESSAGE_ID" DeviceID="DEVICE_ID_MIS"
-                     Time="2016-11-10T21:35:14+02:00" />
-        <xjdf:DeviceFilter DeviceDetails="Brief" />
-    </xjdf:QueryKnownDevices>
+  <xjdf:Header DeviceID="DEVICE_ID_MIS" ID="XJMF_ID" Time="2024-11-10T21:35:14+02:00"/>
+  <xjdf:QueryKnownDevices>
+    <xjdf:Header DeviceID="DEVICE_ID_MIS" ID="MESSAGE_ID" Time="2024-11-10T21:35:14+02:00"/>
+    <xjdf:DeviceFilter DeviceDetails="Brief"/>
+  </xjdf:QueryKnownDevices>
 </xjdf:XJMF>

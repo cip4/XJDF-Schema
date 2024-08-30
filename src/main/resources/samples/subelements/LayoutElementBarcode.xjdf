@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
-  JobID="LayoutElementProduction" JobPartID="Barcode" Types="LayoutElementProduction">
+<XJDF JobID="LayoutElementProduction" JobPartID="Barcode" Types="LayoutElementProduction" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:55:48+01:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2024-03-01T19:55:48+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -29,8 +27,7 @@
           <BarcodeReproParams Height="73.5" Magnification="1">
             <BarcodeCompParams CompensationProcess="Printing" CompensationValue="10"/>
           </BarcodeReproParams>
-          <IdentificationField Encoding="Barcode"
-            EncodingDetails="EAN_13" Purpose="Label"
+          <IdentificationField Encoding="Barcode" EncodingDetails="EAN_13" Purpose="Label"
             PurposeDetails="ProductIdentification" Value="0123456789128"/>
         </BarcodeProductionParams>
       </Content>

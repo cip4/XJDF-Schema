@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:ResourceSet Name="Component" Usage="Input">
-        <xjdf:Resource ExternalID="COMP_ID_UNFOLDED">
-            <xjdf:Component Dimensions="841.88 595.27 0.42"
-                            MediaRef="MEDIA-ID"/>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-    <xjdf:ResourceSet Name="Component" Usage="Output">
-        <xjdf:Resource ExternalID="COMP_ID_FOLDED">
-            <xjdf:Component Dimensions="280.69 595.27 1.26"
-                            MediaRef="MEDIA-ID"/>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
-
-    <xjdf:ResourceSet Name="Media">
-        <xjdf:Resource ID="MEDIA-ID">
-            <xjdf:Media MediaType="Paper" Thickness="150" Weight="135"
-                        ISOPaperSubstrate="PS3"/>
-        </xjdf:Resource>
-    </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="Component" Usage="Input">
+    <xjdf:Resource ExternalID="COMP_ID_UNFOLDED">
+      <xjdf:Component Dimensions="841.88 595.27 0.42" MediaRef="MEDIA-ID"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="Component" Usage="Output">
+    <xjdf:Resource ExternalID="COMP_ID_FOLDED">
+      <xjdf:Component Dimensions="280.69 595.27 1.26" MediaRef="MEDIA-ID"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="Media">
+    <xjdf:Resource ID="MEDIA-ID">
+      <xjdf:Media ISOPaperSubstrate="PS3" MediaType="Paper" Thickness="150" Weight="135"/>
+    </xjdf:Resource>
+  </xjdf:ResourceSet>
 </xjdf:XJDF>

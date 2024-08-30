@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="RawName" Types="ColorSpaceConversion">
+<XJDF JobID="RawName" Types="ColorSpaceConversion" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.6 BLD 009" DeviceID="TestSender" ID="l_000002" Time="2019-03-26T14:07:37+00:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.6 BLD 009" DeviceID="TestSender"
+        ID="l_000002" Time="2024-03-26T14:07:37+00:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->

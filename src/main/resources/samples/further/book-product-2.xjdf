@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-<xjdf:ProductList>
+  <xjdf:ProductList>
     <xjdf:Product Amount="2500" DescriptiveName="My Folded Leaflet">
-        <xjdf:Intent Name="LayoutIntent">
-            <xjdf:LayoutIntent Dimensions="841.88 595.27"
-                               Sides="TwoSidedHeadToHead"
-                               FinishedDimensions="280.69 595.27 0.0"/>
-        </xjdf:Intent>
-
-        <xjdf:Intent Name="FoldingIntent">
-            <xjdf:FoldingIntent FoldCatalog="F6-2"/>
-        </xjdf:Intent>
-        <xjdf:Intent Name="ColorIntent">
-            <xjdf:ColorIntent>
-                <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
-                                   Surface="Front"/>
-                <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black"
-                                   Surface="Back"/>
-            </xjdf:ColorIntent>
-        </xjdf:Intent>
-        <xjdf:Intent Name="MediaIntent">
-            <xjdf:MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
-        </xjdf:Intent>
+      <xjdf:Intent Name="LayoutIntent">
+        <xjdf:LayoutIntent Dimensions="841.88 595.27" FinishedDimensions="280.69 595.27 0.0" Sides="TwoSidedHeadToHead"/>
+      </xjdf:Intent>
+      <xjdf:Intent Name="FoldingIntent">
+        <xjdf:FoldingIntent FoldCatalog="F6-2"/>
+      </xjdf:Intent>
+      <xjdf:Intent Name="ColorIntent">
+        <xjdf:ColorIntent>
+          <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Front"/>
+          <xjdf:SurfaceColor ColorsUsed="Cyan Magenta Yellow Black" Surface="Back"/>
+        </xjdf:ColorIntent>
+      </xjdf:Intent>
+      <xjdf:Intent Name="MediaIntent">
+        <xjdf:MediaIntent MediaQuality="135_MATT" MediaType="Paper"/>
+      </xjdf:Intent>
     </xjdf:Product>
-</xjdf:ProductList>
+  </xjdf:ProductList>
 </xjdf:XJDF>

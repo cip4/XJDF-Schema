@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
-    <Header DeviceID="DEVICE_ID_CONTROLLER" Time="2016-11-11T11:51:14+02:00" />
-    <ResponseKnownDevices ReturnCode="0">
-        <Header DeviceID="DEVICE_ID_CONTROLLER" Time="2016-11-11T11:51:14+02:00" />
-        <Device DeviceID="PRESS-01" />
-        <Device DeviceID="PRESS-02" />
-        <Device DeviceID="PRESS-03" />
-    </ResponseKnownDevices>
+  <Header DeviceID="DEVICE_ID_CONTROLLER" Time="2024-11-11T11:51:14+02:00"/>
+  <ResponseKnownDevices ReturnCode="0">
+    <Header DeviceID="DEVICE_ID_CONTROLLER" Time="2024-11-11T11:51:14+02:00"/>
+    <Device DeviceID="PRESS-01"/>
+    <Device DeviceID="PRESS-02"/>
+    <Device DeviceID="PRESS-03"/>
+  </ResponseKnownDevices>
 </XJMF>

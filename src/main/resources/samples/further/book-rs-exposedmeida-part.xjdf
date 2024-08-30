@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJDF JobID="JOB-42" Types="Folding" xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-<xjdf:ResourceSet Name="ExposedMedia">
+  <xjdf:ResourceSet Name="ExposedMedia">
     <xjdf:Resource>
-        <xjdf:Part Separation="Cyan" PartVersion="German" />
-        <xjdf:Part Separation="Cyan" PartVersion="English" />
-        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+      <xjdf:Part PartVersion="German" Separation="Cyan"/>
+      <xjdf:Part PartVersion="English" Separation="Cyan"/>
+      <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID"/>
     </xjdf:Resource>
     <xjdf:Resource>
-        <xjdf:Part Separation="Magenta" PartVersion="German" />
-        <xjdf:Part Separation="Magenta" PartVersion="English" />
-        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+      <xjdf:Part PartVersion="German" Separation="Magenta"/>
+      <xjdf:Part PartVersion="English" Separation="Magenta"/>
+      <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID"/>
     </xjdf:Resource>
     <xjdf:Resource>
-        <xjdf:Part Separation="Yellow" PartVersion="German" />
-        <xjdf:Part Separation="Yellow" PartVersion="English" />
-        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+      <xjdf:Part PartVersion="German" Separation="Yellow"/>
+      <xjdf:Part PartVersion="English" Separation="Yellow"/>
+      <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID"/>
     </xjdf:Resource>
     <xjdf:Resource>
-        <xjdf:Part Separation="Black" PartVersion="German" />
-        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+      <xjdf:Part PartVersion="German" Separation="Black"/>
+      <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID"/>
     </xjdf:Resource>
     <xjdf:Resource>
-        <xjdf:Part Separation="Black" PartVersion="English" />
-        <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID" />
+      <xjdf:Part PartVersion="English" Separation="Black"/>
+      <xjdf:ExposedMedia MediaRef="MEDIA-PLATE-ID"/>
     </xjdf:Resource>
-</xjdf:ResourceSet>
-
-<xjdf:ResourceSet Name="Media">
+  </xjdf:ResourceSet>
+  <xjdf:ResourceSet Name="Media">
     <xjdf:Resource ID="MEDIA-PLATE-ID">
-        <xjdf:Media MediaType="Plate" />
+      <xjdf:Media MediaType="Plate"/>
     </xjdf:Resource>
-</xjdf:ResourceSet>
+  </xjdf:ResourceSet>
 </xjdf:XJDF>

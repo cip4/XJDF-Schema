@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:Header ID="I2" DeviceID="DEV_ID"
-                 Time="2017-01-11T21:15:32+02:00" />
-    <xjdf:SignalResource>
-        <xjdf:Header ID="I43" DeviceID="DEV_ID"
-                     Time="2017-01-11T21:15:32+02:00" />
-        <xjdf:ResourceInfo JobID="JOB-1234" Speed="6000">
-            <xjdf:ResourceSet Name="Component" Usage="Output">
-                <xjdf:Resource ExternalID="COMP-MAGAZINE">
-                    <xjdf:AmountPool>
-                        <xjdf:PartAmount Amount="243" Waste="75" />
-                    </xjdf:AmountPool>
-                    <xjdf:Component Dimensions="841.88 595.27 5.26" />
-                </xjdf:Resource>
-            </xjdf:ResourceSet>
-        </xjdf:ResourceInfo>
-    </xjdf:SignalResource>
+  <xjdf:Header DeviceID="DEV_ID" ID="I2" Time="2024-01-11T21:15:32+02:00"/>
+  <xjdf:SignalResource>
+    <xjdf:Header DeviceID="DEV_ID" ID="I43" Time="2024-01-11T21:15:32+02:00"/>
+    <xjdf:ResourceInfo JobID="JOB-1234" Speed="6000">
+      <xjdf:ResourceSet Name="Component" Usage="Output">
+        <xjdf:Resource ExternalID="COMP-MAGAZINE">
+          <xjdf:AmountPool>
+            <xjdf:PartAmount Amount="243" Waste="75"/>
+          </xjdf:AmountPool>
+          <xjdf:Component Dimensions="841.88 595.27 5.26"/>
+        </xjdf:Resource>
+      </xjdf:ResourceSet>
+    </xjdf:ResourceInfo>
+  </xjdf:SignalResource>
 </xjdf:XJMF>

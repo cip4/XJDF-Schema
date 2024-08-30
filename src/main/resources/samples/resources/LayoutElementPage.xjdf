@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
-<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0"
-  JobID="LayoutElementProduction" JobPartID="PageSize" Types="LayoutElementProduction">
+<XJDF JobID="LayoutElementProduction" JobPartID="PageSize" Types="LayoutElementProduction" xmlns="http://www.CIP4.org/JDFSchema_2_0">
   <!-- END SNIPPET -->
   <AuditPool>
     <AuditCreated>
-      <Header AgentName="CIP4 JDF Writer Java"
-        AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2020-03-01T19:56:24+01:00"/>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="1.7 BLD 004" DeviceID="TestSender" Time="2024-03-01T19:56:24+01:00"/>
     </AuditCreated>
   </AuditPool>
   <!-- START SNIPPET -->
@@ -24,8 +22,7 @@
   </ResourceSet>
   <ResourceSet Name="Content">
     <Resource ID="r_000008">
-      <Content ContentType="Page"
-        SourceClipBox="0 0 651.97 878.74" SourceTrimBox="14.17 14.17 595.28 850.39"/>
+      <Content ContentType="Page" SourceClipBox="0 0 651.97 878.74" SourceTrimBox="14.17 14.17 595.28 850.39"/>
     </Resource>
   </ResourceSet>
   <ResourceSet Name="RunList" Usage="Output">

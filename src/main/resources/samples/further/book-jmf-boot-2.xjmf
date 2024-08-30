@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xjdf:XJMF xmlns:xjdf="http://www.CIP4.org/JDFSchema_2_0">
-    <xjdf:Header ID="XJMF_ID" DeviceID="CONTROLLER_ID"
-                 Time="2016-11-14T19:22:29+02:00" />
-    <xjdf:ResponseKnownMessages ReturnCode="0">
-        <xjdf:Header ID="I1234" refID="MESSAGE_ID"
-                     DeviceID="CONTROLLER_ID"
-                     Time="2016-11-14T19:22:29+02:00" />
-        <xjdf:MessageService Type="QueryKnownMessages"
-                             URLSchemes="http" />
-        <xjdf:MessageService Type="QueryKnownDevices"
-                             URLSchemes="http" />
-        <xjdf:MessageService Type="QueryKnownSubscriptions"
-                             URLSchemes="http" />
-        <xjdf:MessageService Type="CommandSubmitQueueEntry"
-                             URLSchemes="http" />
-        <xjdf:MessageService Type="CommandShutDown"
-                             URLSchemes="http" />
-        <xjdf:MessageService Type="QueryStatus"
-                             URLSchemes="http" />
-    </xjdf:ResponseKnownMessages>
+  <xjdf:Header DeviceID="CONTROLLER_ID" ID="XJMF_ID" Time="2024-11-14T19:22:29+02:00"/>
+  <xjdf:ResponseKnownMessages ReturnCode="0">
+    <xjdf:Header DeviceID="CONTROLLER_ID" ID="I1234" Time="2024-11-14T19:22:29+02:00" refID="MESSAGE_ID"/>
+    <xjdf:MessageService Type="QueryKnownMessages" URLSchemes="http"/>
+    <xjdf:MessageService Type="QueryKnownDevices" URLSchemes="http"/>
+    <xjdf:MessageService Type="QueryKnownSubscriptions" URLSchemes="http"/>
+    <xjdf:MessageService Type="CommandSubmitQueueEntry" URLSchemes="http"/>
+    <xjdf:MessageService Type="CommandShutDown" URLSchemes="http"/>
+    <xjdf:MessageService Type="QueryStatus" URLSchemes="http"/>
+  </xjdf:ResponseKnownMessages>
 </xjdf:XJMF>

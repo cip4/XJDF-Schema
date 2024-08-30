@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- START SNIPPET -->
 <XJMF xmlns="http://www.CIP4.org/JDFSchema_2_0">
-  <Header DeviceID="DeviceID" ID="l_000002" Time="2019-03-26T14:07:48.552+00:00"/>
+  <Header DeviceID="DeviceID" ID="l_000002" Time="2024-03-26T14:07:48+00:00"/>
   <ResponseResource>
-    <Header DeviceID="DeviceID" ID="R1"
-      Time="2019-03-26T14:07:48.553+00:00" refID="Q1"/>
+    <Header DeviceID="DeviceID" ID="R1" Time="2024-03-26T14:07:48+00:00" refID="Q1"/>
     <ResourceInfo Scope="Allowed">
       <ResourceSet Name="Media">
         <Resource DescriptiveName="Paper # 1" ExternalID="ID_1">
