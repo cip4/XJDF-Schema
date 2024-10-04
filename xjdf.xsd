@@ -2161,6 +2161,7 @@
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
 						<xs:enumeration value="Animation"/>
+						<xs:enumeration value="Icon"/>
 						<xs:enumeration value="Identification"/>
 						<xs:enumeration value="SeparatedThumbNail"/>
 						<xs:enumeration value="Separation"/>
