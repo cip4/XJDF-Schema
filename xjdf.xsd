@@ -1660,7 +1660,7 @@
 					<xs:simpleType>
 						<xs:list>
 							<xs:simpleType>
-								<xs:restriction base="xs:NMTOKEB">
+								<xs:restriction base="xs:NMTOKEN">
 									<xs:enumeration value="XML"/>
 									<xs:enumeration value="Zip"/>
 								</xs:restriction>
