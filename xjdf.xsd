@@ -374,7 +374,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="Anchor">
-		<xs:restriction base="xs:string">
+		<xs:restriction base="xs:NMTOKEN">
 			<xs:enumeration value="BottomCenter"/>
 			<xs:enumeration value="BottomLeft"/>
 			<xs:enumeration value="BottomRight"/>
@@ -538,7 +538,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="Orientation">
-		<xs:restriction base="xs:string">
+		<xs:restriction base="xs:NMTOKEN">
 			<xs:enumeration value="Rotate0"/>
 			<xs:enumeration value="Rotate90"/>
 			<xs:enumeration value="Rotate180"/>
@@ -550,7 +550,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="WorkStyle">
-		<xs:restriction base="xs:string">
+		<xs:restriction base="xs:NMTOKEN">
 			<xs:enumeration value="Perfecting"/>
 			<xs:enumeration value="Simplex"/>
 			<xs:enumeration value="WorkAndBack"/>
@@ -559,7 +559,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="Coating">
-		<xs:restriction base="xs:string">
+		<xs:restriction base="xs:NMTOKEN">
 			<xs:enumeration value="Coated"/>
 			<xs:enumeration value="Gloss"/>
 			<xs:enumeration value="Matte"/>
@@ -570,7 +570,7 @@
 	<xs:simpleType name="SourceObjects">
 		<xs:list>
 			<xs:simpleType>
-				<xs:restriction base="xs:string">
+				<xs:restriction base="xs:NMTOKEN">
 					<xs:enumeration value="ImagePhotographic"/>
 					<xs:enumeration value="ImageScreenShot"/>
 					<xs:enumeration value="LineArt"/>
@@ -605,7 +605,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="DeviceCondition">
-		<xs:restriction base="xs:string">
+		<xs:restriction base="xs:NMTOKEN">
 			<xs:enumeration value="OK"/>
 			<xs:enumeration value="NeedsAttention"/>
 			<xs:enumeration value="Failure"/>
@@ -613,7 +613,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="DeviceStatus">
-		<xs:restriction base="xs:string">
+		<xs:restriction base="xs:NMTOKEN">
 			<xs:enumeration value="Cleanup"/>
 			<xs:enumeration value="Idle"/>
 			<xs:enumeration value="NonProductive"/>
@@ -1660,7 +1660,7 @@
 					<xs:simpleType>
 						<xs:list>
 							<xs:simpleType>
-								<xs:restriction base="xs:string">
+								<xs:restriction base="xs:NMTOKEB">
 									<xs:enumeration value="XML"/>
 									<xs:enumeration value="Zip"/>
 								</xs:restriction>
@@ -2159,7 +2159,7 @@
 			<xs:attribute name="PartVersion" type="xs:NMTOKEN" use="optional"/>
 			<xs:attribute name="PreviewType" use="optional">
 				<xs:simpleType>
-					<xs:restriction base="xs:string">
+					<xs:restriction base="xs:NMTOKEN">
 						<xs:enumeration value="Animation"/>
 						<xs:enumeration value="Icon"/>
 						<xs:enumeration value="Identification"/>
@@ -2542,7 +2542,7 @@
 				</xs:attribute>
 				<xs:attribute name="VarnishArea" use="optional">
 					<xs:simpleType>
-						<xs:restriction base="xs:string">
+						<xs:restriction base="xs:NMTOKEN">
 							<xs:enumeration value="Full"/>
 							<xs:enumeration value="Spot"/>
 						</xs:restriction>
@@ -2550,7 +2550,7 @@
 				</xs:attribute>
 				<xs:attribute name="VarnishMethod" use="optional">
 					<xs:simpleType>
-						<xs:restriction base="xs:string">
+						<xs:restriction base="xs:NMTOKEN">
 							<xs:enumeration value="Blanket"/>
 							<xs:enumeration value="Plate"/>
 							<xs:enumeration value="Independent"/>
@@ -4474,7 +4474,7 @@
 				<xs:attribute name="GrainDirection" type="MediaDirection" use="optional"/>
 				<xs:attribute name="ImagableSide" use="optional">
 					<xs:simpleType>
-						<xs:restriction base="xs:string">
+						<xs:restriction base="xs:NMTOKEN">
 							<xs:enumeration value="Front"/>
 							<xs:enumeration value="Back"/>
 							<xs:enumeration value="Both"/>
@@ -5442,7 +5442,7 @@
 			<xs:attribute name="RowsPerStrip" type="xs:int" use="optional"/>
 			<xs:attribute name="Segmentation" use="optional">
 				<xs:simpleType>
-					<xs:restriction base="xs:string">
+					<xs:restriction base="xs:NMTOKEN">
 						<xs:enumeration value="SingleStrip"/>
 						<xs:enumeration value="Stripped"/>
 						<xs:enumeration value="Tiled"/>
