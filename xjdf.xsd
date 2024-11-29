@@ -1010,9 +1010,13 @@
 	</xs:element>
 	<xs:element name="ModuleInfo">
 		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="Part"/>
+			</xs:sequence>
 			<xs:attribute name="HourCounter" type="xs:duration" use="optional"/>
 			<xs:attribute name="ModuleCondition" type="DeviceCondition" use="optional"/>
 			<xs:attribute name="ModuleID" type="xs:NMTOKEN" use="required"/>
+			<xs:attribute name="ModuleType" type="xs:NMTOKEN" use="optional"/>
 			<xs:attribute name="ProductionCounter" type="xs:float" use="optional"/>
 			<xs:attribute name="Status" type="DeviceStatus" use="required"/>
 			<xs:attribute name="StatusDetails" type="xs:string" use="optional"/>
