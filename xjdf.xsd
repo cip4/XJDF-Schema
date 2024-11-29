@@ -5240,6 +5240,9 @@
 	<xs:element name="SheetOptimizingReport" substitutionGroup="SpecificResource" type="SheetOptimizingReport"/>
 	<xs:complexType name="SheetOptimizingReport">
 		<xs:complexContent>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="0" ref="FileSpec"/>
+			</xs:sequence>
 			<xs:extension base="SpecificResource">
 				<xs:attribute name="AreaUse" type="Use" use="required"/>
 				<xs:attribute name="BackUse" type="Use" use="optional"/>
