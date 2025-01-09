@@ -33,7 +33,7 @@ dependencies {
     implementation localGroovy()
 
     testImplementation 'org.glassfish.jaxb:jaxb-runtime:4.0.2'
-    testImplementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
+    testImplementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.1'
 
     testImplementation 'org.cip4.lib.xjdf:xJdfLib:latest.integration'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'

@@ -64,12 +64,6 @@ jobs:
       - name: Copy tar.gz Archive to GCloud Bucket
         run: gsutil cp ./*.tar.gz  gs://schema.cip4.org/
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: xsd-artifact
-          path: xjdf.xsd
-
       - name: Invalidate CDN Cache
         run: |
           gcloud compute url-maps invalidate-cdn-cache cip4-public-balancer --path "/jdfschema_2_x/*" 
