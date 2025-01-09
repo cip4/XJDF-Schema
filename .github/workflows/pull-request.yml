@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out 'XJDF Schema'...
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: 'schema'
 
       - name: Check out 'Sample Builder'...
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: 'cip4/cip4-sample-builder'
           token: ${{ steps.access_token.outputs.token }}
