@@ -65,7 +65,7 @@ jobs:
         run: gsutil cp ./*.tar.gz  gs://schema.cip4.org/
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: xsd-artifact
           path: xjdf.xsd
