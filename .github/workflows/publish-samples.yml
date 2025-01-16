@@ -34,7 +34,7 @@ jobs:
           token: ${{ steps.access_token.outputs.token }}
           path: 'cip4-sample-builder'
 
-      - uses: actions/setup-java@v3
+      - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '11'
