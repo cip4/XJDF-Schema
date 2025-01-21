@@ -2,7 +2,7 @@ name: Publish XJDF Samples
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   publish-samples:
@@ -10,32 +10,38 @@ jobs:
     steps:
       - name: Get GitHub Access Token
         id: access_token
-        uses: tibdex/github-app-token@v1
+        uses: tibdex/github-app-token@v2
         with:
           app_id: ${{ secrets.CIP4_GITHUB_ACTIONS_APP_ID }}
           private_key: ${{ secrets.CIP4_GITHUB_ACTIONS_APP_KEY }} 
 
       - name: Check out 'XJDF Schema'...
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: 'schema'
 
       - name: Check out 'JDF Specificaion'...
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: 'cip4/JDF-Specification'
           token: ${{ steps.access_token.outputs.token }}
           path: 'spec'
 
       - name: Check out 'Sample Builder'...
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: 'cip4/cip4-sample-builder'
           token: ${{ steps.access_token.outputs.token }}
           path: 'cip4-sample-builder'
 
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'gradle'
+
       - name: Generate XJDF Samples
-        run: ./gradlew.bat --include-build ../cip4-sample-builder clean buildSamples
+        run: ./gradlew.bat --include-build ../cip4-sample-builder clean buildSamples --no-daemon
         working-directory: ./schema
 
       - name: Replace XJDF Samples in Specification 

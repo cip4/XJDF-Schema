@@ -2,31 +2,76 @@ name: Publish Snapshot (DEV Version)
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   RUN_REGION: europe-west1
 
 jobs:
-  publish-samples:
+  publish-snapshot:
     runs-on: ubuntu-latest
     steps:
       - name: Check out sources...
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 11
+          cache: 'gradle'
+
+      - name: Verify
+        run: ./gradlew test --no-daemon
+
+      - name: Update Parameters
+        run: |
+          NOW=$(TZ=GMT date +"%Y-%m-%d %H:%M:%SZ")
+          YEAR=$(TZ=GMT date +"%Y")
+          SPEC_VERSION=2.x
+          VERSION=${SPEC_VERSION}.${GITHUB_RUN_NUMBER}-SNAPSHOT-${GITHUB_SHA:0:7}
+          sed -i "s|@@branch@@|${GITHUB_REF#refs/heads/}|g" *.xsd
+          sed -i "s|@@version@@|${VERSION}|g" *.xsd
+          sed -i "s|@@year@@|${YEAR}|g" *.xsd
+          sed -i "s|@@buildTime@@|${NOW}|g" *.xsd
+          echo "{ \"buildTime\": \"${NOW}\", \"version\": \"${VERSION}\", \"specVersion\": \"${SPEC_VERSION}\" }" > version.json
+
+      - name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: '${{ secrets.GCP_SA_KEY }}'
 
       - name: Setup GCloud CLI
-        uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+        uses: google-github-actions/setup-gcloud@v2
         with:
-          version: '298.0.0'
-          service_account_key: ${{ secrets.GCP_SA_KEY }}
-          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          project_id: ${{ inputs.GCP_PROJECT_ID }}
 
       - name: Copy files to GCloud Bucket
-        run: gsutil cp ./*.xsd  gs://schema.cip4.org/jdfschema_2_dev
+        run: |
+          gsutil cp ./*.xsd  gs://schema.cip4.org/jdfschema_2_x/
+          gsutil cp ./version.json gs://schema.cip4.org/jdfschema_2_x/
 
       - name: Create ZIP Archive
-        run: zip jdfschema_2_dev.zip *.xsd
+        run: zip jdfschema_2_x.zip *.xsd version.json LICENSE.md
 
       - name: Copy ZIP Archive to GCloud Bucket
         run: gsutil cp ./*.zip  gs://schema.cip4.org/
+
+      - name: Createa tar.gz Archive
+        run: tar -czvf jdfschema_2_x.tar.gz *.xsd version.json LICENSE.md
+
+      - name: Copy tar.gz Archive to GCloud Bucket
+        run: gsutil cp ./*.tar.gz  gs://schema.cip4.org/
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: xsd-artifact
+          path: xjdf.xsd
+
+      - name: Invalidate CDN Cache
+        run: |
+          gcloud compute url-maps invalidate-cdn-cache cip4-public-balancer --path "/jdfschema_2_x/*" 
+          gcloud compute url-maps invalidate-cdn-cache cip4-public-balancer --path "/jdfschema_2_x.zip" 
+          gcloud compute url-maps invalidate-cdn-cache cip4-public-balancer --path "/jdfschema_2_x.tar.gz"
