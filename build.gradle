@@ -2,20 +2,31 @@ plugins {
     id 'groovy'
 }
 
+configurations.all {
+    resolutionStrategy {
+        cacheDynamicVersionsFor 30, 'seconds'
+    }
+}
+
 repositories {
     mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.5.2'
+    implementation localGroovy()
 
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.1'
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.3.1'
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
+    testImplementation 'org.cip4.lib.xjdf:xJdfLib:latest.integration'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.3.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
 
     testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
 }
 
 test {
     useJUnitPlatform()
+    maxParallelForks = Runtime.runtime.availableProcessors()
 }
