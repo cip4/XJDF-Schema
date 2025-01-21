@@ -10,31 +10,31 @@ jobs:
     steps:
       - name: Get GitHub Access Token
         id: access_token
-        uses: tibdex/github-app-token@v1
+        uses: tibdex/github-app-token@v2
         with:
           app_id: ${{ secrets.CIP4_GITHUB_ACTIONS_APP_ID }}
           private_key: ${{ secrets.CIP4_GITHUB_ACTIONS_APP_KEY }} 
 
       - name: Check out 'XJDF Schema'...
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: 'schema'
 
       - name: Check out 'JDF Specificaion'...
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: 'cip4/JDF-Specification'
           token: ${{ steps.access_token.outputs.token }}
           path: 'spec'
 
       - name: Check out 'Sample Builder'...
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: 'cip4/cip4-sample-builder'
           token: ${{ steps.access_token.outputs.token }}
           path: 'cip4-sample-builder'
 
-      - uses: actions/setup-java@v3
+      - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '11'
