@@ -5019,12 +5019,6 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="PackingParams" substitutionGroup="SpecificResource" type="PackingParams"/>
-    <xs:complexType name="PackingParams">
-        <xs:complexContent>
-            <xs:extension base="SpecificResource"/>
-        </xs:complexContent>
-    </xs:complexType>
 
 	    <xs:element name="Patch">
         <xs:complexType>
