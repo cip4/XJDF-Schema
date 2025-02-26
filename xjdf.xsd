@@ -5568,18 +5568,19 @@
 			<xs:anyAttribute namespace="##other" processContents="lax"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="SurfaceColor" type="SurfaceColor"/>
-	<xs:complexType name="SurfaceColor">
-		<xs:sequence>
-			<xs:element maxOccurs="unbounded" minOccurs="0" ref="Certification"/>
-		</xs:sequence>
-		<xs:attribute name="Coatings" type="xs:NMTOKENS" use="optional"/>
-		<xs:attribute name="ColorsUsed" type="xs:NMTOKENS" use="optional"/>
-		<xs:attribute name="Coverage" type="xs:float" use="optional"/>
-		<xs:attribute name="PrintStandard" type="xs:NMTOKEN" use="optional"/>
-		<xs:attribute name="Surface" type="Side" use="required"/>
-		<xs:anyAttribute namespace="##other" processContents="lax"/>
-	</xs:complexType>
+	<xs:element name="SurfaceColor">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="Certification"/>
+			</xs:sequence>
+			<xs:attribute name="Coatings" type="xs:NMTOKENS" use="optional"/>
+			<xs:attribute name="ColorsUsed" type="xs:NMTOKENS" use="optional"/>
+			<xs:attribute name="Coverage" type="xs:float" use="optional"/>
+			<xs:attribute name="PrintStandard" type="xs:NMTOKEN" use="optional"/>
+			<xs:attribute name="Surface" type="Side" use="required"/>
+			<xs:anyAttribute namespace="##other" processContents="lax"/>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="Fold">
 		<xs:complexType>
 			<xs:attribute name="From" use="required">
