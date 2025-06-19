@@ -312,6 +312,12 @@
 			<xs:enumeration value="UV"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="FeedSheetLay">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="Leading"/>
+			<xs:enumeration value="Trailing"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="SheetLay">
 		<xs:restriction base="xs:NMTOKEN">
 			<xs:enumeration value="Center"/>
@@ -3780,6 +3786,7 @@
 		<xs:complexContent>
 			<xs:extension base="SpecificResource">
 				<xs:attribute name="Drying" type="EnumDrying" use="optional"/>
+				<xs:attribute name="FeedSheetLay" type="FeedSheetLay" use="optional"/>
 				<xs:attribute name="FirstSurface" type="Side" use="optional"/>
 				<xs:attribute name="FountainSolution" use="optional">
 					<xs:simpleType>
@@ -3970,6 +3977,7 @@
 						</xs:restriction>
 					</xs:simpleType>
 				</xs:attribute>
+				<xs:attribute name="FeedSheetLay" type="FeedSheetLay" use="optional"/>
 				<xs:attribute name="ManualFeed" type="xs:boolean" use="optional"/>
 				<xs:attribute name="PageDelivery" use="optional">
 					<xs:simpleType>
@@ -4378,6 +4386,7 @@
 				<xs:attribute name="Anchor" type="Anchor" use="optional"/>
 				<xs:attribute name="Automated" type="xs:boolean" use="optional"/>
 				<xs:attribute name="ExpansionBox" type="rectangle" use="optional"/>
+				<xs:attribute name="FeedSheetLay" type="FeedSheetLay" use="optional"/>
 				<xs:attribute name="FilmRef" type="xs:IDREF" use="optional"/>
 				<xs:attribute name="InnermostShingling" type="xs:float" use="optional"/>
 				<xs:attribute name="MaxCollect" type="xs:int" use="optional"/>
