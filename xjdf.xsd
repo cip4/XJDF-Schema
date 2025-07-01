@@ -3703,6 +3703,7 @@
 			<xs:extension base="SpecificResource">
 				<xs:sequence>
 					<xs:element maxOccurs="unbounded" minOccurs="0" ref="IdentificationField"/>
+					<xs:element maxOccurs="unbounded" minOccurs="0" ref="SurfaceMark"/>
 				</xs:sequence>
 				<xs:attribute name="Automation" type="EnumAutomation" use="optional"/>
 				<xs:attribute name="CartonTopFlaps" type="XYPair" use="optional"/>
