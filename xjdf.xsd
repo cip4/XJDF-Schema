@@ -4906,8 +4906,10 @@
 							<xs:enumeration value="CIP3Multiple"/>
 							<xs:enumeration value="CIP3Single"/>
 						</xs:restriction>
-					</xs:simpleType>
+					</xs:simpleType>					
 				</xs:attribute>
+				<xs:attribute name="Resolution" type="XYPair" use="optional"/>
+				<xs:attribute name="Size" type="XYPair" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
