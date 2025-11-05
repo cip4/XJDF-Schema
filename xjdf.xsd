@@ -5412,6 +5412,7 @@
 			<xs:attribute name="MarkName" type="xs:NMTOKEN" use="optional"/>
 			<xs:attribute name="Offset" type="XYPair" use="optional"/>
 			<xs:attribute name="Orientation" type="Orientation" use="optional"/>
+			<xs:attribute name="PositionRef" type="xs:IDREF" use="optional"/>
 			<xs:attribute name="RelativeHeight" type="xs:float" use="optional"/>
 			<xs:attribute name="RelativeWidth" type="xs:float" use="optional"/>
 			<xs:attribute name="StripMarkDetails" type="xs:string" use="optional"/>
