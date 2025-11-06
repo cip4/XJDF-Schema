@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XJDF xmlns="http://www.CIP4.org/JDFSchema_2_0" JobID="CutMarks" Types="Cutting" Version="2.3">
+  <AuditPool>
+    <AuditCreated>
+      <Header AgentName="CIP4 JDF Writer Java" AgentVersion="2.2.8" DeviceID="TestSender" Time="2025-09-30T12:58:52+02:00"/>
+    </AuditCreated>
+  </AuditPool>
+  <ResourceSet ID="CuttingParams_000004" Name="CuttingParams" Usage="Input">
+    <Resource>
+      <CuttingParams/>
+    </Resource>
+  </ResourceSet>
+  <!-- START SNIPPET -->
+  <ResourceSet ID="Component_000005" Name="Component" Usage="Input">
+    <Resource>
+      <Component Dimensions="1984.25 1899.21 0">
+        <SurfaceMark Surface="Front">
+          <CutMark MarkType="TopVerticalCutMark" Position="428.03 1474.02"/>
+          <CutMark MarkType="TopVerticalCutMark" Position="833.39 1474.02"/>
+          <CutMark MarkType="TopVerticalCutMark" Position="952.44 1474.02"/>
+          <CutMark MarkType="TopVerticalCutMark" Position="1476.85 1474.02"/>
+          <CutMark MarkType="TopVerticalCutMark" Position="1882.2 1474.02"/>
+          <CutMark MarkType="LeftHorizontalCutMark" Position="428.03 1474.02"/>
+          <CutMark MarkType="RightHorizontalCutMark" Position="1882.2 1474.02"/>
+          <CutMark MarkType="LeftHorizontalCutMark" Position="428.03 878.74"/>
+          <CutMark MarkType="RightHorizontalCutMark" Position="1882.2 878.74"/>
+          <CutMark MarkType="BottomVerticalCutMark" Position="428.03 878.74"/>
+          <CutMark MarkType="BottomVerticalCutMark" Position="833.39 878.74"/>
+          <CutMark MarkType="BottomVerticalCutMark" Position="952.44 878.74"/>
+          <CutMark MarkType="BottomVerticalCutMark" Position="1476.85 878.74"/>
+          <CutMark MarkType="BottomVerticalCutMark" Position="1882.2 878.74"/>
+          <CutMark MarkType="UpperLeftCutMark" Position="428.03 737.01"/>
+          <CutMark MarkType="CrossCutMark" Position="833.39 737.01"/>
+          <CutMark MarkType="CrossCutMark" Position="952.44 737.01"/>
+          <CutMark MarkType="CrossCutMark" Position="1357.8 737.01"/>
+          <CutMark MarkType="CrossCutMark" Position="1476.85 737.01"/>
+          <CutMark MarkType="UpperRightCutMark" Position="1882.2 737.01"/>
+          <CutMark MarkType="LowerLeftCutMark" Position="428.03 141.73"/>
+          <CutMark MarkType="CrossCutMark" Position="833.39 141.73"/>
+          <CutMark MarkType="CrossCutMark" Position="952.44 141.73"/>
+          <CutMark MarkType="CrossCutMark" Position="1357.8 141.73"/>
+          <CutMark MarkType="CrossCutMark" Position="1476.85 141.73"/>
+          <CutMark MarkType="LowerRightCutMark" Position="1882.2 141.73"/>
+        </SurfaceMark>
+      </Component>
+    </Resource>
+  </ResourceSet>
+  <!-- END SNIPPET -->
+</XJDF>
