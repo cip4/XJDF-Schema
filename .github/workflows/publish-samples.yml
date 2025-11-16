@@ -34,10 +34,11 @@ jobs:
           token: ${{ steps.access_token.outputs.token }}
           path: 'cip4-sample-builder'
 
-      - uses: actions/setup-java@v4
+      - name: Setup JDK
+        uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '11'
+          java-version: 21
           cache: 'gradle'
 
       - name: Generate XJDF Samples
