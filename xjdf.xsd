@@ -128,6 +128,7 @@
 			<xs:enumeration value="SelfAdhesive"/>
 			<xs:enumeration value="ShrinkFoil"/>
 			<xs:enumeration value="Sleeve"/>
+			<xs:enumeration value="Synthetic"/>
 			<xs:enumeration value="Textile"/>
 			<xs:enumeration value="Transparency"/>
 			<xs:enumeration value="Vinyl"/>
