@@ -7,7 +7,7 @@ buildscript {
         dependencies {
             classpath("org.cip4:cip4-sample-builder:1.0-SNAPSHOT")
         }
-    } catch (UnknownDomainObjectException e) {
+    } catch (UnknownDomainObjectException ignored) {
         // nothing to do
     }
 }
@@ -16,7 +16,7 @@ plugins {
     id 'groovy'
 }
 
-configurations.all {
+configurations.configureEach {
     resolutionStrategy {
         cacheDynamicVersionsFor 30, 'seconds'
     }
@@ -25,22 +25,21 @@ configurations.all {
 repositories {
     mavenCentral()
     maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots/"
+        url = "https://oss.sonatype.org/content/repositories/snapshots/"
     }
 }
 
 dependencies {
     implementation localGroovy()
 
-    testImplementation 'org.glassfish.jaxb:jaxb-runtime:4.0.2'
+    testImplementation 'org.glassfish.jaxb:jaxb-runtime:4.0.6'
     testImplementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.2'
 
     testImplementation 'org.cip4.lib.xjdf:xJdfLib:latest.integration'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.3.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.4'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.11.4'
 
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
 }
 
 test {
@@ -49,15 +48,15 @@ test {
 }
 
 try {
-    Class.forName('org.cip4.samples.SamplesPlugin');
+    Class.forName('org.cip4.samples.SamplesPlugin')
     apply plugin: 'org.cip4.samples'
 
     buildSamples {
-        inputDir = file("src/main/resources/samples")
-        outputDir = file("build/generated-samples")
+        inputDir = layout.projectDirectory.dir("src/main/resources/samples")
+        outputDir = layout.buildDirectory.dir("generated-samples")
     }
 
     buildSamples.dependsOn test
-} catch (ClassNotFoundException e) {
+} catch (ClassNotFoundException ignored) {
     // void
 }
